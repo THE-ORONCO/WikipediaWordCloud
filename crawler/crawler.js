@@ -2,12 +2,8 @@
 const rp = require("request-promise");
 // cheerio ueber shortcut aufrufbar
 const $ = require("cheerio");
-
-// api abfrage für daten WhatLinksHere
-// 'https://en.wikipedia.org/w/api.php?action=query&format=json&prop=linkshere&titles=Bill_Gates&converttitles=1&utf8=1&lhprop=title|pageid&lhnamespace=0&lhlimit=500';
-const urlPreTarge = 'https://en.wikipedia.org/w/api.php?action=query&format=json&prop=linkshere&titles=';
+// target wird von usereingabe gesetzt + trigger fuer crawler 
 const target = "Bill Gates"
-const urlPosTarget = '&converttitles=1&utf8=1&lhprop=title|pageid&lhnamespace=0&lhlimit=500';
 
 //erwartete eingben vom User Bill Gates -> api call benoetigt Bill_Gates
 //funktion ersetzt effizient ueber regex die leerzeichen mit underscore
@@ -61,7 +57,7 @@ function crawler(url){
   }
 // liefert die daten als json zurück
 // WikimediaID aufrufbar ueber query.'pageid'.pageprops.wikibase_item -> Q5284 (Wikidata zu Bill Gates)
-  function convert2WikiDataID(){
+  function getWikiDataID_URL(){
     //api call https://en.wikipedia.org/w/api.php?action=query&prop=pageprops&ppprop=wikibase_item&redirects=1&titles=Bill_Gates&format=json
     const url = 'https://en.wikipedia.org/w/api.php?action=query&prop=pageprops&ppprop=wikibase_item&redirects=1&titles=' + enhanceTarget(target) + '&format=json'
 
@@ -71,8 +67,18 @@ function crawler(url){
 // sprache des wiki artikels ueber cc.wikipedia
 // welcher viewtype all-access/all-agents (unabhaengig von zugriff )
 //https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/Bill_Gates/daily/20151010/20181012
-function getViews(){
+function getViewsURL(){
   const url = 'https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/'+ enhanceTarget(target)+'/daily/20151010/20181012'
   // crawler ansteuern 
   // writer ansteuern mit custom name 
+  return url
+}
+
+function getWhatLinksHereURL(){
+  // api abfrage für daten WhatLinksHere
+// 'https://en.wikipedia.org/w/api.php?action=query&format=json&prop=linkshere&titles=Bill_Gates&converttitles=1&utf8=1&lhprop=title|pageid&lhnamespace=0&lhlimit=500';
+const urlPreTarge = 'https://en.wikipedia.org/w/api.php?action=query&format=json&prop=linkshere&titles=';
+const urlPosTarget = '&converttitles=1&utf8=1&lhprop=title|pageid&lhnamespace=0&lhlimit=500';
+const url = urlPreTarge + enhanceTarget(target) + urlPreTarge
+return url
 }
