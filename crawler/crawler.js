@@ -16,16 +16,15 @@ function enhanceTarget(target){
   var dataName = target.replace(/ /g, '_');
   return dataName;
 }
-//console.log(enhanceTarget(target));
-crawler(enhanceTarget(target));
 
-function crawler(dataName){
-  const url = urlPreTarge + enhanceTarget(target) + urlPosTarget
+function crawler(url){
+  //const url = urlPreTarge + enhanceTarget(target) + urlPosTarget
   //console.log(url)
   rp(url)
   .then(function(html){
     //bei erfolg
-    write2txt(html)
+    //todo write aufruf entfernen -> return html an function
+    write2json(html)
     //console.log("anzeige ist raus!");
   })
   .catch(function(html){
@@ -48,10 +47,10 @@ function crawler(dataName){
     //handle error
   }); */
 
-  function write2txt(data){
+  function write2json(data){
     const path = './tmpData/' + enhanceTarget(target) + '.json';
     //console.log(path)
-
+    //todo custom name from function support hinzufuegen
       const fs = require("fs");
       fs.writeFile(path, data, function(err){
           if(err){
@@ -60,3 +59,20 @@ function crawler(dataName){
           console.log("Speichern erfolgreich!");
       })
   }
+// liefert die daten als json zurück
+// WikimediaID aufrufbar ueber query.'pageid'.pageprops.wikibase_item -> Q5284 (Wikidata zu Bill Gates)
+  function convert2WikiDataID(){
+    //api call https://en.wikipedia.org/w/api.php?action=query&prop=pageprops&ppprop=wikibase_item&redirects=1&titles=Bill_Gates&format=json
+    const url = 'https://en.wikipedia.org/w/api.php?action=query&prop=pageprops&ppprop=wikibase_item&redirects=1&titles=' + enhanceTarget(target) + '&format=json'
+
+  }
+
+//call für die views Anfang und ende in year month day
+// sprache des wiki artikels ueber cc.wikipedia
+// welcher viewtype all-access/all-agents (unabhaengig von zugriff )
+//https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/Bill_Gates/daily/20151010/20181012
+function getViews(){
+  const url = 'https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/'+ enhanceTarget(target)+'/daily/20151010/20181012'
+  // crawler ansteuern 
+  // writer ansteuern mit custom name 
+}
