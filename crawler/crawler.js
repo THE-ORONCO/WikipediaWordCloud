@@ -96,11 +96,11 @@ return url,  cn;
 // prozessiert: Normalisierung des targets Bill Gates -> Bill_Gates
 // request and api request url aus functionCall (get...URL)
 // schreibt json datei mit cn 0 customName -> tag der die Inhalt erkennbar macht
+// beispielhafter aufruf procress(getViewsURL())
 function process(functionCall){
   var url,cn = functionCall
   write2json(crawler(url), cn)
-}
-
+  }
 // beispiel fuer data handling bei mehreren return werten
 /* function debugTest(){
   var x,y = getWhatLinksHereURL();
