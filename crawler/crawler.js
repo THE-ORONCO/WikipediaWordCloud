@@ -65,7 +65,7 @@ function crawler(url){
     const url = 'https://en.wikipedia.org/w/api.php?action=query&prop=pageprops&ppprop=wikibase_item&redirects=1&titles=' + enhanceTarget(target) + '&format=json'
     //_wdid = tag im dateinamen fuer WikiDataID
     const cn = "_wdid"
-    return url, cn;
+    return [url, cn];
   }
 
 //call für die views Anfang und ende in year month day
@@ -78,7 +78,7 @@ function getViewsURL(){
   // writer ansteuern mit custom name
   //_pv = tag im dateinamen fuer pageviews 
   const cn = "_pv"
-  return url, cn;
+  return [url, cn];
 }
 
 function getWhatLinksHereURL(){
@@ -89,7 +89,7 @@ const urlPosTarget = '&converttitles=1&utf8=1&lhprop=title|pageid&lhnamespace=0&
 const url = urlPreTarge + enhanceTarget(target) + urlPreTarge
 // tag im namen _wlh -> WhaLinksHere
 const cn = "_wlh"
-return url,  cn;
+return [url,  cn];
 }
 
 // wird mit nem get...URL befeuert
@@ -101,6 +101,7 @@ function process(functionCall){
   var url,cn = functionCall
   write2json(crawler(url), cn)
   }
+ 
 // beispiel fuer data handling bei mehreren return werten
 /* function debugTest(){
   var x,y = getWhatLinksHereURL();
@@ -110,6 +111,7 @@ function process(functionCall){
 
 /* test(getWikiDataID_URL())
 function test(functionCall){
-  var url,cn = functionCall
-  console.log(cn)
+  var url = functionCall[0]
+  var cn = functionCall[1]
+  console.log(url)
 } */
