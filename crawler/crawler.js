@@ -91,6 +91,12 @@ const url = urlPreTarge + enhanceTarget(target) + urlPreTarge
 const cn = "_wlh"
 return [url,  cn];
 }
+function getLinksTo(){
+  //https://en.wikipedia.org/w/api.php?action=query&titles=Bill_Gates&prop=links&pllimit=max
+  const url = 'https://en.wikipedia.org/w/api.php?action=query&titles='+ enhanceTarget(target) + '&prop=links&pllimit=max'
+  const cn = "_lt"
+  return [url, cn]
+}
 
 // wird mit nem get...URL befeuert
 // prozessiert: Normalisierung des targets Bill Gates -> Bill_Gates
@@ -101,7 +107,6 @@ function process(functionCall){
   var url,cn = functionCall
   write2json(crawler(url), cn)
   }
- 
 // beispiel fuer data handling bei mehreren return werten
 /* function debugTest(){
   var x,y = getWhatLinksHereURL();
