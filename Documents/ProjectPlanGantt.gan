@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><project name="WikipediaWordCloud" company="Informatiktypen Inc." webLink="http://" view-date="2019-05-27" view-index="0" gantt-divider-location="405" resource-divider-location="399" version="2.8.10" locale="en_GB">
     <description/>
     <view zooming-state="default:4" id="gantt-chart">
-        <field id="tpd3" name="Name" width="199" order="0"/>
-        <field id="tpd4" name="Begin date" width="101" order="1"/>
-        <field id="tpd5" name="End date" width="101" order="2"/>
+        <field id="tpd3" name="Name" width="191" order="0"/>
+        <field id="tpd4" name="Begin date" width="98" order="1"/>
+        <field id="tpd5" name="End date" width="97" order="2"/>
         <option id="taskLabelUp" value="name"/>
         <option id="taskLabelDown" value=""/>
-        <timeline><![CDATA[33,89,125]]></timeline>
+        <timeline><![CDATA[125,33]]></timeline>
         <option id="color.recent"><![CDATA[#00ff00 #ff00cc #0000ff #ff0000]]></option>
     </view>
     <view id="resource-table">
@@ -38,17 +38,21 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Basic documentation writing" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="0" thirdDate="2019-06-03" thirdDate-constraint="1" expand="false">
+        <task id="0" name="Basic documentation writing" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="11" thirdDate="2019-06-03" thirdDate-constraint="1" expand="true">
             <task id="12" name="QS-measures" color="#8cb6ce" meeting="false" start="2019-05-03" duration="7" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
-            <task id="11" name="Project Definition" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
+            <task id="11" name="Project Definition" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="20" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
             <task id="13" name="Resource analysis" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
-            <task id="14" name="Risk analysis" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
+            <task id="14" name="Risk analysis" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="38" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
             <task id="15" name="WhatIf" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="1" name="collecting information" meeting="false" start="2019-06-03" duration="5" complete="0" expand="false">
-            <task id="4" name="Crawler" color="#8cb6ce" meeting="false" start="2019-06-03" duration="1" complete="0" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
+        <task id="1" name="collecting information" meeting="false" start="2019-06-03" duration="7" complete="21" expand="true">
+            <task id="4" name="Crawler" color="#8cb6ce" meeting="false" start="2019-06-03" duration="1" complete="100" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
                 <notes><![CDATA[- Marco already had experience with webcrawlers]]></notes>
-                <depend id="120" type="4" difference="0" hardness="Rubber"/>
+                <depend id="120" type="1" difference="0" hardness="Rubber"/>
+                <depend id="128" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="5" name="Data refinery" color="#8cb6ce" meeting="false" start="2019-06-03" duration="5" complete="0" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
+                <depend id="124" type="2" difference="0" hardness="Rubber"/>
             </task>
             <task id="3" name="Databank" color="#8cb6ce" meeting="false" start="2019-06-03" duration="5" complete="0" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
                 <depend id="122" type="2" difference="0" hardness="Rubber"/>
@@ -56,13 +60,10 @@
             <task id="76" name="DataCollection-Meeting" color="#0000ff" meeting="true" start="2019-06-05" duration="0" complete="0" thirdDate="2019-05-27" thirdDate-constraint="0" expand="true">
                 <notes><![CDATA[- Marco briefed Sonia]]></notes>
             </task>
-            <task id="5" name="Data refinery" color="#8cb6ce" meeting="false" start="2019-06-03" duration="5" complete="0" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
-                <depend id="124" type="2" difference="0" hardness="Rubber"/>
-            </task>
-            <task id="2" name="UI" color="#8cb6ce" meeting="false" start="2019-06-03" duration="5" complete="0" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
+            <task id="2" name="GUI" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="47" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
                 <depend id="118" type="2" difference="0" hardness="Rubber"/>
             </task>
-            <task id="57" name="UI-Meeting" color="#0000ff" meeting="true" start="2019-06-05" duration="0" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true">
+            <task id="57" name="GUI-Meeting" color="#0000ff" meeting="true" start="2019-06-05" duration="0" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true">
                 <notes><![CDATA[- Théo got the job of compareing the different frameworks that were found
 - Marija and Samuel were tasked with learing GIT
 - which Framework will be used is still standing to discussion but is hopefully cleared in the next few days via the research and texts
@@ -71,13 +72,19 @@
 - we further clarified which data we wanted from the crawler]]></notes>
             </task>
         </task>
-        <task id="106" name="programming and testing" meeting="false" start="2019-06-03" duration="14" complete="0" expand="false">
-            <task id="120" name="Crawler" color="#8cb6ce" meeting="false" start="2019-06-03" duration="14" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
-            <task id="122" name="Databank" color="#8cb6ce" meeting="false" start="2019-06-08" duration="1" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
-            <task id="124" name="Data refinery" color="#8cb6ce" meeting="false" start="2019-06-08" duration="1" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
-            <task id="118" name="UI" color="#8cb6ce" meeting="false" start="2019-06-08" duration="1" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
+        <task id="126" name="drafting the programs" color="#000000" meeting="false" start="2019-06-06" duration="3" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true">
+            <task id="128" name="Crawler" color="#8cb6ce" meeting="false" start="2019-06-06" duration="1" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
+            <task id="129" name="Data refinery" meeting="false" start="2019-06-08" duration="1" complete="0" expand="true"/>
+            <task id="130" name="Databank" meeting="false" start="2019-06-08" duration="1" complete="0" expand="true"/>
+            <task id="127" name="GUI" color="#8cb6ce" meeting="false" start="2019-06-08" duration="1" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="55" name="wrapping up" color="#8cb6ce" meeting="false" start="2019-06-29" duration="3" complete="0" thirdDate="2019-06-25" thirdDate-constraint="1" expand="false">
+        <task id="106" name="programming and testing" meeting="false" start="2019-06-03" duration="23" complete="0" expand="true">
+            <task id="120" name="Crawler" color="#8cb6ce" meeting="false" start="2019-06-03" duration="14" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
+            <task id="124" name="Data refinery" color="#8cb6ce" meeting="false" start="2019-06-08" duration="11" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
+            <task id="122" name="Databank" color="#8cb6ce" meeting="false" start="2019-06-08" duration="11" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
+            <task id="118" name="GUI" color="#8cb6ce" meeting="false" start="2019-06-10" duration="16" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="55" name="wrapping up" color="#8cb6ce" meeting="false" start="2019-06-29" duration="3" complete="0" thirdDate="2019-06-25" thirdDate-constraint="1" expand="true">
             <task id="74" name="collecting all documentation" color="#8cb6ce" meeting="false" start="2019-06-29" duration="1" complete="0" thirdDate="2019-06-01" thirdDate-constraint="0" expand="true">
                 <depend id="75" type="2" difference="0" hardness="Rubber"/>
                 <depend id="81" type="1" difference="0" hardness="Rubber"/>
