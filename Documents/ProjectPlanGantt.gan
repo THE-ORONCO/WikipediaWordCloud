@@ -100,7 +100,10 @@
 - we split the workload based on interest and the different parts that need to be programmed
 - Aleksandar was apsent and doesn't respond to texts]]></notes>
         </task>
-        <task id="38" name="Meeting 2" color="#00ff00" meeting="true" start="2019-06-10" duration="0" complete="0" thirdDate="2019-05-24" thirdDate-constraint="0" expand="true"/>
+        <task id="38" name="Meeting 2" color="#00ff00" meeting="true" start="2019-06-11" duration="0" complete="0" thirdDate="2019-05-24" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[- da nur Mitglieder der GUI-Gruppe anwesend waren konnte nur geklärt werden welches Framework man verwendet: D3js bzw ColaJs, da sie in beinahe allem ähnlich wenn nicht gleich aufgebaut sind
+]]></notes>
+        </task>
         <task id="41" name="Meeting 3" color="#00ff00" meeting="true" start="2019-06-17" duration="0" complete="0" thirdDate="2019-05-24" thirdDate-constraint="0" expand="true"/>
         <task id="43" name="Meeting 4" color="#00ff00" meeting="true" start="2019-06-24" duration="0" complete="0" thirdDate="2019-05-24" thirdDate-constraint="0" expand="true"/>
         <task id="53" name="Meeting 5" color="#00ff00" meeting="true" start="2019-07-01" duration="0" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true"/>
