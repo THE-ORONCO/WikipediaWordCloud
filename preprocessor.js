@@ -1,3 +1,7 @@
+const ac = require('./apiCalls.js')
+//import aus apiCalls.js
+// ./ verweis auf das verzeichnis in dem das ausgeführte script liegt
+
 // wird getriggert und weist die anderen module an etwas zu tun
 // fuer jede function in apiCall; apicall an crawler an Write
 // Parrallel ? async? sequenziell? 
@@ -14,7 +18,13 @@ function enhanceTarget(target){
   }
 
 
+
 function process(trigger){
     
 
 }
+//bisher alle calls liefern url + cn
+//getWikiDataID_URL gibt die Q nummer
+//getViewsURL gibt die views
+//getWhatLinksHereURL 
+//getLinksTo
