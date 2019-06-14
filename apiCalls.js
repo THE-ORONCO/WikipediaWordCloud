@@ -9,7 +9,7 @@ getWikiDataID_URL = function(target){
   return [url, cn];
 },
 
-//call für die views Anfang und ende in year month day
+//call für die views Anfang und ende in yyyymmdd
 // sprache des wiki artikels ueber cc.wikipedia
 // welcher viewtype all-access/all-agents (unabhaengig von zugriff )
 //https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/Bill_Gates/daily/20151010/20181012
@@ -24,19 +24,21 @@ return [url, cn];
 
 getWhatLinksHereURL = function(target){
 // api abfrage für daten WhatLinksHere
+// _wlh = tag im namen _wlh fuer WhaLinksHere
 // 'https://en.wikipedia.org/w/api.php?action=query&format=json&prop=linkshere&titles=Bill_Gates&converttitles=1&utf8=1&lhprop=title|pageid&lhnamespace=0&lhlimit=500';
 const urlPreTarge = 'https://en.wikipedia.org/w/api.php?action=query&format=json&prop=linkshere&titles=';
 const urlPosTarget = '&converttitles=1&utf8=1&lhprop=title|pageid&lhnamespace=0&lhlimit=500';
 const url = urlPreTarge + target + urlPreTarge
-// tag im namen _wlh -> WhaLinksHere
+  // _wlh = tag im namen fuer WhaLinksHere
 const cn = "_wlh"
 return [url,  cn];
 },
 getLinksTo = function (target){
 //https://en.wikipedia.org/w/api.php?action=query&titles=Bill_Gates&prop=links&pllimit=max
-const url = 'https://en.wikipedia.org/w/api.php?action=query&titles='+ target + '&prop=links&pllimit=max'
+//https://en.wikipedia.org/w/api.php?action=query&titles=Bill_Gates&prop=links&pllimit=max
+// _lt = tag im namen für LinksTo
 const cn = "_lt"
 return [url, cn]
 } 
-  
+
 }
