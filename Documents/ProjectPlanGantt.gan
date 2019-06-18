@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="WikipediaWordCloud" company="Informatiktypen Inc." webLink="http://" view-date="2019-05-27" view-index="0" gantt-divider-location="405" resource-divider-location="399" version="2.8.10" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="WikipediaWordCloud" company="Informatiktypen Inc." webLink="http://" view-date="2019-06-03" view-index="0" gantt-divider-location="405" resource-divider-location="399" version="2.8.10" locale="en_GB">
     <description/>
     <view zooming-state="default:4" id="gantt-chart">
         <field id="tpd3" name="Name" width="191" order="0"/>
@@ -6,7 +6,7 @@
         <field id="tpd5" name="End date" width="97" order="2"/>
         <option id="taskLabelUp" value="name"/>
         <option id="taskLabelDown" value=""/>
-        <timeline><![CDATA[125,33]]></timeline>
+        <timeline><![CDATA[33,125]]></timeline>
         <option id="color.recent"><![CDATA[#00ff00 #ff00cc #0000ff #ff0000]]></option>
     </view>
     <view id="resource-table">
@@ -45,8 +45,8 @@
             <task id="14" name="Risk analysis" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="38" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
             <task id="15" name="WhatIf" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="1" name="collecting information" meeting="false" start="2019-06-03" duration="7" complete="21" expand="true">
-            <task id="4" name="Crawler" color="#8cb6ce" meeting="false" start="2019-06-03" duration="1" complete="100" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
+        <task id="1" name="collecting information" meeting="false" start="2019-06-03" duration="7" complete="20" expand="true">
+            <task id="4" name="Crawler" color="#8cb6ce" meeting="false" start="2019-06-03" duration="1" complete="0" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
                 <notes><![CDATA[- Marco already had experience with webcrawlers]]></notes>
                 <depend id="120" type="1" difference="0" hardness="Rubber"/>
                 <depend id="128" type="2" difference="0" hardness="Rubber"/>
@@ -54,7 +54,7 @@
             <task id="5" name="Data refinery" color="#8cb6ce" meeting="false" start="2019-06-03" duration="5" complete="0" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
                 <depend id="124" type="2" difference="0" hardness="Rubber"/>
             </task>
-            <task id="3" name="Databank" color="#8cb6ce" meeting="false" start="2019-06-03" duration="5" complete="0" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
+            <task id="3" name="Databank" color="#8cb6ce" meeting="false" start="2019-06-03" duration="1" complete="0" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
                 <depend id="122" type="2" difference="0" hardness="Rubber"/>
             </task>
             <task id="76" name="DataCollection-Meeting" color="#0000ff" meeting="true" start="2019-06-05" duration="0" complete="0" thirdDate="2019-05-27" thirdDate-constraint="0" expand="true">
