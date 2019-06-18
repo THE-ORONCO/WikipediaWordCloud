@@ -68,3 +68,5 @@ function test(functionCall){
   var cn = functionCall[1]
   console.log(url)
 } */
+
+const ac = require("./apiCalls.js");

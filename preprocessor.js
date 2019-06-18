@@ -1,4 +1,4 @@
-const ac = require('./apiCalls.js')
+const ac = require('./apiCalls.js').default
 //import aus apiCalls.js
 // ./ verweis auf das verzeichnis in dem das ausgeführte script liegt
 

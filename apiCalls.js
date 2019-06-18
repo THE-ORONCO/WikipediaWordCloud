@@ -15,7 +15,7 @@ getWikiDataID_URL = function(target){
 // welcher viewtype all-access/all-agents (unabhaengig von zugriff )
 //https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/Bill_Gates/daily/20151010/20181012
 getViewsURL = function(target){
-const url = 'https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/'+ target +'/monthly/20150601/20181012'
+const url = 'https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/'+ target +'/monthly/20150601/' + today();
 // crawler ansteuern 
 // writer ansteuern mit custom name
 //_pv = tag im dateinamen fuer pageviews 
@@ -42,4 +42,11 @@ const cn = "_lt"
 return [url, cn]
 } 
 
+}
+
+function today() {
+  function twoDigit(n) { return (n < 10 ? '0' : '') + n; }
+
+  var now = new Date();
+  return '' + now.getFullYear() + twoDigit(now.getMonth() + 1) + twoDigit(now.getDate());
 }
