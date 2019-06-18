@@ -9,12 +9,13 @@ getWikiDataID_URL = function(target){
   return [url, cn];
 },
 
+//It only includes data back to July 1, 2015
 //call für die views Anfang und ende in yyyymmdd
 // sprache des wiki artikels ueber cc.wikipedia
 // welcher viewtype all-access/all-agents (unabhaengig von zugriff )
 //https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/Bill_Gates/daily/20151010/20181012
 getViewsURL = function(target){
-const url = 'https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/'+ target +'/daily/20151010/20181012'
+const url = 'https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/'+ target +'/monthly/20150601/20181012'
 // crawler ansteuern 
 // writer ansteuern mit custom name
 //_pv = tag im dateinamen fuer pageviews 
