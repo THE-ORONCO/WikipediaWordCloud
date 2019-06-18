@@ -69,4 +69,5 @@ function test(functionCall){
   console.log(url)
 } */
 
-const ac = require("./apiCalls.js");
+//const ac = require("./apiCalls.js");
+console.log(process.cwd)
