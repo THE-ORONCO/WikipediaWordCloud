@@ -20,6 +20,7 @@ function enhanceTarget(target){
 
 
 function process(trigger){
+  target = enhanceTargetName(trigger)
     
 
 }
