@@ -1,0 +1,11 @@
+{
+  "name": "datarefinery",
+  "version": "1.0.0",
+  "description": "data refinery for crawler data",
+  "main": "refinery.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
