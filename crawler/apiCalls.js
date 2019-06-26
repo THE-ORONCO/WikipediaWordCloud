@@ -36,8 +36,9 @@ return [url,  cn];
 },
 getLinksTo = function (target){
 //https://en.wikipedia.org/w/api.php?action=query&titles=Bill_Gates&prop=links&pllimit=max
-//https://en.wikipedia.org/w/api.php?action=query&titles=Bill_Gates&prop=links&pllimit=max
+//https://en.wikipedia.org/w/api.php?action=query&titles=Bill_Gates&prop=links&pllimit=max&format=json
 // _lt = tag im namen für LinksTo
+const url = 'https://en.wikipedia.org/w/api.php?action=query&titles='+ target +'&prop=links&pllimit=max&format=json'
 const cn = "_lt"
 return [url, cn]
 } 

@@ -69,5 +69,5 @@ function test(functionCall){
   console.log(url)
 } */
 
-//const ac = require("./apiCalls.js");
-console.log(process.cwd)
+const ac = require("./apiCalls.js");
+console.log(ac.getViewsURL(enhanceTarget("Bill Gates" )));

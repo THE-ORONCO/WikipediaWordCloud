@@ -13,6 +13,8 @@ function enhanceTarget(target){
   return dataName;
 }
 
+const url = 'https://en.wikipedia.org/w/api.php?action=query&titles=Bill_Gates&prop=links&pllimit=max&format=json'
+crawler(url);
 // default crawler ohne filter und ohne custom UserAgent
 function crawler(url){
   //const url = urlPreTarge + enhanceTarget(target) + urlPosTarget
@@ -21,7 +23,8 @@ function crawler(url){
   .then(function(html){
     //bei erfolg
     //todo write aufruf entfernen -> return html an function
-    return html;
+    write2json(html,"_lt")
+    //return html;
     //console.log("anzeige ist raus!");
   })
   .catch(function(html){
