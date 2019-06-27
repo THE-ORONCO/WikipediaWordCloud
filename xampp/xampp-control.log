@@ -534,3 +534,72 @@
 16:27:38  [main] 	Deinitializing Modules
 16:27:38  [main] 	Deinitializing Control Panel
 
+16:29:02  [main] 	Initializing Control Panel
+16:29:02  [main] 	Windows Version:  Home  64-bit
+16:29:02  [main] 	XAMPP Version: 7.3.6
+16:29:02  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+16:29:02  [main] 	You are not running with administrator rights! This will work for
+16:29:02  [main] 	most application stuff but whenever you do something with services
+16:29:02  [main] 	there will be a security dialogue or things will break! So think 
+16:29:02  [main] 	about running this application with administrator rights!
+16:29:02  [main] 	XAMPP Installation Directory: "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\"
+16:29:02  [main] 	Checking for prerequisites
+16:29:02  [main] 	All prerequisites found
+16:29:02  [main] 	Initializing Modules
+16:29:02  [main] 	The FileZilla module is disabled
+16:29:02  [main] 	The Mercury module is disabled
+16:29:02  [main] 	Starting Check-Timer
+16:29:02  [main] 	Control Panel Ready
+16:29:03  [Apache] 	Attempting to start Apache app...
+16:29:03  [Apache] 	Status change detected: running
+16:29:33  [mysql] 	Attempting to start MySQL app...
+16:32:05  [mysql] 	Attempting to start MySQL app...
+16:33:35  [mysql] 	Attempting to start MySQL app...
+16:34:09  [mysql] 	Attempting to start MySQL app...
+16:34:22  [main] 	Executing "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\mysql\data"
+16:38:36  [mysql] 	Attempting to start MySQL app...
+16:41:52  [mysql] 	Status change detected: running
+16:41:53  [mysql] 	Status change detected: stopped
+16:41:53  [mysql] 	Error: MySQL shutdown unexpectedly.
+16:41:53  [mysql] 	This may be due to a blocked port, missing dependencies, 
+16:41:53  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+16:41:53  [mysql] 	Press the Logs button to view error logs and check
+16:41:53  [mysql] 	the Windows Event Viewer for more clues
+16:41:53  [mysql] 	If you need more help, copy and post this
+16:41:53  [mysql] 	entire log window on the forums
+16:43:28  [mysql] 	Status change detected: running
+16:43:28  [mysql] 	Status change detected: stopped
+16:43:28  [mysql] 	Error: MySQL shutdown unexpectedly.
+16:43:28  [mysql] 	This may be due to a blocked port, missing dependencies, 
+16:43:28  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+16:43:28  [mysql] 	Press the Logs button to view error logs and check
+16:43:28  [mysql] 	the Windows Event Viewer for more clues
+16:43:28  [mysql] 	If you need more help, copy and post this
+16:43:28  [mysql] 	entire log window on the forums
+17:08:21  [mysql] 	Status change detected: running
+17:08:22  [mysql] 	Status change detected: stopped
+17:08:22  [mysql] 	Error: MySQL shutdown unexpectedly.
+17:08:22  [mysql] 	This may be due to a blocked port, missing dependencies, 
+17:08:22  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+17:08:22  [mysql] 	Press the Logs button to view error logs and check
+17:08:22  [mysql] 	the Windows Event Viewer for more clues
+17:08:22  [mysql] 	If you need more help, copy and post this
+17:08:22  [mysql] 	entire log window on the forums
+17:11:07  [mysql] 	Status change detected: running
+17:11:07  [mysql] 	Status change detected: stopped
+17:11:07  [mysql] 	Error: MySQL shutdown unexpectedly.
+17:11:07  [mysql] 	This may be due to a blocked port, missing dependencies, 
+17:11:07  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+17:11:07  [mysql] 	Press the Logs button to view error logs and check
+17:11:07  [mysql] 	the Windows Event Viewer for more clues
+17:11:07  [mysql] 	If you need more help, copy and post this
+17:11:07  [mysql] 	entire log window on the forums
+17:11:25  [mysql] 	Status change detected: running
+17:11:55  [mysql] 	Attempting to stop MySQL app...
+17:11:55  [mysql] 	Status change detected: stopped
+17:11:57  [Apache] 	Attempting to stop Apache (PID: 9384)
+17:11:57  [Apache] 	Attempting to stop Apache (PID: 11012)
+17:11:58  [Apache] 	Status change detected: stopped
+17:12:05  [main] 	Deinitializing Modules
+17:12:05  [main] 	Deinitializing Control Panel
+
