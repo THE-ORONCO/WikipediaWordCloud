@@ -16,7 +16,7 @@
 # You should have received a copy of the GNU Library General Public
 # License along with this library; if not, write to the Free
 # Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,
-# MA 02110-1301, USA
+# MA 02110-1335  USA
 
 use Getopt::Long;
 use POSIX qw(strftime getcwd);
@@ -492,12 +492,19 @@ sub list_defaults_files
 
   return ($opt{file}) if exists $opt{file};
 
-  return      ('/etc/my.cnf',
-               '/etc/mysql/my.cnf',
-               'C:/Program Files (x86)/MySQL/my.cnf',
-               ($ENV{MYSQL_HOME} ? "$ENV{MYSQL_HOME}/my.cnf" : undef),
-               $opt{'extra-file'},
-               ($ENV{HOME} ? "$ENV{HOME}/.my.cnf" : undef));
+  my @dirs;
+
+  # same rule as in mysys/my_default.c
+  if ('/etc') {
+    push @dirs, '/etc/my.cnf';
+  } else {
+    push @dirs, '/etc/my.cnf', '/etc/mysql/my.cnf';
+  }
+  push @dirs, "$ENV{MYSQL_HOME}/my.cnf" if $ENV{MYSQL_HOME};
+  push @dirs, $opt{'extra-file'} if $opt{'extra-file'};
+  push @dirs, "$ENV{HOME}/.my.cnf" if $ENV{HOME};
+
+  return @dirs;
 }
 
 
@@ -727,8 +734,8 @@ password   = my_password
 [mysqld2]
 socket     = /tmp/mysql.sock2
 port       = 3307
-pid-file   = C:/Program Files/MariaDB 10.1/data2/hostname.pid2
-datadir    = C:/Program Files/MariaDB 10.1/data2
+pid-file   = C:/Program Files/MariaDB 10.3/data2/hostname.pid2
+datadir    = C:/Program Files/MariaDB 10.3/data2
 language   = C:/Program Files (x86)/MySQL/share/mysql/english
 user       = unix_user1
 
@@ -738,24 +745,24 @@ ledir      = /path/to/mysqld-binary/
 mysqladmin = /path/to/mysqladmin
 socket     = /tmp/mysql.sock3
 port       = 3308
-pid-file   = C:/Program Files/MariaDB 10.1/data3/hostname.pid3
-datadir    = C:/Program Files/MariaDB 10.1/data3
+pid-file   = C:/Program Files/MariaDB 10.3/data3/hostname.pid3
+datadir    = C:/Program Files/MariaDB 10.3/data3
 language   = C:/Program Files (x86)/MySQL/share/mysql/swedish
 user       = unix_user2
 
 [mysqld4]
 socket     = /tmp/mysql.sock4
 port       = 3309
-pid-file   = C:/Program Files/MariaDB 10.1/data4/hostname.pid4
-datadir    = C:/Program Files/MariaDB 10.1/data4
+pid-file   = C:/Program Files/MariaDB 10.3/data4/hostname.pid4
+datadir    = C:/Program Files/MariaDB 10.3/data4
 language   = C:/Program Files (x86)/MySQL/share/mysql/estonia
 user       = unix_user3
  
 [mysqld6]
 socket     = /tmp/mysql.sock6
 port       = 3311
-pid-file   = C:/Program Files/MariaDB 10.1/data6/hostname.pid6
-datadir    = C:/Program Files/MariaDB 10.1/data6
+pid-file   = C:/Program Files/MariaDB 10.3/data6/hostname.pid6
+datadir    = C:/Program Files/MariaDB 10.3/data6
 language   = C:/Program Files (x86)/MySQL/share/mysql/japanese
 user       = unix_user4
 EOF

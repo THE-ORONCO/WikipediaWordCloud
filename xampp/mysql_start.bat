@@ -6,7 +6,7 @@ echo MySQL is trying to start
 echo Please wait  ...
 echo MySQL is starting with mysql\bin\my.ini (console)
 
-mysql\bin\mysqld --defaults-file=mysql\bin\my.ini --standalone --console
+mysql\bin\mysqld --defaults-file=mysql\bin\my.ini --standalone
 
 if errorlevel 1 goto error
 goto finish

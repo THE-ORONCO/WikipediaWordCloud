@@ -1,13 +1,16 @@
-###### ApacheFriends XAMPP Version 7.3.5 ######
+###### ApacheFriends XAMPP Version 7.3.6 ######
+ 
+Note: The Portable Version does not contain the FileZilla FTP and the Mercury Mail Server. The service installations are also disabled here.
+
 
 Important! PHP in this package needs the Microsoft Visual C++ 2015 Redistributable package from
 http://www.microsoft.com/en-us/download/. Please ensure that the VC++ 2015 runtime
 libraries are installed on your system.
 
   + Apache 2.4.39
-  + MariaDB 10.1.40
-  + PHP 7.3.5 (VC15 X86 64bit thread safe) + PEAR
-  + phpMyAdmin 4.8.5
+  + MariaDB 10.3.16
+  + PHP 7.3.6 (VC15 X86 64bit thread safe) + PEAR
+  + phpMyAdmin 4.9.0.1
   + OpenSSL 1.1.0g
   + ADOdb 518a
   + Mercury Mail Transport System v4.63 (not included in the portable version)
@@ -15,7 +18,7 @@ libraries are installed on your system.
   + Webalizer 2.23-04 (not included in the portable version)
   + Strawberry Perl 5.16.3.1 Portable
   + Tomcat 7.0.92
-  + XAMPP Control Panel Version 3.2.3.
+  + XAMPP Control Panel Version 3.2.4.
   + XAMPP mailToDisk 1.0 (write emails via PHP on local disk in <xampp>\mailoutput. Activated in the php.ini as mail default.)
 
 ---------------------------------------------------------------
