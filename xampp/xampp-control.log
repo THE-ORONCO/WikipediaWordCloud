@@ -1,0 +1,536 @@
+14:48:26  [main] 	Initializing Control Panel
+14:48:26  [main] 	Windows Version:  Home  64-bit
+14:48:26  [main] 	XAMPP Version: 7.3.6
+14:48:26  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+14:48:26  [main] 	You are not running with administrator rights! This will work for
+14:48:26  [main] 	most application stuff but whenever you do something with services
+14:48:26  [main] 	there will be a security dialogue or things will break! So think 
+14:48:26  [main] 	about running this application with administrator rights!
+14:48:26  [main] 	XAMPP Installation Directory: "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\"
+14:48:26  [main] 	Checking for prerequisites
+14:48:26  [main] 	All prerequisites found
+14:48:26  [main] 	Initializing Modules
+14:48:26  [main] 	The FileZilla module is disabled
+14:48:26  [main] 	The Mercury module is disabled
+14:48:26  [main] 	Starting Check-Timer
+14:48:26  [main] 	Control Panel Ready
+14:48:28  [Apache] 	Attempting to start Apache app...
+14:48:28  [Apache] 	Status change detected: running
+14:48:29  [Apache] 	Status change detected: stopped
+14:48:29  [Apache] 	Error: Apache shutdown unexpectedly.
+14:48:29  [Apache] 	This may be due to a blocked port, missing dependencies, 
+14:48:29  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+14:48:29  [Apache] 	Press the Logs button to view error logs and check
+14:48:29  [Apache] 	the Windows Event Viewer for more clues
+14:48:29  [Apache] 	If you need more help, copy and post this
+14:48:29  [Apache] 	entire log window on the forums
+14:51:01  [main] 	Deinitializing Modules
+14:51:01  [main] 	Deinitializing Control Panel
+
+14:56:57  [main] 	Initializing Control Panel
+14:56:57  [main] 	Windows Version:  Home  64-bit
+14:56:57  [main] 	XAMPP Version: 7.3.6
+14:56:57  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+14:56:57  [main] 	You are not running with administrator rights! This will work for
+14:56:57  [main] 	most application stuff but whenever you do something with services
+14:56:57  [main] 	there will be a security dialogue or things will break! So think 
+14:56:57  [main] 	about running this application with administrator rights!
+14:56:57  [main] 	XAMPP Installation Directory: "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\"
+14:56:57  [main] 	Checking for prerequisites
+14:56:57  [main] 	All prerequisites found
+14:56:57  [main] 	Initializing Modules
+14:56:57  [main] 	The FileZilla module is disabled
+14:56:57  [main] 	The Mercury module is disabled
+14:56:57  [main] 	Starting Check-Timer
+14:56:57  [main] 	Control Panel Ready
+14:56:59  [Apache] 	Attempting to start Apache app...
+14:56:59  [Apache] 	Status change detected: running
+14:57:00  [Apache] 	Status change detected: stopped
+14:57:00  [Apache] 	Error: Apache shutdown unexpectedly.
+14:57:00  [Apache] 	This may be due to a blocked port, missing dependencies, 
+14:57:00  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+14:57:00  [Apache] 	Press the Logs button to view error logs and check
+14:57:00  [Apache] 	the Windows Event Viewer for more clues
+14:57:00  [Apache] 	If you need more help, copy and post this
+14:57:00  [Apache] 	entire log window on the forums
+14:57:08  [Apache] 	Status change detected: running
+14:57:09  [Apache] 	Status change detected: stopped
+14:57:09  [Apache] 	Error: Apache shutdown unexpectedly.
+14:57:09  [Apache] 	This may be due to a blocked port, missing dependencies, 
+14:57:09  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+14:57:09  [Apache] 	Press the Logs button to view error logs and check
+14:57:09  [Apache] 	the Windows Event Viewer for more clues
+14:57:09  [Apache] 	If you need more help, copy and post this
+14:57:09  [Apache] 	entire log window on the forums
+14:57:39  [Apache] 	Status change detected: running
+14:57:40  [Apache] 	Status change detected: stopped
+14:57:40  [Apache] 	Error: Apache shutdown unexpectedly.
+14:57:40  [Apache] 	This may be due to a blocked port, missing dependencies, 
+14:57:40  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+14:57:40  [Apache] 	Press the Logs button to view error logs and check
+14:57:40  [Apache] 	the Windows Event Viewer for more clues
+14:57:40  [Apache] 	If you need more help, copy and post this
+14:57:40  [Apache] 	entire log window on the forums
+14:58:47  [Apache] 	Status change detected: running
+14:58:48  [Apache] 	Status change detected: stopped
+14:58:48  [Apache] 	Error: Apache shutdown unexpectedly.
+14:58:48  [Apache] 	This may be due to a blocked port, missing dependencies, 
+14:58:48  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+14:58:48  [Apache] 	Press the Logs button to view error logs and check
+14:58:48  [Apache] 	the Windows Event Viewer for more clues
+14:58:48  [Apache] 	If you need more help, copy and post this
+14:58:48  [Apache] 	entire log window on the forums
+15:00:10  [Apache] 	Status change detected: running
+15:00:11  [Apache] 	Status change detected: stopped
+15:00:11  [Apache] 	Error: Apache shutdown unexpectedly.
+15:00:11  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:00:11  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:00:11  [Apache] 	Press the Logs button to view error logs and check
+15:00:11  [Apache] 	the Windows Event Viewer for more clues
+15:00:11  [Apache] 	If you need more help, copy and post this
+15:00:11  [Apache] 	entire log window on the forums
+15:01:38  [Apache] 	Status change detected: running
+15:01:38  [Apache] 	Status change detected: stopped
+15:01:38  [Apache] 	Error: Apache shutdown unexpectedly.
+15:01:38  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:01:38  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:01:38  [Apache] 	Press the Logs button to view error logs and check
+15:01:38  [Apache] 	the Windows Event Viewer for more clues
+15:01:38  [Apache] 	If you need more help, copy and post this
+15:01:38  [Apache] 	entire log window on the forums
+15:02:16  [Apache] 	Status change detected: running
+15:02:17  [Apache] 	Status change detected: stopped
+15:02:17  [Apache] 	Error: Apache shutdown unexpectedly.
+15:02:17  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:02:17  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:02:17  [Apache] 	Press the Logs button to view error logs and check
+15:02:17  [Apache] 	the Windows Event Viewer for more clues
+15:02:17  [Apache] 	If you need more help, copy and post this
+15:02:17  [Apache] 	entire log window on the forums
+15:04:37  [main] 	Deinitializing Modules
+15:04:37  [main] 	Deinitializing Control Panel
+
+15:25:00  [main] 	Initializing Control Panel
+15:25:00  [main] 	Windows Version:  Home  64-bit
+15:25:00  [main] 	XAMPP Version: 7.3.6
+15:25:00  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+15:25:00  [main] 	You are not running with administrator rights! This will work for
+15:25:00  [main] 	most application stuff but whenever you do something with services
+15:25:00  [main] 	there will be a security dialogue or things will break! So think 
+15:25:00  [main] 	about running this application with administrator rights!
+15:25:00  [main] 	XAMPP Installation Directory: "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\"
+15:25:00  [main] 	Checking for prerequisites
+15:25:00  [main] 	All prerequisites found
+15:25:00  [main] 	Initializing Modules
+15:25:00  [main] 	The FileZilla module is disabled
+15:25:00  [main] 	The Mercury module is disabled
+15:25:00  [main] 	Starting Check-Timer
+15:25:00  [main] 	Control Panel Ready
+15:25:15  [Apache] 	Attempting to start Apache app...
+15:25:15  [Apache] 	Status change detected: running
+15:28:11  [Apache] 	Attempting to stop Apache (PID: 9816)
+15:28:11  [Apache] 	Attempting to stop Apache (PID: 5736)
+15:28:12  [Apache] 	Status change detected: stopped
+15:28:13  [main] 	Deinitializing Modules
+15:28:13  [main] 	Deinitializing Control Panel
+
+15:28:22  [main] 	Initializing Control Panel
+15:28:22  [main] 	Windows Version:  Home  64-bit
+15:28:22  [main] 	XAMPP Version: 7.3.6
+15:28:22  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+15:28:22  [main] 	Running with Administrator rights - good!
+15:28:22  [main] 	XAMPP Installation Directory: "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\"
+15:28:22  [main] 	Checking for prerequisites
+15:28:22  [main] 	All prerequisites found
+15:28:22  [main] 	Initializing Modules
+15:28:22  [main] 	The FileZilla module is disabled
+15:28:22  [main] 	The Mercury module is disabled
+15:28:22  [main] 	Starting Check-Timer
+15:28:22  [main] 	Control Panel Ready
+15:28:24  [Apache] 	Attempting to start Apache app...
+15:28:24  [Apache] 	Status change detected: running
+15:29:25  [Apache] 	Attempting to stop Apache (PID: 3228)
+15:29:25  [Apache] 	Attempting to stop Apache (PID: 10108)
+15:29:26  [Apache] 	Status change detected: stopped
+15:29:52  [Apache] 	Attempting to start Apache app...
+15:29:52  [Apache] 	Status change detected: running
+15:29:59  [Apache] 	Attempting to stop Apache (PID: 2888)
+15:29:59  [Apache] 	Attempting to stop Apache (PID: 7664)
+15:29:59  [Apache] 	Status change detected: stopped
+15:30:15  [Apache] 	Attempting to start Apache app...
+15:30:16  [Apache] 	Status change detected: running
+15:30:20  [Apache] 	Attempting to stop Apache (PID: 7372)
+15:30:20  [Apache] 	Attempting to stop Apache (PID: 6232)
+15:30:21  [Apache] 	Status change detected: stopped
+15:31:21  [Apache] 	Attempting to start Apache app...
+15:31:21  [Apache] 	Status change detected: running
+15:31:22  [Apache] 	Status change detected: stopped
+15:31:22  [Apache] 	Error: Apache shutdown unexpectedly.
+15:31:22  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:31:22  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:31:22  [Apache] 	Press the Logs button to view error logs and check
+15:31:22  [Apache] 	the Windows Event Viewer for more clues
+15:31:22  [Apache] 	If you need more help, copy and post this
+15:31:22  [Apache] 	entire log window on the forums
+15:31:30  [Apache] 	Status change detected: running
+15:31:31  [Apache] 	Status change detected: stopped
+15:31:31  [Apache] 	Error: Apache shutdown unexpectedly.
+15:31:31  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:31:31  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:31:31  [Apache] 	Press the Logs button to view error logs and check
+15:31:31  [Apache] 	the Windows Event Viewer for more clues
+15:31:31  [Apache] 	If you need more help, copy and post this
+15:31:31  [Apache] 	entire log window on the forums
+15:32:11  [Apache] 	Attempting to start Apache app...
+15:32:11  [Apache] 	Status change detected: running
+15:32:12  [Apache] 	Status change detected: stopped
+15:32:12  [Apache] 	Error: Apache shutdown unexpectedly.
+15:32:12  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:32:12  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:32:12  [Apache] 	Press the Logs button to view error logs and check
+15:32:12  [Apache] 	the Windows Event Viewer for more clues
+15:32:12  [Apache] 	If you need more help, copy and post this
+15:32:12  [Apache] 	entire log window on the forums
+15:32:15  [Apache] 	Status change detected: running
+15:32:15  [Apache] 	Status change detected: stopped
+15:32:15  [Apache] 	Error: Apache shutdown unexpectedly.
+15:32:15  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:32:15  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:32:15  [Apache] 	Press the Logs button to view error logs and check
+15:32:15  [Apache] 	the Windows Event Viewer for more clues
+15:32:15  [Apache] 	If you need more help, copy and post this
+15:32:15  [Apache] 	entire log window on the forums
+15:32:39  [Apache] 	Status change detected: running
+15:32:43  [Apache] 	Status change detected: stopped
+15:32:43  [Apache] 	Error: Apache shutdown unexpectedly.
+15:32:43  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:32:43  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:32:43  [Apache] 	Press the Logs button to view error logs and check
+15:32:43  [Apache] 	the Windows Event Viewer for more clues
+15:32:43  [Apache] 	If you need more help, copy and post this
+15:32:43  [Apache] 	entire log window on the forums
+15:32:47  [Apache] 	Attempting to start Apache app...
+15:32:47  [Apache] 	Status change detected: running
+15:32:57  [Apache] 	Attempting to stop Apache (PID: 10292)
+15:32:57  [Apache] 	Attempting to stop Apache (PID: 13824)
+15:32:57  [Apache] 	Status change detected: stopped
+15:32:58  [main] 	Deinitializing Modules
+15:32:58  [main] 	Deinitializing Control Panel
+
+15:33:05  [main] 	Initializing Control Panel
+15:33:05  [main] 	Windows Version:  Home  64-bit
+15:33:05  [main] 	XAMPP Version: 7.3.6
+15:33:05  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+15:33:05  [main] 	Running with Administrator rights - good!
+15:33:05  [main] 	XAMPP Installation Directory: "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\"
+15:33:05  [main] 	Checking for prerequisites
+15:33:05  [main] 	All prerequisites found
+15:33:05  [main] 	Initializing Modules
+15:33:05  [main] 	The FileZilla module is disabled
+15:33:05  [main] 	The Mercury module is disabled
+15:33:05  [main] 	Starting Check-Timer
+15:33:05  [main] 	Control Panel Ready
+15:33:07  [Apache] 	Attempting to start Apache app...
+15:33:07  [Apache] 	Status change detected: running
+15:33:31  [Apache] 	Attempting to stop Apache (PID: 7428)
+15:33:31  [Apache] 	Attempting to stop Apache (PID: 7516)
+15:33:31  [Apache] 	Status change detected: stopped
+15:33:31  [Apache] 	Attempting to start Apache app...
+15:33:32  [Apache] 	Status change detected: running
+15:34:11  [main] 	Deinitializing Modules
+15:34:11  [main] 	Deinitializing Control Panel
+
+15:35:14  [main] 	Initializing Control Panel
+15:35:14  [main] 	Windows Version:  Home  64-bit
+15:35:14  [main] 	XAMPP Version: 7.3.6
+15:35:14  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+15:35:14  [main] 	You are not running with administrator rights! This will work for
+15:35:14  [main] 	most application stuff but whenever you do something with services
+15:35:14  [main] 	there will be a security dialogue or things will break! So think 
+15:35:14  [main] 	about running this application with administrator rights!
+15:35:14  [main] 	XAMPP Installation Directory: "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\"
+15:35:14  [main] 	Checking for prerequisites
+15:35:14  [main] 	All prerequisites found
+15:35:14  [main] 	Initializing Modules
+15:35:14  [main] 	The FileZilla module is disabled
+15:35:14  [main] 	The Mercury module is disabled
+15:35:14  [main] 	Starting Check-Timer
+15:35:14  [main] 	Control Panel Ready
+15:35:16  [Apache] 	Attempting to start Apache app...
+15:35:16  [Apache] 	Status change detected: running
+15:35:18  [Apache] 	Attempting to stop Apache (PID: 8024)
+15:35:18  [Apache] 	Attempting to stop Apache (PID: 9304)
+15:35:18  [Apache] 	Status change detected: stopped
+15:35:20  [main] 	Deinitializing Modules
+15:35:20  [main] 	Deinitializing Control Panel
+
+15:34:18  [main] 	Initializing Control Panel
+15:34:18  [main] 	Windows Version:  Home  64-bit
+15:34:18  [main] 	XAMPP Version: 7.3.6
+15:34:18  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+15:34:18  [main] 	You are not running with administrator rights! This will work for
+15:34:18  [main] 	most application stuff but whenever you do something with services
+15:34:18  [main] 	there will be a security dialogue or things will break! So think 
+15:34:18  [main] 	about running this application with administrator rights!
+15:34:18  [main] 	XAMPP Installation Directory: "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\"
+15:34:18  [main] 	Checking for prerequisites
+15:34:18  [main] 	All prerequisites found
+15:34:18  [main] 	Initializing Modules
+15:34:18  [Apache] 	Problem detected!
+15:34:18  [Apache] 	Port 80 in use by "Unable to open process" with PID 13416!
+15:34:18  [Apache] 	Apache WILL NOT start without the configured ports free!
+15:34:18  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+15:34:18  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+15:34:18  [main] 	The FileZilla module is disabled
+15:34:18  [main] 	The Mercury module is disabled
+15:34:18  [main] 	Starting Check-Timer
+15:34:18  [main] 	Control Panel Ready
+15:34:24  [Apache] 	Problem detected!
+15:34:24  [Apache] 	Port 80 in use by "Unable to open process" with PID 13416!
+15:34:24  [Apache] 	Apache WILL NOT start without the configured ports free!
+15:34:24  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+15:34:24  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+15:34:24  [Apache] 	Attempting to start Apache app...
+15:34:24  [Apache] 	Status change detected: running
+15:34:25  [Apache] 	Status change detected: stopped
+15:34:25  [Apache] 	Error: Apache shutdown unexpectedly.
+15:34:25  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:34:25  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:34:25  [Apache] 	Press the Logs button to view error logs and check
+15:34:25  [Apache] 	the Windows Event Viewer for more clues
+15:34:25  [Apache] 	If you need more help, copy and post this
+15:34:25  [Apache] 	entire log window on the forums
+15:34:27  [Apache] 	Problem detected!
+15:34:27  [Apache] 	Port 80 in use by "Unable to open process" with PID 13416!
+15:34:27  [Apache] 	Apache WILL NOT start without the configured ports free!
+15:34:27  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+15:34:27  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+15:34:27  [Apache] 	Attempting to start Apache app...
+15:34:27  [Apache] 	Status change detected: running
+15:34:28  [Apache] 	Status change detected: stopped
+15:34:28  [Apache] 	Error: Apache shutdown unexpectedly.
+15:34:28  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:34:28  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:34:28  [Apache] 	Press the Logs button to view error logs and check
+15:34:28  [Apache] 	the Windows Event Viewer for more clues
+15:34:28  [Apache] 	If you need more help, copy and post this
+15:34:28  [Apache] 	entire log window on the forums
+15:34:51  [Apache] 	Status change detected: running
+15:34:51  [Apache] 	Status change detected: stopped
+15:34:51  [Apache] 	Error: Apache shutdown unexpectedly.
+15:34:51  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:34:51  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:34:51  [Apache] 	Press the Logs button to view error logs and check
+15:34:51  [Apache] 	the Windows Event Viewer for more clues
+15:34:51  [Apache] 	If you need more help, copy and post this
+15:34:51  [Apache] 	entire log window on the forums
+15:35:16  [Apache] 	Status change detected: running
+15:35:18  [Apache] 	Status change detected: stopped
+15:35:18  [Apache] 	Error: Apache shutdown unexpectedly.
+15:35:18  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:35:18  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:35:18  [Apache] 	Press the Logs button to view error logs and check
+15:35:18  [Apache] 	the Windows Event Viewer for more clues
+15:35:18  [Apache] 	If you need more help, copy and post this
+15:35:18  [Apache] 	entire log window on the forums
+15:40:34  [Apache] 	Status change detected: running
+15:40:53  [Apache] 	Status change detected: stopped
+15:40:53  [Apache] 	Error: Apache shutdown unexpectedly.
+15:40:53  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:40:53  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:40:53  [Apache] 	Press the Logs button to view error logs and check
+15:40:53  [Apache] 	the Windows Event Viewer for more clues
+15:40:53  [Apache] 	If you need more help, copy and post this
+15:40:53  [Apache] 	entire log window on the forums
+15:41:03  [Apache] 	Attempting to start Apache app...
+15:41:04  [Apache] 	Status change detected: running
+15:41:11  [Apache] 	Attempting to stop Apache (PID: 9800)
+15:41:11  [Apache] 	Attempting to stop Apache (PID: 3936)
+15:41:11  [Apache] 	Status change detected: stopped
+15:44:13  [Apache] 	Attempting to start Apache app...
+15:44:13  [Apache] 	Status change detected: running
+15:45:23  [Apache] 	Attempting to stop Apache (PID: 10948)
+15:45:23  [Apache] 	Attempting to stop Apache (PID: 5900)
+15:45:23  [Apache] 	Status change detected: stopped
+15:48:53  [Apache] 	Attempting to start Apache app...
+15:48:54  [Apache] 	Status change detected: running
+15:49:00  [Apache] 	Attempting to stop Apache (PID: 1868)
+15:49:00  [Apache] 	Attempting to stop Apache (PID: 8884)
+15:49:00  [Apache] 	Status change detected: stopped
+15:51:02  [Apache] 	Attempting to start Apache app...
+15:51:02  [Apache] 	Status change detected: running
+15:51:10  [Apache] 	Attempting to stop Apache (PID: 8012)
+15:51:10  [Apache] 	Attempting to stop Apache (PID: 13824)
+15:51:10  [Apache] 	Status change detected: stopped
+15:52:24  [Apache] 	Attempting to start Apache app...
+15:52:24  [Apache] 	Status change detected: running
+15:53:07  [Apache] 	Attempting to stop Apache (PID: 9992)
+15:53:07  [Apache] 	Attempting to stop Apache (PID: 9932)
+15:53:07  [Apache] 	Status change detected: stopped
+15:53:08  [Apache] 	Attempting to start Apache app...
+15:53:08  [Apache] 	Status change detected: running
+15:53:08  [Apache] 	Status change detected: stopped
+15:53:08  [Apache] 	Error: Apache shutdown unexpectedly.
+15:53:08  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:53:08  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:53:08  [Apache] 	Press the Logs button to view error logs and check
+15:53:08  [Apache] 	the Windows Event Viewer for more clues
+15:53:08  [Apache] 	If you need more help, copy and post this
+15:53:08  [Apache] 	entire log window on the forums
+15:53:37  [Apache] 	Status change detected: running
+15:53:37  [Apache] 	Status change detected: stopped
+15:53:37  [Apache] 	Error: Apache shutdown unexpectedly.
+15:53:37  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:53:37  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:53:37  [Apache] 	Press the Logs button to view error logs and check
+15:53:37  [Apache] 	the Windows Event Viewer for more clues
+15:53:37  [Apache] 	If you need more help, copy and post this
+15:53:37  [Apache] 	entire log window on the forums
+15:54:07  [Apache] 	Attempting to start Apache app...
+15:54:07  [Apache] 	Status change detected: running
+15:54:22  [Apache] 	Attempting to stop Apache (PID: 7388)
+15:54:22  [Apache] 	Attempting to stop Apache (PID: 5804)
+15:54:22  [Apache] 	Status change detected: stopped
+15:55:45  [Apache] 	Attempting to start Apache app...
+15:55:45  [Apache] 	Status change detected: running
+15:55:53  [Apache] 	Attempting to stop Apache (PID: 748)
+15:55:53  [Apache] 	Attempting to stop Apache (PID: 7316)
+15:55:53  [Apache] 	Status change detected: stopped
+15:55:56  [main] 	Deinitializing Modules
+15:55:56  [main] 	Deinitializing Control Panel
+
+15:56:03  [main] 	Initializing Control Panel
+15:56:03  [main] 	Windows Version:  Home  64-bit
+15:56:03  [main] 	XAMPP Version: 7.3.6
+15:56:03  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+15:56:03  [main] 	Running with Administrator rights - good!
+15:56:03  [main] 	XAMPP Installation Directory: "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\"
+15:56:03  [main] 	Checking for prerequisites
+15:56:03  [main] 	All prerequisites found
+15:56:03  [main] 	Initializing Modules
+15:56:03  [main] 	The FileZilla module is disabled
+15:56:03  [main] 	The Mercury module is disabled
+15:56:03  [main] 	Starting Check-Timer
+15:56:03  [main] 	Control Panel Ready
+15:56:05  [Apache] 	Attempting to start Apache app...
+15:56:05  [Apache] 	Status change detected: running
+15:56:18  [Apache] 	Attempting to stop Apache (PID: 13488)
+15:56:18  [Apache] 	Attempting to stop Apache (PID: 3008)
+15:56:19  [Apache] 	Status change detected: stopped
+15:57:05  [Apache] 	Attempting to start Apache app...
+15:57:05  [Apache] 	Status change detected: running
+15:57:36  [Apache] 	Attempting to stop Apache (PID: 7996)
+15:57:36  [Apache] 	Attempting to stop Apache (PID: 13388)
+15:57:36  [Apache] 	Status change detected: stopped
+15:59:03  [Apache] 	Attempting to start Apache app...
+15:59:03  [Apache] 	Status change detected: running
+15:59:03  [Apache] 	Status change detected: stopped
+15:59:03  [Apache] 	Error: Apache shutdown unexpectedly.
+15:59:03  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:59:03  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:59:03  [Apache] 	Press the Logs button to view error logs and check
+15:59:03  [Apache] 	the Windows Event Viewer for more clues
+15:59:03  [Apache] 	If you need more help, copy and post this
+15:59:03  [Apache] 	entire log window on the forums
+15:59:13  [Apache] 	Status change detected: running
+15:59:14  [Apache] 	Status change detected: stopped
+15:59:14  [Apache] 	Error: Apache shutdown unexpectedly.
+15:59:14  [Apache] 	This may be due to a blocked port, missing dependencies, 
+15:59:14  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+15:59:14  [Apache] 	Press the Logs button to view error logs and check
+15:59:14  [Apache] 	the Windows Event Viewer for more clues
+15:59:14  [Apache] 	If you need more help, copy and post this
+15:59:14  [Apache] 	entire log window on the forums
+15:59:28  [Apache] 	Status change detected: running
+15:59:33  [Apache] 	Attempting to stop Apache (PID: 14548)
+15:59:33  [Apache] 	Attempting to stop Apache (PID: 7832)
+15:59:33  [Apache] 	Status change detected: stopped
+16:01:23  [Apache] 	Attempting to start Apache app...
+16:01:24  [Apache] 	Status change detected: running
+16:01:29  [Apache] 	Attempting to stop Apache (PID: 14832)
+16:01:29  [Apache] 	Attempting to stop Apache (PID: 9628)
+16:01:29  [Apache] 	Status change detected: stopped
+16:01:36  [main] 	Deinitializing Modules
+16:01:36  [main] 	Deinitializing Control Panel
+
+16:03:54  [main] 	Initializing Control Panel
+16:03:54  [main] 	Windows Version:  Home  64-bit
+16:03:54  [main] 	XAMPP Version: 7.3.6
+16:03:54  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+16:03:54  [main] 	You are not running with administrator rights! This will work for
+16:03:54  [main] 	most application stuff but whenever you do something with services
+16:03:54  [main] 	there will be a security dialogue or things will break! So think 
+16:03:54  [main] 	about running this application with administrator rights!
+16:03:54  [main] 	XAMPP Installation Directory: "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\"
+16:03:54  [main] 	Checking for prerequisites
+16:03:54  [main] 	All prerequisites found
+16:03:54  [main] 	Initializing Modules
+16:03:54  [main] 	The FileZilla module is disabled
+16:03:54  [main] 	The Mercury module is disabled
+16:03:54  [main] 	Starting Check-Timer
+16:03:54  [main] 	Control Panel Ready
+16:07:17  [main] 	Deinitializing Modules
+16:07:17  [main] 	Deinitializing Control Panel
+
+16:07:19  [main] 	Initializing Control Panel
+16:07:19  [main] 	Windows Version:  Home  64-bit
+16:07:19  [main] 	XAMPP Version: 7.3.6
+16:07:19  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+16:07:19  [main] 	You are not running with administrator rights! This will work for
+16:07:19  [main] 	most application stuff but whenever you do something with services
+16:07:19  [main] 	there will be a security dialogue or things will break! So think 
+16:07:19  [main] 	about running this application with administrator rights!
+16:07:19  [main] 	XAMPP Installation Directory: "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\"
+16:07:19  [main] 	Checking for prerequisites
+16:07:19  [main] 	All prerequisites found
+16:07:19  [main] 	Initializing Modules
+16:07:19  [main] 	The FileZilla module is disabled
+16:07:19  [main] 	The Mercury module is disabled
+16:07:19  [main] 	Starting Check-Timer
+16:07:19  [main] 	Control Panel Ready
+16:07:20  [Apache] 	Attempting to start Apache app...
+16:07:21  [Apache] 	Status change detected: running
+16:10:24  [Apache] 	Attempting to stop Apache (PID: 14992)
+16:10:24  [Apache] 	Attempting to stop Apache (PID: 5444)
+16:10:24  [Apache] 	Status change detected: stopped
+16:10:25  [Apache] 	Attempting to start Apache app...
+16:10:25  [Apache] 	Status change detected: running
+16:11:47  [Apache] 	Attempting to stop Apache (PID: 7720)
+16:11:47  [Apache] 	Attempting to stop Apache (PID: 2184)
+16:11:48  [Apache] 	Status change detected: stopped
+16:14:05  [Apache] 	Attempting to start Apache app...
+16:14:05  [Apache] 	Status change detected: running
+16:15:50  [main] 	Executing "services.msc"
+16:15:56  [main] 	Executing "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\"
+16:16:15  [mysql] 	Attempting to start MySQL app...
+16:19:41  [Apache] 	Attempting to stop Apache (PID: 13864)
+16:19:41  [Apache] 	Attempting to stop Apache (PID: 8196)
+16:19:42  [Apache] 	Status change detected: stopped
+16:19:44  [mysql] 	Attempting to start MySQL app...
+16:19:44  [mysql] 	Status change detected: running
+16:19:44  [mysql] 	Status change detected: stopped
+16:19:44  [mysql] 	Error: MySQL shutdown unexpectedly.
+16:19:44  [mysql] 	This may be due to a blocked port, missing dependencies, 
+16:19:44  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+16:19:44  [mysql] 	Press the Logs button to view error logs and check
+16:19:44  [mysql] 	the Windows Event Viewer for more clues
+16:19:44  [mysql] 	If you need more help, copy and post this
+16:19:44  [mysql] 	entire log window on the forums
+16:19:46  [Apache] 	Attempting to start Apache app...
+16:19:47  [Apache] 	Status change detected: running
+16:19:54  [Apache] 	Attempting to stop Apache (PID: 13144)
+16:19:54  [Apache] 	Attempting to stop Apache (PID: 14104)
+16:19:54  [Apache] 	Status change detected: stopped
+16:21:56  [Apache] 	Attempting to start Apache app...
+16:21:56  [Apache] 	Status change detected: running
+16:27:23  [Apache] 	Attempting to stop Apache (PID: 5868)
+16:27:23  [Apache] 	Attempting to stop Apache (PID: 12060)
+16:27:23  [Apache] 	Status change detected: stopped
+16:27:25  [Apache] 	Attempting to start Apache app...
+16:27:25  [Apache] 	Status change detected: running
+16:27:35  [Apache] 	Attempting to stop Apache (PID: 9384)
+16:27:35  [Apache] 	Attempting to stop Apache (PID: 1012)
+16:27:35  [Apache] 	Status change detected: stopped
+16:27:38  [main] 	Deinitializing Modules
+16:27:38  [main] 	Deinitializing Control Panel
+
