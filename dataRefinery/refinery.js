@@ -27,6 +27,7 @@ const file = toRef + target
 var callback = console.log;
 
 function traverseViews(obj) {
+  var myPV = [];
     if (obj instanceof Array) {
         for (var i=0; i<obj.length; i++) {
             if (typeof obj[i] == "object" && obj[i]) {
@@ -48,15 +49,25 @@ function traverseViews(obj) {
                // callback(prop, obj[prop]);
                //filter nach views und gibt nur die values zurück
                 if (prop == "views"){
-                  callback(obj[prop]);
-                  
+                  //callback(obj[prop]);
+                  myPV.push(obj[prop])
                 }
             }
         }
     }
+    console.log(myPV)
 }
-traverseViews( JSON.parse(fs.readFileSync('./../toRef/Bill_Gates_pv.json')) );
+//traverseViews( JSON.parse(fs.readFileSync('./../toRef/Bill_Gates_pv.json')) );
  
+fileFinder();
 
-
-
+//sucht und findet saemtliche dateien in toRef/
+function fileFinder(){
+  fs.readdir("./../toRef/", function (err, files) {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    console.log(files);
+  });
+}
