@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+    <p>
+	<f></f><f>
+	</f>
+	<f></f>
+	</p>
+    <p><f></f>
+	<f></f>
+	</p>
+    <p></p>
+	<p><f></f></p>
+
+    <script>
+        var data = [1, 2, 3, 4, 5];
+        var paragraph = d3.select("body")
+                .selectAll("p")
+				.selectAll("f")
+                .data(data)
+                .text(function (d, i) {
+                    console.log("d: " + d);
+                    console.log("i: " + i);
+                    console.log("this: " + this);
+
+                    return d;
+                });
+    </script>
+</body>
+</html>
+
