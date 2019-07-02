@@ -1,0 +1,18 @@
+mithilfe von xslt.js
+
+<div id="transformResult"></div>
+<script type="text/javascript">
+$(function() {
+     $('#transformResult').xslt("document.xml", "document.xsl");
+});
+</script>
+
+bzw.
+
+<div id="transformResult"></div>
+<script type="text/javascript">
+window.onload = function() {
+    new Transformation().setXml("document.xml")
+        .setXslt("document.xsl").transform("transformResult");
+}
+</script>
