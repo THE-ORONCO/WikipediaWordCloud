@@ -59,7 +59,7 @@ function traverseViews(obj) {
 }
 //traverseViews( JSON.parse(fs.readFileSync('./../toRef/Bill_Gates_pv.json')) );
  
-fileFinder();
+//fileFinder();
 
 //sucht und findet saemtliche dateien in toRef/
 function fileFinder(){
@@ -68,6 +68,20 @@ function fileFinder(){
       console.log(err);
       return;
     }
-    console.log(files);
+    //console.log(files);
+    //return files
   });
 }
+
+
+function xmlWriterPV(type, xmlData){
+var builder = require('xmlbuilder');
+var xml = builder.create('root')
+  .ele('data')
+    .ele(type)
+    .txt(xmlData)
+  .end({ pretty: true});
+
+console.log(xml);
+}
+
