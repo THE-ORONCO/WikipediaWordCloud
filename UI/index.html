@@ -6,7 +6,57 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>D3 v4 - force layout</title>
-    <style>
+    <style>#title {
+      font-size: 2vw;
+      background-color: grey;
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+      padding-top: 1.5vw;
+      padding-bottom: 1.5vw;
+    }
+
+    #bottombar {
+      position:absolute;
+      bottom: 1vw;
+
+    }
+
+    body {
+      height: 100%;
+    }
+
+    #graph {
+        background-color: white;
+        position: fixed;
+        right: 0px;
+        width: 80%;
+        height:100%;
+    }
+
+    #sidebar {
+      background-color: whitesmoke;
+      width: 20%;
+      height: 100%;
+      position: fixed;
+      text-align: center;
+    }
+
+    #searchbar {
+      background-image: url("icons/magnifier.svg");
+      background-size: 1vw 1vw;
+      background-repeat: no-repeat;
+      background-position: right;
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+      width: 97%;
+      border: none;
+    }
+
+    #searchbar:focus {
+      outline: none;
+    }
+
+    
 
         .nodes, .links {
             /*fill: transparent;*/
