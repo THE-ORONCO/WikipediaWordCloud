@@ -7,11 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>D3 v4 - force layout</title>
     <style>
-        html, body, #graph {
-            width: 99%;
-            height: 99%;
-            background-color: cornflowerblue;
-        }
 
         .nodes, .links {
             /*fill: transparent;*/
@@ -31,9 +26,30 @@
 </head>
 
 <body>
+<div id="sidebar">
+    <div id="titlecontainer">
+      <p id="title">WikiWordCloud</p>
+    </div>
+    <div id="searchbar-div">
+      <input id="searchbar" type="text" name="searchbar" placeholder="Enter term here...">
+    </div>
+    <div id="checkboxes">
+      Option 1: <input type="checkbox" name="option1" value="Option 1"><br>
+      Option 2: <input type="checkbox" name="option2" value="Option 2"><br>
+      Option 3: <input type="checkbox" name="option3" value="Option 3">
+    </div>
+    <div id="slider-div">
+      <input type="range" min="1" max="3" value="2">
+    </div>
+    <div class="buttoncontainer">
+      <button type="button" name="addlink">Add Link</button><br>
+      <button type="button" name="addlink">Add Article</button>
+    </div>
+    <div id="bottombar">
+      <p><a href="#">Impressum</a> | <a href="#">Anleitung</a></p>
+    </div>
+</div>
 <div id="graph"></div>
-
-
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script>
     !(function () {
