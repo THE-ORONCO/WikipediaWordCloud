@@ -603,3 +603,138 @@
 17:12:05  [main] 	Deinitializing Modules
 17:12:05  [main] 	Deinitializing Control Panel
 
+08:48:29  [main] 	Initializing Control Panel
+08:48:29  [main] 	Windows Version:  Home  64-bit
+08:48:29  [main] 	XAMPP Version: 7.3.6
+08:48:29  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+08:48:29  [main] 	You are not running with administrator rights! This will work for
+08:48:29  [main] 	most application stuff but whenever you do something with services
+08:48:29  [main] 	there will be a security dialogue or things will break! So think 
+08:48:29  [main] 	about running this application with administrator rights!
+08:48:29  [main] 	XAMPP Installation Directory: "c:\users\kai\repositories\wikipediawordcloud\xampp\"
+08:48:29  [main] 	Checking for prerequisites
+08:48:33  [main] 	All prerequisites found
+08:48:33  [main] 	Initializing Modules
+08:48:33  [main] 	The FileZilla module is disabled
+08:48:33  [main] 	The Mercury module is disabled
+08:48:33  [main] 	Starting Check-Timer
+08:48:33  [main] 	Control Panel Ready
+08:48:36  [Apache] 	Attempting to start Apache app...
+08:48:37  [Apache] 	Status change detected: running
+08:48:40  [Apache] 	Status change detected: stopped
+08:48:40  [Apache] 	Error: Apache shutdown unexpectedly.
+08:48:40  [Apache] 	This may be due to a blocked port, missing dependencies, 
+08:48:40  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+08:48:40  [Apache] 	Press the Logs button to view error logs and check
+08:48:40  [Apache] 	the Windows Event Viewer for more clues
+08:48:40  [Apache] 	If you need more help, copy and post this
+08:48:40  [Apache] 	entire log window on the forums
+08:48:45  [main] 	Deinitializing Modules
+08:48:45  [main] 	Deinitializing Control Panel
+
+08:50:52  [main] 	Initializing Control Panel
+08:50:52  [main] 	Windows Version:  Home  64-bit
+08:50:52  [main] 	XAMPP Version: 7.3.6
+08:50:52  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+08:50:52  [main] 	You are not running with administrator rights! This will work for
+08:50:52  [main] 	most application stuff but whenever you do something with services
+08:50:52  [main] 	there will be a security dialogue or things will break! So think 
+08:50:52  [main] 	about running this application with administrator rights!
+08:50:52  [main] 	XAMPP Installation Directory: "c:\users\kai\repositories\wikipediawordcloud\xampp\"
+08:50:52  [main] 	Checking for prerequisites
+08:50:52  [main] 	All prerequisites found
+08:50:52  [main] 	Initializing Modules
+08:50:52  [mysql] 	XAMPP MySQL is already running on port 3306
+08:50:52  [main] 	The FileZilla module is disabled
+08:50:52  [main] 	The Mercury module is disabled
+08:50:52  [main] 	Starting Check-Timer
+08:50:52  [main] 	Control Panel Ready
+08:50:55  [mysql] 	Attempting to stop MySQL app...
+08:50:55  [mysql] 	Status change detected: stopped
+08:50:56  [Apache] 	Attempting to start Apache app...
+08:50:56  [Apache] 	Status change detected: running
+09:06:08  [Apache] 	Attempting to stop Apache (PID: 11008)
+09:06:08  [Apache] 	Attempting to stop Apache (PID: 5128)
+09:06:08  [Apache] 	Status change detected: stopped
+09:07:14  [Apache] 	Attempting to start Apache app...
+09:07:14  [Apache] 	Status change detected: running
+09:09:40  [main] 	Executing "c:\users\kai\repositories\wikipediawordcloud\xampp\apache"
+09:12:07  [Apache] 	Attempting to stop Apache (PID: 7256)
+09:12:07  [Apache] 	Attempting to stop Apache (PID: 3096)
+09:12:07  [Apache] 	Status change detected: stopped
+09:12:08  [Apache] 	Attempting to start Apache app...
+09:12:08  [Apache] 	Status change detected: running
+09:13:03  [Apache] 	Attempting to stop Apache (PID: 10648)
+09:13:03  [Apache] 	Attempting to stop Apache (PID: 7408)
+09:13:04  [Apache] 	Status change detected: stopped
+09:13:05  [main] 	Deinitializing Modules
+09:13:05  [main] 	Deinitializing Control Panel
+
+09:13:15  [main] 	Initializing Control Panel
+09:13:15  [main] 	Windows Version:  Home  64-bit
+09:13:15  [main] 	XAMPP Version: 7.3.6
+09:13:15  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+09:13:15  [main] 	You are not running with administrator rights! This will work for
+09:13:15  [main] 	most application stuff but whenever you do something with services
+09:13:15  [main] 	there will be a security dialogue or things will break! So think 
+09:13:15  [main] 	about running this application with administrator rights!
+09:13:15  [main] 	XAMPP Installation Directory: "c:\users\kai\repositories\wikipediawordcloud\xampp\"
+09:13:15  [main] 	Checking for prerequisites
+09:13:15  [main] 	All prerequisites found
+09:13:15  [main] 	Initializing Modules
+09:13:15  [main] 	The FileZilla module is disabled
+09:13:15  [main] 	The Mercury module is disabled
+09:13:15  [main] 	Starting Check-Timer
+09:13:15  [main] 	Control Panel Ready
+09:13:19  [Apache] 	Attempting to start Apache app...
+09:13:19  [Apache] 	Status change detected: running
+09:18:28  [Apache] 	Attempting to stop Apache (PID: 9896)
+09:18:28  [Apache] 	Attempting to stop Apache (PID: 5864)
+09:18:29  [Apache] 	Status change detected: stopped
+09:18:30  [Apache] 	Attempting to start Apache app...
+09:18:30  [Apache] 	Status change detected: running
+09:23:10  [Apache] 	Attempting to stop Apache (PID: 10516)
+09:23:10  [Apache] 	Attempting to stop Apache (PID: 12276)
+09:23:11  [Apache] 	Status change detected: stopped
+09:23:11  [Apache] 	Attempting to start Apache app...
+09:23:12  [Apache] 	Status change detected: running
+09:23:41  [mysql] 	Attempting to start MySQL app...
+09:23:42  [mysql] 	Status change detected: running
+09:31:11  [main] 	Executing "c:\users\kai\repositories\wikipediawordcloud\xampp\apache"
+09:37:00  [Apache] 	Attempting to stop Apache (PID: 3416)
+09:37:00  [Apache] 	Attempting to stop Apache (PID: 9572)
+09:37:00  [Apache] 	Status change detected: stopped
+09:37:01  [Apache] 	Attempting to start Apache app...
+09:37:01  [Apache] 	Status change detected: running
+09:37:03  [mysql] 	Attempting to stop MySQL app...
+09:37:03  [mysql] 	Status change detected: stopped
+09:37:04  [mysql] 	Attempting to start MySQL app...
+09:37:04  [mysql] 	Status change detected: running
+09:41:21  [Apache] 	Attempting to stop Apache (PID: 6624)
+09:41:21  [Apache] 	Attempting to stop Apache (PID: 6124)
+09:41:22  [Apache] 	Status change detected: stopped
+09:41:23  [Apache] 	Attempting to start Apache app...
+09:41:23  [Apache] 	Status change detected: running
+09:51:30  [Apache] 	Attempting to stop Apache (PID: 10752)
+09:51:30  [Apache] 	Attempting to stop Apache (PID: 2228)
+09:51:30  [Apache] 	Status change detected: stopped
+09:51:31  [Apache] 	Attempting to start Apache app...
+09:51:31  [Apache] 	Status change detected: running
+09:52:01  [Apache] 	Attempting to stop Apache (PID: 11488)
+09:52:01  [Apache] 	Attempting to stop Apache (PID: 5876)
+09:52:02  [Apache] 	Status change detected: stopped
+09:52:03  [Apache] 	Attempting to start Apache app...
+09:52:03  [Apache] 	Status change detected: running
+09:54:18  [Apache] 	Attempting to stop Apache (PID: 216)
+09:54:18  [Apache] 	Attempting to stop Apache (PID: 8904)
+09:54:19  [Apache] 	Status change detected: stopped
+09:54:20  [Apache] 	Attempting to start Apache app...
+09:54:20  [Apache] 	Status change detected: running
+09:54:46  [Apache] 	Attempting to stop Apache (PID: 9036)
+09:54:47  [Apache] 	Attempting to stop Apache (PID: 8300)
+09:54:47  [Apache] 	Status change detected: stopped
+09:54:47  [mysql] 	Attempting to stop MySQL app...
+09:54:48  [mysql] 	Status change detected: stopped
+09:54:50  [main] 	Deinitializing Modules
+09:54:50  [main] 	Deinitializing Control Panel
+
