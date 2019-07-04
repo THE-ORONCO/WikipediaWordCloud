@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+<p></p>
+<script>
+    var data = {
+        "nodes":[
+            {"id": "wuff"},
+            {"id": "baum"}
+        ],
+        "links":[
+            {"source": "wuff", "target":"baum"}
+        ]
+    };
+
+    console.log("test");
+    console.log(data);
+    console.log(data.nodes);
+    console.log(data.links);
+    console.log(data.nodes[0]);
+
+    if(!(contains(data.nodes, "id", "wuff"))){
+        data.nodes.push({"id": "wuff"});
+    }
+
+    if(!(contains(data.nodes, "id", "pipi"))){
+        data.nodes.push({"id": "pipi"});
+    }
+
+    function contains(arr, key, val) {
+        for (var i = 0; i < arr.length; i++) {
+            if(arr[i][key] === val) return true;
+        }
+        return false;
+    }
+
+
+    console.log(data);
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src = "https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+<svg></svg>
+
+<script>
+    //Get the SVG element
+    var svg = d3.select("svg");
+
+    var width = 960, height = 600;
+    var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+    var link = svg.append("g").selectAll(".link");
+    var node = svg.append("g").selectAll(".node");
+    var label = svg.append("g").selectAll(".label");
+
+    //Begin the force simulation
+    var simulation = d3.forceSimulation()
+        .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(50).strength(0.3))
+        .force("charge", d3.forceManyBody().strength(-15))
+        .force("center", d3.forceCenter(width / 2, height / 2));
+
+    //Highlight variables
+    var highlight_color = "blue";
+    var tHighlight = 0.05;
+
+    var config;
+
+    var linkedByIndex = {};
+
+    //Get the data
+    d3.json("./data/stuffData.json", function (data) {
+        //if (!localStorage.graph)
+        //{
+        localStorage.graph = JSON.stringify(data);
+        //}
+        update();
+        forms();
+    });
+
+    function update() {
+
+        config = JSON.parse(localStorage.graph);
+        console.log(JSON.stringify(config));
+        linkedByIndex = {};
+        //Create an array of source,target containing all links
+        config.links.forEach(function (d) {
+            linkedByIndex[d.source + "," + d.target] = true;
+            linkedByIndex[d.target + "," + d.source] = true;
+        });
+
+        //Draw links
+        link = link.data(config.links);
+        link.exit().remove();
+        link = link.enter().append("line")
+            .attr("class", "link")
+            .attr("stroke-width", 2)
+            .attr("stroke", "#888")
+            //.attr("opacity", function (d) { if (d.target.radius > 7) { return 1 }; return 0; })
+            .merge(link);
+
+
+        node = node.data(config.nodes);
+        node.exit().remove();
+        node = node.enter().append("circle")
+            .attr("class", "node")
+            .attr("r", function(d) { return d.radius; })
+            .attr("fill", function (d) { return color(d.id); })
+            .attr("stroke", "black")
+            //  .attr("pointer-events", function (d) { if (d.radius <= 7) { return "none"; } return "visibleAll"; })
+            //  .attr("opacity", function (d) { if (d.radius <= 7) { return 0; } return 1; })
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended))
+            .on("mouseover", mouseOver)
+            .on("mouseout", mouseOut)
+            .merge(node);
+
+        label = label.data(config.nodes);
+        label.exit().remove();
+        label = label.enter().append("text")
+            .attr("class", "label")
+            .attr("dx", function (d) { return d.radius * 1.25; })
+            .attr("dy", ".35em")
+            .attr("opacity", function (d) { if (d.radius <= 7) { return 0; } return 1; })
+            .attr("font-weight", "normal")
+            .style("font-size", 10)
+            .text(function (d) { return d.id; })
+            .merge(label);
+
+        //Add nodes to simulation
+        simulation
+            .nodes(config.nodes)
+            .on("tick", ticked);
+
+        //Add links to simulation
+        simulation.force("link")
+            .links(config.links);
+
+        simulation.alphaTarget(0.3).restart();
+    }
+
+    //Animating by ticks function
+    function ticked() {
+        node
+            .attr("cx", function (d) { return d.x = Math.max(d.radius, Math.min(width - d.radius, d.x)); })
+            .attr("cy", function (d) { return d.y = Math.max(d.radius, Math.min(height - d.radius, d.y)); });
+        link
+            .attr("x1", function (d) { return d.source.x; })
+            .attr("y1", function (d) { return d.source.y; })
+            .attr("x2", function (d) { return d.target.x; })
+            .attr("y2", function (d) { return d.target.y; });
+        label
+            .attr("x", function (d) { return d.x = Math.max(d.radius, Math.min(width - d.radius, d.x)); })
+            .attr("y", function (d) { return d.y = Math.max(d.radius, Math.min(height - d.radius, d.y)); });
+    }
+
+    //Using above array, check if two nodes are linked
+    function isConnected(node1, node2) {
+        return linkedByIndex[node1.id + "," + node2.id] || node1.index == node2.index;
+    }
+
+    function newNode(name, rad)
+    {
+        if (name == "")
+        {
+            alert("Must specify name");
+            return;
+        }
+        console.log("Adding node with name: " + name + " and radius: " + rad);
+        var temp = JSON.parse(localStorage.graph);
+        temp.nodes.push({ "id": name, "radius": Number(rad) });
+        localStorage.graph = JSON.stringify(temp);
+        update();
+    }
+
+    function newLink(source, target)
+    {
+        var foundSource = false;
+        var foundTarget = false;
+
+        if (source == "" && target == "")
+        {
+            alert("Must specify source and target");
+            return;
+        }
+        else if(source == "")
+        {
+            alert("Must specify source");
+            return;
+        }
+        else if (target == "")
+        {
+            alert("Must specify target")
+            return;
+        }
+
+        var temp = JSON.parse(localStorage.graph);
+
+        for (var i=0; i < temp.nodes.length; i++)
+        {
+            if(temp.nodes[i]['id'] === source)
+            {
+                foundSource = true;
+            }
+
+            if(temp.nodes[i]['id'] === target)
+            {
+                foundTarget = true;
+            }
+        }
+
+        if (foundSource && foundTarget) {
+            temp.links.push({ "source": source, "target": target });
+            localStorage.graph = JSON.stringify(temp);
+            update();
+        }
+        else {
+            alert("Invalid source or target");
+            return;
+        }
+
+        return;
+    }
+
+    function removeLink(linkSource, linkTarget)
+    {
+
+    }
+
+    function removeNode(nodeName)
+    {
+        var temp = JSON.parse(localStorage.graph);
+        var found = false;
+
+        if (nodeName == "")
+        {
+            alert("Must specify node name");
+            return;
+        }
+
+        for(var i=0; i<temp.nodes.length; i++)
+        {
+            if(temp.nodes[i]['id'] === nodeName)
+            {
+                console.log("Removing node: " + nodeName);
+                found = true;
+                temp.nodes.splice(i, 1);
+                temp.links = temp.links.filter(function (d) { return d.source != nodeName && d.target != nodeName; });
+            }
+        }
+
+        if(!found)
+        {
+            alert("Node does not exist");
+            return;
+        }
+
+        localStorage.graph = JSON.stringify(temp);
+
+        update();
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "root": "Apfel",
+
+  "nodes": [
+    {"id": "Baum"},
+    {"id": "Blatt"},
+    {"id": "Wurm"},
+    {"id": "Pflanze"},
+    {"id": "Frucht"},
+    {"id": "Samen"},
+    {"id": "Newton"}
+  ],
+
+  "links": [
+    {"source": "Apfel", "target": "Baum"},
+    {"source": "Apfel", "target": "Blatt"},
+    {"source": "Apfel", "target": "Wurm"},
+    {"source": "Apfel", "target": "Pflanze"},
+    {"source": "Apfel", "target": "Frucht"},
+    {"source": "Apfel", "target": "Samen"},
+    {"source": "Apfel", "target": "Newton"}
+
+  ]
+}
