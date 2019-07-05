@@ -9,9 +9,9 @@
 <h1 id="title">WikiWordCloud</h1>
 
 <div>
-    <button id='btnRenderExisting2Node'>Render 2 existing nodes</button>
-    <button id='btnRenderExisting3Node'>Render 3 existing nodes</button>
-    <button id='btnRenderNewNode'>Render 3 existing nodes and 1 brand new node</button>
+    <button id='btnRenderExisting2Node'>Render 2 existing nodeData</button>
+    <button id='btnRenderExisting3Node'>Render 3 existing nodeData</button>
+    <button id='btnRenderNewNode'>Render 3 existing nodeData and 1 brand new node</button>
 
 </div>
 
@@ -28,7 +28,7 @@
         links: [{source: "a", target: "b"}, {source: "b", target: "c"}, {source: "c", target: "a"}]
     };
     /*{
-    "nodes": [
+    "nodeData": [
         {"id": "Myriel"},
         {"id": "Napoleon"},
         {"id": "Mlle.Baptistine"},
@@ -107,7 +107,7 @@
         {"id": "Brujon"},
         {"id": "Mme.Hucheloup"}
     ],
-    "links": [
+    "linkData": [
         {"source": "Napoleon", "target": "Myriel"},
         {"source": "Mlle.Baptistine", "target": "Myriel"},
         {"source": "Mme.Magloire", "target": "Myriel"},
@@ -376,9 +376,9 @@
     console.log(noders);
     console.log(linkers);
 
-    var nodes = noders,
+    var nodeData = noders,
 
-        links = linkers;
+        linkData = linkers;
     console.log(data.nodes);
     console.log(data.links);
 
@@ -397,13 +397,13 @@
         //.attr("class", "graph")//attr("class", "stuff") doesnt work for some reason here
 
         , link = g.append("g")
-        //.attr("class", "links")//attr("class", "stuff") doesnt work for some reason here
+        //.attr("class", "linkData")//attr("class", "stuff") doesnt work for some reason here
             .attr("stroke", "#000")
             .attr("stroke-width", 1.5)
             .selectAll(".link"),
 
         node = g.append("g")
-        //.attr("class", "nodes")//attr("class", "stuff") doesnt work for some reason here
+        //.attr("class", "nodeData")//attr("class", "stuff") doesnt work for some reason here
             .attr("stroke", "#fff")
             .attr("stroke-width", 1.5)
             .selectAll(".node"),
@@ -415,18 +415,18 @@
 
     function restart() {
 
-        // Apply the general update pattern to the nodes.
+        // Apply the general update pattern to the nodeData.
         //get new data
         node = node.data(nodes, function (d) {
             return d.id;
         });
 
-        //remove all nodes that don't exist in the data anymore
+        //remove all nodeData that don't exist in the data anymore
         node.exit()
         /* if transitions are wanted they can be inserted here */
             .remove();
 
-        //add all nodes that don't exist
+        //add all nodeData that don't exist
         node = node.enter()
             .append("circle")
             .attr("fill", function (d) {
@@ -439,13 +439,13 @@
                 .on("end", dragended));
 
 
-        // Apply the general update pattern to the links.
+        // Apply the general update pattern to the linkData.
         link = link.data(links, function (d) {
             console.log(d.source.id + "-" + d.target.id);
             return d.source.id + "-" + d.target.id;
         });
 
-        // Keep the exiting links connected to the moving remaining nodes.
+        // Keep the exiting linkData connected to the moving remaining nodeData.
         link.exit()
         /* if transitions are wanted they can be inserted here */
             .remove();

@@ -14,13 +14,13 @@
     var a = {id: "a"},
         b = {id: "b"},
         c = {id: "c"},
-        nodes = [a, b, c],
-        links = [];
+        nodeData = [a, b, c],
+        linkData = [];
 
     //define physics
     var simulation = d3.forceSimulation(nodes)
         .force("charge", d3.forceManyBody().strength(-1000))    //charge of particles
-        .force("link", d3.forceLink(links).distance(200))       //strength of links
+        .force("link", d3.forceLink(links).distance(200))       //strength of linkData
         .force("x", d3.forceX())
         .force("y", d3.forceY())
         .alphaTarget(1)
@@ -33,7 +33,7 @@
 
     restart();
 
-    //create all links between nodes and wait one second
+    //create all linkData between nodeData and wait one second
     d3.timeout(function () {
         links.push({source: a, target: b}); // Add a-b.
         links.push({source: b, target: c}); // Add b-c.
@@ -41,7 +41,7 @@
         restart();
     }, 1000);
 
-    //remove nodes and links
+    //remove nodeData and linkData
     d3.interval(function () {
         nodes.pop(); // Remove c.
         links.pop(); // Remove c-a.
@@ -49,7 +49,7 @@
         restart();
     }, 2000, d3.now());
 
-    //read nodes and links
+    //read nodeData and linkData
     d3.interval(function () {
         nodes.push(c); // Re-add c.
         links.push({source: b, target: c}); // Re-add b-c.
@@ -59,7 +59,7 @@
 
     function restart() {
 
-        // Apply the general update pattern to the nodes.
+        // Apply the general update pattern to the nodeData.
         node = node.data(nodes, function (d) {
             return d.id;
         });
@@ -75,7 +75,7 @@
             .attr("r", 8)
             .merge(node);
 
-        // Apply the general update pattern to the links.
+        // Apply the general update pattern to the linkData.
         link = link.data(links, function (d) {
             return d.source.id + "-" + d.target.id;
         });

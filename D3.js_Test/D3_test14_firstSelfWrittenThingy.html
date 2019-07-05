@@ -68,15 +68,15 @@
         console.log("test data: ");
         console.log(data);
 
-        //json loading + saving links in links and nodes in nodes + logging of the progress
+        //json loading + saving linkData in linkData and nodeData in nodeData + logging of the progress
         d3.json(dataDirPosition, function (error, graph) {
             if (error) {
                 console.log(error);
                 throw error;
             }
 
-            nodes = JSON.valueOf(graph.nodes);
-            links = graph.links;
+            nodeData = JSON.valueOf(graph.nodes);
+            linkData = graph.links;
 
             console.log("json graph: ");
             console.log(graph);

@@ -97,7 +97,7 @@
                 .force("x", d3.forceX(0));
 
             var link = svg.append("g")
-                .attr("class", "links")
+                .attr("class", "linkData")
                 .selectAll("line")
                 .data(data.links)
                 .enter()
@@ -105,9 +105,9 @@
                 .attr("stroke", "black");
 
 
-            // Code for nodes/circle/labels inspired by https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
+            // Code for nodeData/circle/labels inspired by https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
             var node = svg.append("g")
-                .attr("class", "nodes")
+                .attr("class", "nodeData")
                 .selectAll("circle")
                 .data(data.nodes)
                 .enter().append("g");
@@ -127,12 +127,12 @@
                 .attr('y', 3);
 
 
-            // Original code for the nodes:
+            // Original code for the nodeData:
 
             // var node = svg.append("g")
-            //     .attr("class", "nodes")
+            //     .attr("class", "nodeData")
             //     .selectAll("circle")
-            //     .data(data.nodes)
+            //     .data(data.nodeData)
             //     .enter().append("circle")
             //     .attr("r", function (d) {
             //         return d.r

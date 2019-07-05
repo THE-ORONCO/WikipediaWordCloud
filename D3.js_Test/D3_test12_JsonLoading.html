@@ -26,7 +26,7 @@
 
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
-    //define forces acting on links and nodes
+    //define forces acting on linkData and nodeData
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink().id(function (d) {
             return d.id;
@@ -38,20 +38,25 @@
     d3.json("./data/miserables.json", function (error, graph) {
         if (error) throw error;
 
-        //create links
+        //create linkData
         var link = svg.append("g")
-            .attr("class", "links")
+            .attr("class", "linkData")
             .selectAll("line")
-            .data(graph.links)
+            .data(graph.links, function (d){
+                console.log(d);
+                return d;
+            }
+
+            )
             .enter()
             .append("line")
             .attr("stroke-width", function (d) {
                 return Math.sqrt(d.value);
             });
 
-        //create nodes
+        //create nodeData
         var node = svg.append("g")
-            .attr("class", "nodes")
+            .attr("class", "nodeData")
             .selectAll("g")
             .data(graph.nodes)
             .enter()
@@ -66,6 +71,7 @@
                 .on("start", dragstarted)
                 .on("drag", dragged)
                 .on("end", dragended));
+
         var lables = node.append("text")
             .text(function (d) {
                 return d.id;
