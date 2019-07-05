@@ -1,5 +1,5 @@
 #title {
-  font-size: 2vw;
+  font-size: 3vw;
   background-color: grey;
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -26,40 +26,44 @@ body {
 }
 
 #graph {
-  background-color: white;
+  background-color: darkgrey;
   position: fixed;
   right: 0px;
-  width: 80%;
+  width: 75%;
   height: 100%;
 }
 
 #sidebar {
   background-color: whitesmoke;
-  width: 20%;
+  width: 25%;
   height: 100%;
   position: fixed;
   text-align: center;
 }
 
 #searchbar {
-  /*background-image: url("icons/magnifier.svg");
-  background-size: 1vw 1vw;
-  background-repeat: no-repeat;
-  background-position: right;*/
-  width: 79.4%;
   border: none;
+  display: table-cell;
+  width: 80%;
   float: left;
-  height: 96%;
+  padding: 0px;
+  height: 100%;
+  font-size: 1.5vw;
+}
+
+#searchbar-container {
+  display: table;
+  width: 100%;
+  height: 4vw;
+  border-spacing: 0px;
+}
+
+#searchbar::placeholder {
+  font-size: 1.5vw;
 }
 
 #searchbar:focus {
   outline: none;
-}
-
-#searchbar input:-moz-placeholder {
-  font-size: 20px;
-  font-weight: 900;
-  text-align: center;
 }
 
 #searchbtn {
@@ -67,6 +71,7 @@ body {
   border-radius: 0px;
   border: none;
   background-color: teal;
+  display: table-cell;
   width: 20%;
   height: 100%;
 }
