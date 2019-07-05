@@ -3,15 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>WikiWordCloud</title>
+    <style>
+        html, body, #graph {
+            width: 99%;
+            height: 99%;
+            background-color: cornflowerblue;
+        }
+        .nodes, .links {
+            /*fill: transparent;*/
+            stroke: #777777;
+            stroke-width: 3px;
+        }
+
+        text {
+            font-family: sans-serif;
+            font-size: 20px;
+            color: white;
+            stroke-width: 0px;
+            fill: white;
+        }
+
+    </style>
     <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 <body>
 <h1 id="title">WikiWordCloud</h1>
 
 <div>
-    <button id='btnRenderExisting2Node'>Render 2 existing nodeData</button>
-    <button id='btnRenderExisting3Node'>Render 3 existing nodeData</button>
-    <button id='btnRenderNewNode'>Render 3 existing nodeData and 1 brand new node</button>
+    <button id='btnRenderExisting2Node'>Render 2 existing nodes</button>
+    <button id='btnRenderExisting3Node'>Render 3 existing nodes</button>
+    <button id='btnRenderNewNode'>Render 3 existing nodes and 1 brand new node</button>
 
 </div>
 
@@ -28,19 +49,19 @@
         c = {id: "c"},
         f = {id: "f"},
         g = {id: "g"},
-        nodeData = [a, b, c, f, g],
+        node_data = [a, b, c, f, g],
         l_ab = {source: a, target: b},
         l_bc = {source: b, target: c},
         l_ca = {source: c, target: a},
         l_fg = {source: f, target: g},
         l_af = {source: a, target: f},
-        linkData = [l_ab, l_bc, l_ca, l_fg, l_af];
+        link_data = [l_ab, l_bc, l_ca, l_fg, l_af];
 
     console.log(a.name);
 
     var id = 0;
 
-    var simulation = d3.forceSimulation(nodes)
+    var simulation = d3.forceSimulation(node_data)
         .force('charge', d3.forceManyBody())
         .force('link', d3.forceLink())
         .force('center', d3.forceCenter(width / 2, height / 2))
@@ -48,68 +69,87 @@
         .on("tick", ticked)
         .stop();
 
-    var g = svg.append("g"),
-        link = g.append("g").attr("stroke", "#000").attr("stroke-width", 1.5).selectAll(".link"),
-        node = g.append("g").attr("stroke", "#fff").attr("stroke-width", 1.5).selectAll(".node");
+    var graph = svg.append("g").attr("class", "graph");
+    links = graph.append("g").attr("class", "links").selectAll(".links");
+    nodes = graph.append("g").attr("class", "nodes").selectAll(".nodes");
+    var circle;
+    var labels;
 
     restart();
 
     function restart() {
 
-        // Apply the general update pattern to the nodeData.
-        node = node.data(nodes, function (d) {
+        // Apply the general update pattern to the node_data.
+        nodes = nodes.data(node_data, function (d) {
             return d.id;
         });
 
-        node.exit()
-        /* transition */
-            .remove();
+        nodes.exit()/* transition */.remove();
 
-        node = node.enter().append("circle")
-            .attr("fill", function (d) {
-                return color(d.id);
-            })
-            .call(function (node) {
-                node.transition().attr("r", 8);
-            })
-            .merge(node)
+
+
+        var temp = nodes.enter().append("g")
+            .merge(nodes)
             .call(d3.drag()
                 .on("start", dragstarted)
                 .on("drag", dragged)
-                .on("end", dragended));
+                .on("end", dragended))
+            .on("click", click);
 
-        // Apply the general update pattern to the linkData.
-        link = link.data(links, function (d) {
-            console.log(d);
-            return d.source + "-" + d.target;
+        circle = temp.append("circle")
+            .attr("fill", function (d) {
+                return color(d.id);
+            })
+            .call(function (nodes) {
+                nodes.transition().attr("r", 8);
+            });
+
+        labels = temp.append("text")
+            .text(function (d) {
+                return d.id;
+            })
+            .attr('x', 6)
+            .attr('y', 3);
+
+
+        // Apply the general update pattern to the link_data.
+        links = links.data(link_data, function (d) {
+            return d.source.id + "-" + d.target.id;
         });
 
-        // Keep the exiting linkData connected to the moving remaining nodeData.
-        link.exit()
+        // Keep the exiting link_data connected to the moving remaining node_data.
+        links.exit()
         /*transition*/
             .remove();
 
-        link = link.enter().append("line")
+        links = links.enter().append("line")
             .call(function (link) {
                 link.transition().attr("stroke-opacity", 1);
             })
-            .merge(link);
+            .merge(links);
 
         // Update and restart the simulation.
-        simulation.nodes(nodes);
-        simulation.force("link").links(links);
+        simulation.nodes(node_data);
+        simulation.force("link").links(link_data);
         simulation.alpha(1).restart();
     }
 
     function ticked() {
-        node.attr("cx", function (d) {
+        circle.attr("cx", function (d) {
             return d.x;
         })
             .attr("cy", function (d) {
                 return d.y;
             });
 
-        link.attr("x1", function (d) {
+        labels
+            .attr("x", function (d) {
+                return d.x;
+            })
+            .attr("y", function (d) {
+                return d.y;
+            });
+        links.attr("x1", function (d) {
             return d.source.x;
         })
             .attr("y1", function (d) {
@@ -123,17 +163,24 @@
             });
     }
 
-    restart();
+
+    function click(d) {
+        console.log(d.id);
+        node_data = [a, b, c];
+        link_data = [l_ab, l_bc, l_ca];
+        restart();
+        console.log(nodes);
+    }
 
     document.getElementById('btnRenderExisting3Node').addEventListener('click', function () {
-        nodes = [a, b, c];
-        links = [l_ab, l_bc, l_ca];
+        node_data = [a, b, c];
+        link_data = [l_ab, l_bc, l_ca];
         restart();
     });
 
     document.getElementById('btnRenderExisting2Node').addEventListener('click', function () {
-        nodes = [a, b];
-        links = [l_ab];
+        node_data = [a, b];
+        link_data = [l_ab];
         restart();
     });
 
@@ -143,8 +190,8 @@
             x: width / 2,
             y: height / 2
         };
-        nodes = [a, b, c, d];
-        links = [l_ab, l_bc, l_ca, {
+        node_data = [a, b, c, d];
+        link_data = [l_ab, l_bc, l_ca, {
             source: a,
             target: d
         }];
