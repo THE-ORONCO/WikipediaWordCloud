@@ -2,32 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>WikiWordCloud</title>
     <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 <body>
+<h1 id="title">WikiWordCloud</h1>
 
 <div>
     <button id='btnRenderExisting2Node'>Render 2 existing nodes</button>
     <button id='btnRenderExisting3Node'>Render 3 existing nodes</button>
     <button id='btnRenderNewNode'>Render 3 existing nodes and 1 brand new node</button>
+
 </div>
+
 <svg id="drawingSpace" width="666" height="666"></svg>
 
-<script>
+<script type="text/javascript">
     var svg = d3.select("#drawingSpace"),
-        width = 400,
-        height = 400,
+        width = +svg.attr("width"),
+        height = +svg.attr("height"),
         color = d3.scaleOrdinal(d3.schemeCategory10);
 
     var a = {id: "a"},
         b = {id: "b"},
         c = {id: "c"},
-        nodes = [a, b, c],
+        f = {id: "f"},
+        g = {id: "g"},
+        nodes = [a, b, c, f, g],
         l_ab = {source: a, target: b},
         l_bc = {source: b, target: c},
         l_ca = {source: c, target: a},
-        links = [l_ab, l_bc, l_ca];
+        l_fg = {source: f, target: g},
+        l_af = {source: a, target: f},
+        links = [l_ab, l_bc, l_ca, l_fg, l_af];
+
+    console.log(a.name);
 
     var id = 0;
 
@@ -40,42 +49,23 @@
         .stop();
 
     var g = svg.append("g")
-            .attr("class", "graph"),//attr("class", "stuff") doesnt work for some reason here
-
-        link = g.append("g")
-            .attr("class", "links")//attr("class", "stuff") doesnt work for some reason here
-            .attr("stroke", "#000")
-            .attr("stroke-width", 1.5)
-            .selectAll(".link"),
-
-        node = g.append("g")
-            .attr("class", "nodes")//attr("class", "stuff") doesnt work for some reason here
-            .attr("stroke", "#fff")
-            .attr("stroke-width", 1.5)
-            .selectAll(".node"),
-
-        label = g.append("g")
-            .selectAll(".label");
+    link = g.append("g").attr("stroke", "#000").attr("stroke-width", 1.5).selectAll(".link"),
+        node = g.append("g").attr("stroke", "#fff").attr("stroke-width", 1.5).selectAll(".node");
 
     restart();
 
     function restart() {
 
         // Apply the general update pattern to the nodes.
-        //get new data
         node = node.data(nodes, function (d) {
             return d.id;
         });
 
-        //remove all nodes that don't exist in the data anymore
         node.exit()
-            .transition()
-            .attr("r", 0)
+        /* transition */
             .remove();
 
-        //add all nodes that don't exist
-        node = node.enter()
-            .append("circle")
+        node = node.enter().append("circle")
             .attr("fill", function (d) {
                 return color(d.id);
             })
@@ -88,7 +78,6 @@
                 .on("drag", dragged)
                 .on("end", dragended));
 
-
         // Apply the general update pattern to the links.
         link = link.data(links, function (d) {
             return d.source.id + "-" + d.target.id;
@@ -96,28 +85,7 @@
 
         // Keep the exiting links connected to the moving remaining nodes.
         link.exit()
-            .transition()
-            .attr("stroke-opacity", 0)
-            .attrTween("x1", function (d) {
-                return function () {
-                    return d.source.x;
-                };
-            })
-            .attrTween("x2", function (d) {
-                return function () {
-                    return d.target.x;
-                };
-            })
-            .attrTween("y1", function (d) {
-                return function () {
-                    return d.source.y;
-                };
-            })
-            .attrTween("y2", function (d) {
-                return function () {
-                    return d.target.y;
-                };
-            })
+        /*transition*/
             .remove();
 
         link = link.enter().append("line")
@@ -133,18 +101,16 @@
     }
 
     function ticked() {
-        node
-            .attr("cx", function (d) {
-                return d.x;
-            })
+        node.attr("cx", function (d) {
+            return d.x;
+        })
             .attr("cy", function (d) {
                 return d.y;
             });
 
-        link
-            .attr("x1", function (d) {
-                return d.source.x;
-            })
+        link.attr("x1", function (d) {
+            return d.source.x;
+        })
             .attr("y1", function (d) {
                 return d.source.y;
             })
@@ -154,16 +120,9 @@
             .attr("y2", function (d) {
                 return d.target.y;
             });
-
-        label
-            .attr("x", function (d) {
-                return d.x;
-            })
-            .attr("y", function (d) {
-                return d.y;
-            });
     }
 
+    restart();
 
     document.getElementById('btnRenderExisting3Node').addEventListener('click', function () {
         nodes = [a, b, c];
