@@ -68,11 +68,22 @@ function fileFinder(){
       console.log(err);
       return;
     }
-    //console.log(files);
-    //return files
+    //console.log(files.length);
+    return files
   });
 }
 
+fileFinder()
+
+function openFile(){
+  var fileArray = fileFinder();
+  for(var i = 0; i <= fileArray.length;i++){
+    if(fileArray[i].includes("_pv.json")){
+      console.log(i)
+    }
+  }
+
+}
 
 function xmlWriterPV(type, xmlData){
 var builder = require('xmlbuilder');
