@@ -13,7 +13,7 @@ if(!empty($res) AND $searchName != ""){
 
 	$xml->startElement('wiki');
 		$xml->startElement('pageName');
-			$xml->writeRaw($res[0][1]);
+			$xml->writeRaw(str_ireplace("&", "&amp;", $res[0][1]));
 		$xml->endElement();
 		$xml->startElement('pageID');
 			$xml->writeRaw($res[0][2]);
@@ -23,7 +23,7 @@ if(!empty($res) AND $searchName != ""){
 		$xml->endElement();
 		for($i=0; $i < count($res); $i++){
 		$xml->startElement('linkTo');
-			$xml->writeRaw($res[$i][7]);
+			$xml->writeRaw(str_ireplace("&", "&amp;", $res[$i][7]));
 		$xml->endElement();
 		}
 	$xml->endElement();
