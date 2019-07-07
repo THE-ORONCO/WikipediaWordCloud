@@ -26,7 +26,9 @@ const file = toRef + target
 
 var callback = console.log;
 
+
 function traverseViews(obj) {
+  var flag = 0
   var myPV = [];
     if (obj instanceof Array) {
         for (var i=0; i<obj.length; i++) {
@@ -42,6 +44,7 @@ function traverseViews(obj) {
     } else {
         for (var prop in obj) {
             if (typeof obj[prop] == "object" && obj[prop]) {
+              
                 //callback(prop);
                 traverseViews(obj[prop]);
             } else {
@@ -50,15 +53,25 @@ function traverseViews(obj) {
                //filter nach views und gibt nur die values zurück
                 if (prop == "views"){
                   //callback(obj[prop]);
-                  myPV.push(obj[prop])
+                  flag = "views"
+                  parseInt(myPV.push(obj[prop]))
                 }
+                
             }
+            
         }
     }
-    console.log(myPV)
+    if (flag == "views"){
+      //do smth with views
+      console.log(myPV + " " + flag)
+    }
+
+
+
 }
 //traverseViews( JSON.parse(fs.readFileSync('./../toRef/Bill_Gates_pv.json')) );
- 
+traverseViews(JSON.parse(fs.readFileSync('./../toRef/Bill_Gates_wlh.json'))) 
+
 //fileFinder();
 
 //sucht und findet saemtliche dateien in toRef/
