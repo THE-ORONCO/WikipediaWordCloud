@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: steelblue;
+            margin:5px;
+        }
+    </style>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+<div> </div>
+<p>ff</p>
+<hmmmmmm> hmmmmmmmmmm </hmmmmmm>
+<f>interaction</f>
+<script>
+    d3.selectAll("div")
+      .on("mouseover", function(){
+          d3.select(this)
+            .style("background-color", "orange");
+
+          // Get current event info
+          console.log(d3.event);
+          
+          // Get x & y co-ordinates
+          console.log(d3.mouse(this));
+      })
+      .on("mouseout", function(){
+          d3.select(this)
+            .style("background-color", "steelblue")
+      });
+	  
+	  d3.selectAll("p")
+      .on("mouseover", function(){
+          d3.select(this)
+            .style("color", "orange");
+
+          // Get current event info
+          console.log(d3.event);
+          
+          // Get x & y co-ordinates
+          console.log(d3.mouse(this));
+      })
+      .on("mouseout", function(){
+          d3.select(this)
+            .style("color", "steelblue")
+      });
+	  
+	  d3.selectAll("f")
+      .on("mouseover", function(){
+          d3.selectAll("hmmmmmm")
+            .style("color", "orange");
+
+          // Get current event info
+          console.log(d3.event);
+          
+          // Get x & y co-ordinates
+          console.log(d3.mouse(this));
+      })
+      .on("mouseout", function(){
+          d3.selectAll("hmmmmmm")
+            .style("color", "steelblue")
+      });
+	  
+</script>
+</body>
+</html>

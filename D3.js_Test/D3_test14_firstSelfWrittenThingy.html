@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WWC</title>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <style>
+        #drawingSpace{
+            border: 2px black solid;
+        }
+    </style>
+
+</head>
+<body>
+<h1>WikiWordCloud</h1>
+<button onclick="">generate</button>
+
+<!-- width and height are still hardcoded because but are read in via d3.js -->
+<svg id="drawingSpace" width="666" height="666"> DrawingSpace</svg>
+
+<script>
+    //create the canvas variable and the corresponding width and height from the given svg
+    var svg = d3.select("#drawingSpace").text(""),
+        width = +svg.attr("width"),
+        height = +svg.attr("height");
+    console.log("svg created with dimensions " + width + "|" + height);
+
+    //generates temp data for testing until i can read in json
+    const range = 10;
+    var data = {
+        nodes: d3.range(0, range).map(function (d) {
+            return {label: "l" + d, r: ~~d3.randomUniform(15, 30)()}
+        }),
+        links: d3.range(0, range).map(function () {
+            return {source: ~~d3.randomUniform(range)(), target: ~~d3.randomUniform(range)()}
+        })
+    };
+
+    //define the used force types in the simulation
+    var simulation = d3.forceSimulation()
+        .force("link", d3.forceLink().id(function (d) {
+            return d.id;
+        }))
+        .force("charge", d3.forceManyBody().strength(-5))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("x", d3.forceX())
+        .force("y", d3.forceY());;
+    console.log(data);
+
+
+    //initial drawing of the graph
+    drawGraph(data);
+
+    function drawGraph(data) {
+
+    }
+
+
+
+
+    //generates graph from json
+    //could be made more elegant but for the time being this has to be enough
+    var dataDirPosition = "./data/miserables.json";
+
+    function drawGraphJSON() {
+        console.log("test data: ");
+        console.log(data);
+
+        //json loading + saving linkData in linkData and nodeData in nodeData + logging of the progress
+        d3.json(dataDirPosition, function (error, graph) {
+            if (error) {
+                console.log(error);
+                throw error;
+            }
+
+            nodeData = JSON.valueOf(graph.nodes);
+            linkData = graph.links;
+
+            console.log("json graph: ");
+            console.log(graph);
+
+        });
+
+    }
+
+
+
+
+</script>
+
+</body>
+</html>

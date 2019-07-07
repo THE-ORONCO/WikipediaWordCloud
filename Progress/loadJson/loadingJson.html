@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>askyb - Load JSON File Locally by Javascript Without JQuery</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+
+</head>
+
+<body>
+<script>
+    d3.json("./data.json", function (error, graph) {
+        if (error) {
+            console.log(error);
+        }
+        console.log(graph.links[0].target);
+
+    });
+
+
+</script>
+
+</body>
+</html>

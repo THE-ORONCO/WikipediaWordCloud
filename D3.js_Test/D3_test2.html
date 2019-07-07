@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+
+    <p>Error: This is dummy error.</p>
+    <p>Warning: This is dummy warning.</p>
+	<p>     Warningmcgeeeeeee </p>
+	<p> warning
+	wup wup </p>
+	<p>War
+	ning</p>
+	<p> was Warning?</p>
+	<p> was warning?</p>
+
+<script>
+    d3.selectAll("p").style("color", function(d, i) {
+            var text = this.innerText;
+        
+            if (text.indexOf("Error") >= 0) {
+                return "red";
+            } else if (text.indexOf("Warning") >= 0) {
+                return "yellow";
+            } else {
+				return "cyan";
+			}
+});
+</script>
+</body>
+</html>

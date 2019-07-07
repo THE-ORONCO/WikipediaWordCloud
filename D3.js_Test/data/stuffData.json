@@ -1,0 +1,18 @@
+{
+  "nodes": [
+    {
+      "id": "id1",
+      "radius": 5
+    },
+    {
+      "id": "id2",
+      "radius": 6
+    }
+  ],
+  "links": [
+    {
+      "source": "id1",
+      "target": "id2"
+    }
+  ]
+}
