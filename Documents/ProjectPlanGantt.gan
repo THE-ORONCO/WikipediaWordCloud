@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="WikipediaWordCloud" company="Informatiktypen Inc." webLink="http://" view-date="2019-06-03" view-index="0" gantt-divider-location="405" resource-divider-location="399" version="2.8.10" locale="en_GB">
+    <description/>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd3" name="Name" width="191" order="0"/>
+        <field id="tpd4" name="Begin date" width="98" order="1"/>
+        <field id="tpd5" name="End date" width="97" order="2"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelDown" value=""/>
+        <timeline><![CDATA[33,125]]></timeline>
+        <option id="color.recent"><![CDATA[#00ff00 #ff00cc #0000ff #ff0000]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="103" order="0"/>
+        <field id="1" name="Default role" width="128" order="1"/>
+        <field id="4" name="Assignment role" width="164" order="2"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Basic documentation writing" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="11" thirdDate="2019-06-03" thirdDate-constraint="1" expand="true">
+            <task id="12" name="QS-measures" color="#8cb6ce" meeting="false" start="2019-05-03" duration="7" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
+            <task id="11" name="Project Definition" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="20" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
+            <task id="13" name="Resource analysis" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
+            <task id="14" name="Risk analysis" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="38" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
+            <task id="15" name="WhatIf" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="1" name="collecting information" meeting="false" start="2019-06-03" duration="7" complete="20" expand="true">
+            <task id="4" name="Crawler" color="#8cb6ce" meeting="false" start="2019-06-03" duration="1" complete="0" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[- Marco already had experience with webcrawlers]]></notes>
+                <depend id="120" type="1" difference="0" hardness="Rubber"/>
+                <depend id="128" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="5" name="Data refinery" color="#8cb6ce" meeting="false" start="2019-06-03" duration="5" complete="0" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
+                <depend id="124" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="3" name="Databank" color="#8cb6ce" meeting="false" start="2019-06-03" duration="1" complete="0" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
+                <depend id="122" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="76" name="DataCollection-Meeting" color="#0000ff" meeting="true" start="2019-06-05" duration="0" complete="0" thirdDate="2019-05-27" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[- Marco briefed Sonia]]></notes>
+            </task>
+            <task id="2" name="GUI" color="#8cb6ce" meeting="false" start="2019-06-03" duration="7" complete="47" thirdDate="2019-06-05" thirdDate-constraint="0" expand="true">
+                <depend id="118" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="57" name="GUI-Meeting" color="#0000ff" meeting="true" start="2019-06-05" duration="0" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[- Théo got the job of compareing the different frameworks that were found
+- Marija and Samuel were tasked with learing GIT
+- which Framework will be used is still standing to discussion but is hopefully cleared in the next few days via the research and texts
+
+- lateron the others joined in on the discussion and made it more general
+- we further clarified which data we wanted from the crawler]]></notes>
+            </task>
+        </task>
+        <task id="126" name="drafting the programs" color="#000000" meeting="false" start="2019-06-06" duration="3" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true">
+            <task id="128" name="Crawler" color="#8cb6ce" meeting="false" start="2019-06-06" duration="1" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
+            <task id="129" name="Data refinery" meeting="false" start="2019-06-08" duration="1" complete="0" expand="true"/>
+            <task id="130" name="Databank" meeting="false" start="2019-06-08" duration="1" complete="0" expand="true"/>
+            <task id="127" name="GUI" color="#8cb6ce" meeting="false" start="2019-06-08" duration="1" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="106" name="programming and testing" meeting="false" start="2019-06-03" duration="23" complete="0" expand="true">
+            <task id="120" name="Crawler" color="#8cb6ce" meeting="false" start="2019-06-03" duration="14" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
+            <task id="124" name="Data refinery" color="#8cb6ce" meeting="false" start="2019-06-08" duration="11" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
+            <task id="122" name="Databank" color="#8cb6ce" meeting="false" start="2019-06-08" duration="11" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
+            <task id="118" name="GUI" color="#8cb6ce" meeting="false" start="2019-06-10" duration="16" complete="0" thirdDate="2019-06-08" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="55" name="wrapping up" color="#8cb6ce" meeting="false" start="2019-06-29" duration="3" complete="0" thirdDate="2019-06-25" thirdDate-constraint="1" expand="true">
+            <task id="74" name="collecting all documentation" color="#8cb6ce" meeting="false" start="2019-06-29" duration="1" complete="0" thirdDate="2019-06-01" thirdDate-constraint="0" expand="true">
+                <depend id="75" type="2" difference="0" hardness="Rubber"/>
+                <depend id="81" type="1" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="75" name="reviewing the documentation" color="#8cb6ce" meeting="false" start="2019-06-30" duration="2" complete="0" thirdDate="2019-06-10" thirdDate-constraint="0" expand="true"/>
+            <task id="81" name="final testing" color="#8cb6ce" meeting="false" start="2019-06-29" duration="3" complete="0" thirdDate="2019-06-10" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="125" name="Inital meeting" color="#00ff00" meeting="true" start="2019-05-29" duration="0" complete="0" thirdDate="2019-05-20" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[- the general structure of our program was planned out]]></notes>
+        </task>
+        <task id="35" name="Meeting 1" color="#00ff00" meeting="true" start="2019-06-03" duration="0" complete="0" thirdDate="2019-05-24" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[- more people where there this time
+- we split the workload based on interest and the different parts that need to be programmed
+- Aleksandar was apsent and doesn't respond to texts]]></notes>
+        </task>
+        <task id="38" name="Meeting 2" color="#00ff00" meeting="true" start="2019-06-11" duration="0" complete="0" thirdDate="2019-05-24" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[- da nur Mitglieder der GUI-Gruppe anwesend waren konnte nur geklärt werden welches Framework man verwendet: D3js bzw ColaJs, da sie in beinahe allem ähnlich wenn nicht gleich aufgebaut sind
+]]></notes>
+        </task>
+        <task id="41" name="Meeting 3" color="#00ff00" meeting="true" start="2019-06-17" duration="0" complete="0" thirdDate="2019-05-24" thirdDate-constraint="0" expand="true"/>
+        <task id="43" name="Meeting 4" color="#00ff00" meeting="true" start="2019-06-24" duration="0" complete="0" thirdDate="2019-05-24" thirdDate-constraint="0" expand="true"/>
+        <task id="53" name="Meeting 5" color="#00ff00" meeting="true" start="2019-07-01" duration="0" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true"/>
+        <task id="33" name="Planed end of project" color="#ff0000" meeting="true" start="2019-07-01" duration="0" complete="0" thirdDate="2019-05-24" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Sonia" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="Kai" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="2" name="Samuel" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="3" name="Marco" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="4" name="Marija" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="5" name="Aleksandar" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="6" name="Théo" function="SoftwareDevelopment:2" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="13" resource-id="0" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="120" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="125" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="35" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="1" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="122" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="35" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="57" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="118" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="125" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="3" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="120" resource-id="3" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="35" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="4" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
+        <allocation task-id="57" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="118" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="125" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="5" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="5" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="124" resource-id="5" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="125" resource-id="5" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="6" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="6" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
+        <allocation task-id="57" resource-id="6" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="118" resource-id="6" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="125" resource-id="6" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="6" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
