@@ -1,0 +1,18 @@
+{
+  "node": {
+    "id": "Fauchelevent",
+    "group": 0
+  },
+  "links": [
+    {
+      "source": "MotherInnocent",
+      "target": "Fauchelevent",
+      "value": 3
+    },
+    {
+      "source": "Gribier",
+      "target": "Fauchelevent",
+      "value": 2
+    }
+  ]
+}

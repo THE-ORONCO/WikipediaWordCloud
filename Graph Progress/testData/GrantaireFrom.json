@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "Grantaire",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Grantaire",
+      "target": "Bossuet",
+      "value": 3
+    },
+    {
+      "source": "Grantaire",
+      "target": "Enjolras",
+      "value": 3
+    },
+    {
+      "source": "Grantaire",
+      "target": "Combeferre",
+      "value": 1
+    },
+    {
+      "source": "Grantaire",
+      "target": "Courfeyrac",
+      "value": 2
+    },
+    {
+      "source": "Grantaire",
+      "target": "Joly",
+      "value": 2
+    },
+    {
+      "source": "Grantaire",
+      "target": "Gavroche",
+      "value": 1
+    },
+    {
+      "source": "Grantaire",
+      "target": "Bahorel",
+      "value": 1
+    },
+    {
+      "source": "Grantaire",
+      "target": "Feuilly",
+      "value": 1
+    },
+    {
+      "source": "Grantaire",
+      "target": "Prouvaire",
+      "value": 1
+    }
+  ]
+}

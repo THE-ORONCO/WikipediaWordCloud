@@ -1,114 +1,119 @@
 body {
-  height: 100%;
-  margin-left: 0;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
+    height: 100%;
+    margin-left: 0;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 #graphContainer {
-  background-color: white;
-  position: fixed;
-  right: 0px;
-  width: 75%;
-  height: 100%;
+    background-color: white;
+    position: fixed;
+    right: 0px;
+    width: 75%;
+    height: 100%;
 }
 
 #sidebar {
-  background-color: whitesmoke;
-  width: 230px;
-  height: 100%;
-  position: fixed;
-  text-align: center;
+    background-color: whitesmoke;
+    width: 230px;
+    height: 100%;
+    position: fixed;
+    text-align: center;
 }
 
 #title {
-  font-size: 3vw;
-  background-color: grey;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  padding-top: 1.5vw;
-  padding-bottom: 1.5vw;
+    font-size: 3vw;
+    background-color: grey;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
 }
 
 #searchbar-container {
-  display: table;
-  width: 100%;
-  height: 4vw;
-  border-spacing: 0px;
+    display: table;
+    width: 100%;
+    height: 4vw;
+    border-spacing: 0px;
 }
 
 #searchbar {
-  border-color: grey;
-  border-radius: 3px;
-  border-width: 1px;
-  margin: 2.5%;
-  display: table-cell;
-  width: 80%;
-  float: left;
-  padding: 0px;
-  height: 23px;
-  font-size: 20px;
+    border-color: grey;
+    border-radius: 3px;
+    border-width: 1px;
+    margin: 2.5%;
+    display: table-cell;
+    width: 80%;
+    float: left;
+    padding: 0px;
+    height: 23px;
+    font-size: 20px;
 }
 
 #searchbar::placeholder {
-  font-size: 1vw;
+    font-size: 1vw;
 }
 
 #searchbar:focus {
-  outline: none;
+    outline: none;
 }
 
 #searchbtn {
-  float: right;
-  border-radius: 0px;
-  border: none;
-  background-color: whitesmoke;
-  display: table-cell;
-  width: 20%;
-  height: 100%;
+    float: right;
+    border-radius: 0px;
+    border: none;
+    background-color: whitesmoke;
+    display: table-cell;
+    width: 20%;
+    height: 100%;
 }
 
 #searchbtn:focus {
-  outline: none;
+    outline: none;
 }
 
 #searchbtn:hover {
-  background-color: cyan;
+    background-color: cyan;
 }
 
 #sb-img {
-  height: 2vw;
+    height: 2vw;
 }
 
 #checkbox-container {
-  height: 15vw;
-  display: table;
-  border-spacing: 0px;
-  width: 100%;
-  padding: 0px;
+    height: 15vw;
+    display: table;
+    border-spacing: 0px;
+    width: 100%;
+    padding: 0px;
 }
 
 .checkboxes {
-  text-align: center;
-  vertical-align: bottom;
-  height: 5vw;
+    text-align: center;
+    vertical-align: bottom;
+    height: 5vw;
 }
 
-.nodes, .links {
-  /*fill: transparent;*/
-  stroke: lightgray;
-  stroke-width: 3px;
+.links {
+    /*fill: transparent;*/
+    stroke: lightgray;
+    stroke-width: 2.3px;
+}
+
+.node {
+    stroke: white;
+    stroke-width: 2.3;
 }
 
 text {
-  font-family: Linux Libertine, Georgia, Times, serif; /*font stack is defined the same way it is in Wikipedia*/
-  font-size: 20px;
-  color: black;
-  stroke-width: 0px;
-  fill: black;
+    font-family: Linux Libertine, Georgia, Times, serif; /*font stack is defined the same way it is in Wikipedia*/
+    font-size: 20px;
+    color: black;
+    stroke-width: 0px;
+    fill: black;
 }
 
 #bottombar-container {
-  position: absolute;
-  bottom: 1vw;
+    position: absolute;
+    bottom: 1vw;
 }

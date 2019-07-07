@@ -1,0 +1,18 @@
+{
+  "node": {
+    "id": "Magnon",
+    "group": 5
+  },
+  "links": [
+    {
+      "source": "Magnon",
+      "target": "Gillenormand",
+      "value": 1
+    },
+    {
+      "source": "Magnon",
+      "target": "Mme.Thenardier",
+      "value": 1
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+.links {
+    /*fill: transparent;*/
+    stroke: lightgray;
+    stroke-width: 2.3px;
+}
+
+.node {
+    stroke: white;
+    stroke-width: 2.3;
+}
+
+text {
+    font-family: Linux Libertine, Georgia, Times, serif; /*font stack is defined the same way it is in Wikipedia*/
+    font-size: 20px;
+    stroke-width: 0px;
+    fill: black;
+}
+
+#graphContainer {
+    background-color: white;
+    position: fixed;
+    right: 0px;
+    width: 75%;
+    height: 100%;
+}

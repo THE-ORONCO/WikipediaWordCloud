@@ -1,0 +1,18 @@
+{
+  "node": {
+    "id": "BaronessT",
+    "group": 5
+  },
+  "links": [
+    {
+      "source": "BaronessT",
+      "target": "Gillenormand",
+      "value": 1
+    },
+    {
+      "source": "BaronessT",
+      "target": "Marius",
+      "value": 1
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "node": {
+    "id": "Gavroche",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Marius",
+      "target": "Gavroche",
+      "value": 4
+    },
+    {
+      "source": "Mabeuf",
+      "target": "Gavroche",
+      "value": 1
+    },
+    {
+      "source": "Enjolras",
+      "target": "Gavroche",
+      "value": 7
+    },
+    {
+      "source": "Combeferre",
+      "target": "Gavroche",
+      "value": 6
+    },
+    {
+      "source": "Prouvaire",
+      "target": "Gavroche",
+      "value": 1
+    },
+    {
+      "source": "Feuilly",
+      "target": "Gavroche",
+      "value": 2
+    },
+    {
+      "source": "Courfeyrac",
+      "target": "Gavroche",
+      "value": 7
+    },
+    {
+      "source": "Bahorel",
+      "target": "Gavroche",
+      "value": 5
+    },
+    {
+      "source": "Bossuet",
+      "target": "Gavroche",
+      "value": 5
+    },
+    {
+      "source": "Joly",
+      "target": "Gavroche",
+      "value": 3
+    },
+    {
+      "source": "Grantaire",
+      "target": "Gavroche",
+      "value": 1
+    },
+    {
+      "source": "Gueulemer",
+      "target": "Gavroche",
+      "value": 1
+    },
+    {
+      "source": "Babet",
+      "target": "Gavroche",
+      "value": 1
+    },
+    {
+      "source": "Montparnasse",
+      "target": "Gavroche",
+      "value": 1
+    },
+    {
+      "source": "Child1",
+      "target": "Gavroche",
+      "value": 2
+    },
+    {
+      "source": "Child2",
+      "target": "Gavroche",
+      "value": 2
+    },
+    {
+      "source": "Brujon",
+      "target": "Gavroche",
+      "value": 1
+    },
+    {
+      "source": "Mme.Hucheloup",
+      "target": "Gavroche",
+      "value": 1
+    }
+  ]
+}

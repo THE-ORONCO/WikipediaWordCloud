@@ -1,0 +1,28 @@
+{
+  "node": {
+    "id": "Gueulemer",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Babet",
+      "target": "Gueulemer",
+      "value": 6
+    },
+    {
+      "source": "Claquesous",
+      "target": "Gueulemer",
+      "value": 4
+    },
+    {
+      "source": "Montparnasse",
+      "target": "Gueulemer",
+      "value": 2
+    },
+    {
+      "source": "Brujon",
+      "target": "Gueulemer",
+      "value": 3
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "node": {
+    "id": "Mabeuf",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Mabeuf",
+      "target": "Marius",
+      "value": 1
+    },
+    {
+      "source": "Mabeuf",
+      "target": "Eponine",
+      "value": 1
+    },
+    {
+      "source": "Mabeuf",
+      "target": "Gavroche",
+      "value": 1
+    }
+  ]
+}

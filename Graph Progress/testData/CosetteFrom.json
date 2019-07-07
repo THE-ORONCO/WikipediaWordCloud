@@ -1,0 +1,28 @@
+{
+  "node": {
+    "id": "Cosette",
+    "group": 5
+  },
+  "links": [
+    {
+      "source": "Cosette",
+      "target": "Mme.Thenardier",
+      "value": 4
+    },
+    {
+      "source": "Cosette",
+      "target": "Valjean",
+      "value": 31
+    },
+    {
+      "source": "Cosette",
+      "target": "Tholomyes",
+      "value": 1
+    },
+    {
+      "source": "Cosette",
+      "target": "Thenardier",
+      "value": 1
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "node": {
+    "id": "Enjolras",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Combeferre",
+      "target": "Enjolras",
+      "value": 15
+    },
+    {
+      "source": "Prouvaire",
+      "target": "Enjolras",
+      "value": 4
+    },
+    {
+      "source": "Feuilly",
+      "target": "Enjolras",
+      "value": 6
+    },
+    {
+      "source": "Courfeyrac",
+      "target": "Enjolras",
+      "value": 17
+    },
+    {
+      "source": "Bahorel",
+      "target": "Enjolras",
+      "value": 4
+    },
+    {
+      "source": "Bossuet",
+      "target": "Enjolras",
+      "value": 10
+    },
+    {
+      "source": "Joly",
+      "target": "Enjolras",
+      "value": 5
+    },
+    {
+      "source": "Grantaire",
+      "target": "Enjolras",
+      "value": 3
+    },
+    {
+      "source": "Claquesous",
+      "target": "Enjolras",
+      "value": 1
+    },
+    {
+      "source": "Mme.Hucheloup",
+      "target": "Enjolras",
+      "value": 1
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "node": {
+    "id": "Joly",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Joly",
+      "target": "Bahorel",
+      "value": 5
+    },
+    {
+      "source": "Joly",
+      "target": "Bossuet",
+      "value": 7
+    },
+    {
+      "source": "Joly",
+      "target": "Gavroche",
+      "value": 3
+    },
+    {
+      "source": "Joly",
+      "target": "Courfeyrac",
+      "value": 5
+    },
+    {
+      "source": "Joly",
+      "target": "Enjolras",
+      "value": 5
+    },
+    {
+      "source": "Joly",
+      "target": "Feuilly",
+      "value": 5
+    },
+    {
+      "source": "Joly",
+      "target": "Prouvaire",
+      "value": 2
+    },
+    {
+      "source": "Joly",
+      "target": "Combeferre",
+      "value": 5
+    },
+    {
+      "source": "Joly",
+      "target": "Mabeuf",
+      "value": 1
+    },
+    {
+      "source": "Joly",
+      "target": "Marius",
+      "value": 2
+    }
+  ]
+}

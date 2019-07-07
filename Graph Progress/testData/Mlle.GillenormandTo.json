@@ -1,0 +1,28 @@
+{
+  "node": {
+    "id": "Mlle.Gillenormand",
+    "group": 5
+  },
+  "links": [
+    {
+      "source": "Mme.Pontmercy",
+      "target": "Mlle.Gillenormand",
+      "value": 1
+    },
+    {
+      "source": "Mlle.Vaubois",
+      "target": "Mlle.Gillenormand",
+      "value": 1
+    },
+    {
+      "source": "Lt.Gillenormand",
+      "target": "Mlle.Gillenormand",
+      "value": 2
+    },
+    {
+      "source": "Marius",
+      "target": "Mlle.Gillenormand",
+      "value": 6
+    }
+  ]
+}

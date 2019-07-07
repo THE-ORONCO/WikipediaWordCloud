@@ -1,0 +1,28 @@
+{
+  "node": {
+    "id": "Favourite",
+    "group": 3
+  },
+  "links": [
+    {
+      "source": "Favourite",
+      "target": "Tholomyes",
+      "value": 3
+    },
+    {
+      "source": "Favourite",
+      "target": "Listolier",
+      "value": 3
+    },
+    {
+      "source": "Favourite",
+      "target": "Fameuil",
+      "value": 3
+    },
+    {
+      "source": "Favourite",
+      "target": "Blacheville",
+      "value": 4
+    }
+  ]
+}

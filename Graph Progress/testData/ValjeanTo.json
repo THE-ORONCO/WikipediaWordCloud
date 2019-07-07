@@ -1,0 +1,168 @@
+{
+  "node": {
+    "id": "Valjean",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Marguerite",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Mme.deR",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Isabeau",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Gervais",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Fantine",
+      "target": "Valjean",
+      "value": 9
+    },
+    {
+      "source": "Mme.Thenardier",
+      "target": "Valjean",
+      "value": 7
+    },
+    {
+      "source": "Thenardier",
+      "target": "Valjean",
+      "value": 12
+    },
+    {
+      "source": "Cosette",
+      "target": "Valjean",
+      "value": 31
+    },
+    {
+      "source": "Javert",
+      "target": "Valjean",
+      "value": 17
+    },
+    {
+      "source": "Fauchelevent",
+      "target": "Valjean",
+      "value": 8
+    },
+    {
+      "source": "Bamatabois",
+      "target": "Valjean",
+      "value": 2
+    },
+    {
+      "source": "Simplice",
+      "target": "Valjean",
+      "value": 3
+    },
+    {
+      "source": "Scaufflaire",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Woman1",
+      "target": "Valjean",
+      "value": 2
+    },
+    {
+      "source": "Judge",
+      "target": "Valjean",
+      "value": 3
+    },
+    {
+      "source": "Champmathieu",
+      "target": "Valjean",
+      "value": 3
+    },
+    {
+      "source": "Brevet",
+      "target": "Valjean",
+      "value": 2
+    },
+    {
+      "source": "Chenildieu",
+      "target": "Valjean",
+      "value": 2
+    },
+    {
+      "source": "Cochepaille",
+      "target": "Valjean",
+      "value": 2
+    },
+    {
+      "source": "Woman2",
+      "target": "Valjean",
+      "value": 3
+    },
+    {
+      "source": "MotherInnocent",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Gavroche",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Gillenormand",
+      "target": "Valjean",
+      "value": 2
+    },
+    {
+      "source": "Mlle.Gillenormand",
+      "target": "Valjean",
+      "value": 2
+    },
+    {
+      "source": "Marius",
+      "target": "Valjean",
+      "value": 19
+    },
+    {
+      "source": "Enjolras",
+      "target": "Valjean",
+      "value": 4
+    },
+    {
+      "source": "Bossuet",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Gueulemer",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Babet",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Claquesous",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Montparnasse",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Toussaint",
+      "target": "Valjean",
+      "value": 1
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "node": {
+    "id": "Bahorel",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Bossuet",
+      "target": "Bahorel",
+      "value": 4
+    },
+    {
+      "source": "Joly",
+      "target": "Bahorel",
+      "value": 5
+    },
+    {
+      "source": "Grantaire",
+      "target": "Bahorel",
+      "value": 1
+    },
+    {
+      "source": "Mme.Hucheloup",
+      "target": "Bahorel",
+      "value": 1
+    }
+  ]
+}

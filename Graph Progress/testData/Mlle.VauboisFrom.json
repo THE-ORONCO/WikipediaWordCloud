@@ -1,0 +1,13 @@
+{
+  "node": {
+    "id": "Mlle.Vaubois",
+    "group": 5
+  },
+  "links": [
+    {
+      "source": "Mlle.Vaubois",
+      "target": "Mlle.Gillenormand",
+      "value": 1
+    }
+  ]
+}

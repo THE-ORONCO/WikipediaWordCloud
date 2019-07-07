@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "Tholomyes",
+    "group": 3
+  },
+  "links": [
+    {
+      "source": "Listolier",
+      "target": "Tholomyes",
+      "value": 4
+    },
+    {
+      "source": "Fameuil",
+      "target": "Tholomyes",
+      "value": 4
+    },
+    {
+      "source": "Blacheville",
+      "target": "Tholomyes",
+      "value": 4
+    },
+    {
+      "source": "Favourite",
+      "target": "Tholomyes",
+      "value": 3
+    },
+    {
+      "source": "Dahlia",
+      "target": "Tholomyes",
+      "value": 3
+    },
+    {
+      "source": "Zephine",
+      "target": "Tholomyes",
+      "value": 3
+    },
+    {
+      "source": "Fantine",
+      "target": "Tholomyes",
+      "value": 3
+    },
+    {
+      "source": "Cosette",
+      "target": "Tholomyes",
+      "value": 1
+    },
+    {
+      "source": "Marius",
+      "target": "Tholomyes",
+      "value": 1
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "node": {
+    "id": "Prouvaire",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Prouvaire",
+      "target": "Gavroche",
+      "value": 1
+    },
+    {
+      "source": "Prouvaire",
+      "target": "Enjolras",
+      "value": 4
+    },
+    {
+      "source": "Prouvaire",
+      "target": "Combeferre",
+      "value": 2
+    }
+  ]
+}

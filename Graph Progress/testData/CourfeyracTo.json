@@ -1,0 +1,33 @@
+{
+  "node": {
+    "id": "Courfeyrac",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Bahorel",
+      "target": "Courfeyrac",
+      "value": 6
+    },
+    {
+      "source": "Bossuet",
+      "target": "Courfeyrac",
+      "value": 12
+    },
+    {
+      "source": "Joly",
+      "target": "Courfeyrac",
+      "value": 5
+    },
+    {
+      "source": "Grantaire",
+      "target": "Courfeyrac",
+      "value": 2
+    },
+    {
+      "source": "Mme.Hucheloup",
+      "target": "Courfeyrac",
+      "value": 1
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "node": {
+    "id": "Blacheville",
+    "group": 3
+  },
+  "links": [
+    {
+      "source": "Blacheville",
+      "target": "Tholomyes",
+      "value": 4
+    },
+    {
+      "source": "Blacheville",
+      "target": "Listolier",
+      "value": 4
+    },
+    {
+      "source": "Blacheville",
+      "target": "Fameuil",
+      "value": 4
+    }
+  ]
+}

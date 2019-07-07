@@ -1,0 +1,38 @@
+{
+  "node": {
+    "id": "Zephine",
+    "group": 3
+  },
+  "links": [
+    {
+      "source": "Zephine",
+      "target": "Tholomyes",
+      "value": 3
+    },
+    {
+      "source": "Zephine",
+      "target": "Listolier",
+      "value": 3
+    },
+    {
+      "source": "Zephine",
+      "target": "Fameuil",
+      "value": 3
+    },
+    {
+      "source": "Zephine",
+      "target": "Blacheville",
+      "value": 3
+    },
+    {
+      "source": "Zephine",
+      "target": "Favourite",
+      "value": 4
+    },
+    {
+      "source": "Zephine",
+      "target": "Dahlia",
+      "value": 4
+    }
+  ]
+}

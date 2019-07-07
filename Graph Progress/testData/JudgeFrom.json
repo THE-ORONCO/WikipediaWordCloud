@@ -1,0 +1,18 @@
+{
+  "node": {
+    "id": "Judge",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Judge",
+      "target": "Valjean",
+      "value": 3
+    },
+    {
+      "source": "Judge",
+      "target": "Bamatabois",
+      "value": 2
+    }
+  ]
+}

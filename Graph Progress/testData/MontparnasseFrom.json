@@ -1,0 +1,48 @@
+{
+  "node": {
+    "id": "Montparnasse",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Montparnasse",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Montparnasse",
+      "target": "Babet",
+      "value": 2
+    },
+    {
+      "source": "Montparnasse",
+      "target": "Gueulemer",
+      "value": 2
+    },
+    {
+      "source": "Montparnasse",
+      "target": "Claquesous",
+      "value": 2
+    },
+    {
+      "source": "Montparnasse",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Montparnasse",
+      "target": "Gavroche",
+      "value": 1
+    },
+    {
+      "source": "Montparnasse",
+      "target": "Eponine",
+      "value": 1
+    },
+    {
+      "source": "Montparnasse",
+      "target": "Thenardier",
+      "value": 1
+    }
+  ]
+}

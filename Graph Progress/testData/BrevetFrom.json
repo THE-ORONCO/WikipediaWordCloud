@@ -1,0 +1,28 @@
+{
+  "node": {
+    "id": "Brevet",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Brevet",
+      "target": "Judge",
+      "value": 2
+    },
+    {
+      "source": "Brevet",
+      "target": "Champmathieu",
+      "value": 2
+    },
+    {
+      "source": "Brevet",
+      "target": "Valjean",
+      "value": 2
+    },
+    {
+      "source": "Brevet",
+      "target": "Bamatabois",
+      "value": 1
+    }
+  ]
+}

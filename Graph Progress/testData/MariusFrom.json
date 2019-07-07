@@ -1,0 +1,58 @@
+{
+  "node": {
+    "id": "Marius",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Marius",
+      "target": "Mlle.Gillenormand",
+      "value": 6
+    },
+    {
+      "source": "Marius",
+      "target": "Gillenormand",
+      "value": 12
+    },
+    {
+      "source": "Marius",
+      "target": "Pontmercy",
+      "value": 1
+    },
+    {
+      "source": "Marius",
+      "target": "Lt.Gillenormand",
+      "value": 1
+    },
+    {
+      "source": "Marius",
+      "target": "Cosette",
+      "value": 21
+    },
+    {
+      "source": "Marius",
+      "target": "Valjean",
+      "value": 19
+    },
+    {
+      "source": "Marius",
+      "target": "Tholomyes",
+      "value": 1
+    },
+    {
+      "source": "Marius",
+      "target": "Thenardier",
+      "value": 2
+    },
+    {
+      "source": "Marius",
+      "target": "Eponine",
+      "value": 5
+    },
+    {
+      "source": "Marius",
+      "target": "Gavroche",
+      "value": 4
+    }
+  ]
+}

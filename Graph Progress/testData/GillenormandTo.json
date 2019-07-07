@@ -1,0 +1,33 @@
+{
+  "node": {
+    "id": "Gillenormand",
+    "group": 5
+  },
+  "links": [
+    {
+      "source": "Magnon",
+      "target": "Gillenormand",
+      "value": 1
+    },
+    {
+      "source": "Mlle.Gillenormand",
+      "target": "Gillenormand",
+      "value": 9
+    },
+    {
+      "source": "Lt.Gillenormand",
+      "target": "Gillenormand",
+      "value": 1
+    },
+    {
+      "source": "Marius",
+      "target": "Gillenormand",
+      "value": 12
+    },
+    {
+      "source": "BaronessT",
+      "target": "Gillenormand",
+      "value": 1
+    }
+  ]
+}

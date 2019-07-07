@@ -1,0 +1,33 @@
+{
+  "node": {
+    "id": "Enjolras",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Enjolras",
+      "target": "Marius",
+      "value": 7
+    },
+    {
+      "source": "Enjolras",
+      "target": "Gavroche",
+      "value": 7
+    },
+    {
+      "source": "Enjolras",
+      "target": "Javert",
+      "value": 6
+    },
+    {
+      "source": "Enjolras",
+      "target": "Mabeuf",
+      "value": 1
+    },
+    {
+      "source": "Enjolras",
+      "target": "Valjean",
+      "value": 4
+    }
+  ]
+}

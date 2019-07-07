@@ -1,0 +1,33 @@
+{
+  "node": {
+    "id": "Javert",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Javert",
+      "target": "Valjean",
+      "value": 17
+    },
+    {
+      "source": "Javert",
+      "target": "Fantine",
+      "value": 5
+    },
+    {
+      "source": "Javert",
+      "target": "Thenardier",
+      "value": 5
+    },
+    {
+      "source": "Javert",
+      "target": "Mme.Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Javert",
+      "target": "Cosette",
+      "value": 1
+    }
+  ]
+}

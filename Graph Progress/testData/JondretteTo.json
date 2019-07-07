@@ -1,0 +1,13 @@
+{
+  "node": {
+    "id": "Jondrette",
+    "group": 7
+  },
+  "links": [
+    {
+      "source": "Mme.Burgon",
+      "target": "Jondrette",
+      "value": 1
+    }
+  ]
+}

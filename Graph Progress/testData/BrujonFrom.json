@@ -1,0 +1,43 @@
+{
+  "node": {
+    "id": "Brujon",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Brujon",
+      "target": "Babet",
+      "value": 3
+    },
+    {
+      "source": "Brujon",
+      "target": "Gueulemer",
+      "value": 3
+    },
+    {
+      "source": "Brujon",
+      "target": "Thenardier",
+      "value": 3
+    },
+    {
+      "source": "Brujon",
+      "target": "Gavroche",
+      "value": 1
+    },
+    {
+      "source": "Brujon",
+      "target": "Eponine",
+      "value": 1
+    },
+    {
+      "source": "Brujon",
+      "target": "Claquesous",
+      "value": 1
+    },
+    {
+      "source": "Brujon",
+      "target": "Montparnasse",
+      "value": 1
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "node": {
+    "id": "Geborand",
+    "group": 1
+  },
+  "links": [
+    {
+      "source": "Geborand",
+      "target": "Myriel",
+      "value": 1
+    }
+  ]
+}

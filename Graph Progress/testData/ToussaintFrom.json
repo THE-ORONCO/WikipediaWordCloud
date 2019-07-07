@@ -1,0 +1,23 @@
+{
+  "node": {
+    "id": "Toussaint",
+    "group": 5
+  },
+  "links": [
+    {
+      "source": "Toussaint",
+      "target": "Cosette",
+      "value": 2
+    },
+    {
+      "source": "Toussaint",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Toussaint",
+      "target": "Valjean",
+      "value": 1
+    }
+  ]
+}

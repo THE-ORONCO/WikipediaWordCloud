@@ -1,0 +1,13 @@
+{
+  "node": {
+    "id": "Listolier",
+    "group": 3
+  },
+  "links": [
+    {
+      "source": "Listolier",
+      "target": "Tholomyes",
+      "value": 4
+    }
+  ]
+}

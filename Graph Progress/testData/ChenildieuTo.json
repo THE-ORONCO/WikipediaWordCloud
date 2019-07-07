@@ -1,0 +1,13 @@
+{
+  "node": {
+    "id": "Chenildieu",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Cochepaille",
+      "target": "Chenildieu",
+      "value": 2
+    }
+  ]
+}

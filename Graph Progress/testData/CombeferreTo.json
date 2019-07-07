@@ -1,0 +1,43 @@
+{
+  "node": {
+    "id": "Combeferre",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Prouvaire",
+      "target": "Combeferre",
+      "value": 2
+    },
+    {
+      "source": "Feuilly",
+      "target": "Combeferre",
+      "value": 5
+    },
+    {
+      "source": "Courfeyrac",
+      "target": "Combeferre",
+      "value": 13
+    },
+    {
+      "source": "Bahorel",
+      "target": "Combeferre",
+      "value": 5
+    },
+    {
+      "source": "Bossuet",
+      "target": "Combeferre",
+      "value": 9
+    },
+    {
+      "source": "Joly",
+      "target": "Combeferre",
+      "value": 5
+    },
+    {
+      "source": "Grantaire",
+      "target": "Combeferre",
+      "value": 1
+    }
+  ]
+}

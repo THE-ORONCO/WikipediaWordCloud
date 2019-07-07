@@ -1,0 +1,28 @@
+{
+  "node": {
+    "id": "Blacheville",
+    "group": 3
+  },
+  "links": [
+    {
+      "source": "Favourite",
+      "target": "Blacheville",
+      "value": 4
+    },
+    {
+      "source": "Dahlia",
+      "target": "Blacheville",
+      "value": 3
+    },
+    {
+      "source": "Zephine",
+      "target": "Blacheville",
+      "value": 3
+    },
+    {
+      "source": "Fantine",
+      "target": "Blacheville",
+      "value": 3
+    }
+  ]
+}

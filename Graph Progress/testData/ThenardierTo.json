@@ -1,0 +1,73 @@
+{
+  "node": {
+    "id": "Thenardier",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Cosette",
+      "target": "Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Javert",
+      "target": "Thenardier",
+      "value": 5
+    },
+    {
+      "source": "Pontmercy",
+      "target": "Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Boulatruelle",
+      "target": "Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Eponine",
+      "target": "Thenardier",
+      "value": 3
+    },
+    {
+      "source": "Anzelma",
+      "target": "Thenardier",
+      "value": 2
+    },
+    {
+      "source": "Gavroche",
+      "target": "Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Marius",
+      "target": "Thenardier",
+      "value": 2
+    },
+    {
+      "source": "Gueulemer",
+      "target": "Thenardier",
+      "value": 5
+    },
+    {
+      "source": "Babet",
+      "target": "Thenardier",
+      "value": 6
+    },
+    {
+      "source": "Claquesous",
+      "target": "Thenardier",
+      "value": 4
+    },
+    {
+      "source": "Montparnasse",
+      "target": "Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Brujon",
+      "target": "Thenardier",
+      "value": 3
+    }
+  ]
+}

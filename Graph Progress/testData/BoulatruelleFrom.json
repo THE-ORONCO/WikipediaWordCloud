@@ -1,0 +1,13 @@
+{
+  "node": {
+    "id": "Boulatruelle",
+    "group": 6
+  },
+  "links": [
+    {
+      "source": "Boulatruelle",
+      "target": "Thenardier",
+      "value": 1
+    }
+  ]
+}

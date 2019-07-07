@@ -1,0 +1,33 @@
+{
+  "node": {
+    "id": "Feuilly",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Courfeyrac",
+      "target": "Feuilly",
+      "value": 6
+    },
+    {
+      "source": "Bahorel",
+      "target": "Feuilly",
+      "value": 3
+    },
+    {
+      "source": "Bossuet",
+      "target": "Feuilly",
+      "value": 6
+    },
+    {
+      "source": "Joly",
+      "target": "Feuilly",
+      "value": 5
+    },
+    {
+      "source": "Grantaire",
+      "target": "Feuilly",
+      "value": 1
+    }
+  ]
+}

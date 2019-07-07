@@ -1,0 +1,13 @@
+{
+  "node": {
+    "id": "Gervais",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Gervais",
+      "target": "Valjean",
+      "value": 1
+    }
+  ]
+}

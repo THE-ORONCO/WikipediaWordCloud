@@ -1,0 +1,18 @@
+{
+  "node": {
+    "id": "Pontmercy",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Mme.Pontmercy",
+      "target": "Pontmercy",
+      "value": 1
+    },
+    {
+      "source": "Marius",
+      "target": "Pontmercy",
+      "value": 1
+    }
+  ]
+}

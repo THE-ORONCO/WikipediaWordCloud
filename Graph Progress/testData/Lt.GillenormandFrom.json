@@ -1,0 +1,23 @@
+{
+  "node": {
+    "id": "Lt.Gillenormand",
+    "group": 5
+  },
+  "links": [
+    {
+      "source": "Lt.Gillenormand",
+      "target": "Mlle.Gillenormand",
+      "value": 2
+    },
+    {
+      "source": "Lt.Gillenormand",
+      "target": "Gillenormand",
+      "value": 1
+    },
+    {
+      "source": "Lt.Gillenormand",
+      "target": "Cosette",
+      "value": 1
+    }
+  ]
+}

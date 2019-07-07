@@ -1,0 +1,28 @@
+{
+  "node": {
+    "id": "Judge",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Champmathieu",
+      "target": "Judge",
+      "value": 3
+    },
+    {
+      "source": "Brevet",
+      "target": "Judge",
+      "value": 2
+    },
+    {
+      "source": "Chenildieu",
+      "target": "Judge",
+      "value": 2
+    },
+    {
+      "source": "Cochepaille",
+      "target": "Judge",
+      "value": 2
+    }
+  ]
+}

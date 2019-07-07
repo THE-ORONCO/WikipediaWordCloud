@@ -1,0 +1,23 @@
+{
+  "node": {
+    "id": "Anzelma",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Anzelma",
+      "target": "Eponine",
+      "value": 2
+    },
+    {
+      "source": "Anzelma",
+      "target": "Thenardier",
+      "value": 2
+    },
+    {
+      "source": "Anzelma",
+      "target": "Mme.Thenardier",
+      "value": 1
+    }
+  ]
+}

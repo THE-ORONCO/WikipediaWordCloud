@@ -1,0 +1,13 @@
+{
+  "node": {
+    "id": "Montparnasse",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Brujon",
+      "target": "Montparnasse",
+      "value": 1
+    }
+  ]
+}

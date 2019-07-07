@@ -1,0 +1,58 @@
+{
+  "node": {
+    "id": "Myriel",
+    "group": 1
+  },
+  "links": [
+    {
+      "source": "Napoleon",
+      "target": "Myriel",
+      "value": 1
+    },
+    {
+      "source": "Mlle.Baptistine",
+      "target": "Myriel",
+      "value": 8
+    },
+    {
+      "source": "Mme.Magloire",
+      "target": "Myriel",
+      "value": 10
+    },
+    {
+      "source": "CountessdeLo",
+      "target": "Myriel",
+      "value": 1
+    },
+    {
+      "source": "Geborand",
+      "target": "Myriel",
+      "value": 1
+    },
+    {
+      "source": "Champtercier",
+      "target": "Myriel",
+      "value": 1
+    },
+    {
+      "source": "Cravatte",
+      "target": "Myriel",
+      "value": 1
+    },
+    {
+      "source": "Count",
+      "target": "Myriel",
+      "value": 2
+    },
+    {
+      "source": "OldMan",
+      "target": "Myriel",
+      "value": 1
+    },
+    {
+      "source": "Valjean",
+      "target": "Myriel",
+      "value": 5
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "node": {
+    "id": "Bahorel",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Bahorel",
+      "target": "Combeferre",
+      "value": 5
+    },
+    {
+      "source": "Bahorel",
+      "target": "Gavroche",
+      "value": 5
+    },
+    {
+      "source": "Bahorel",
+      "target": "Courfeyrac",
+      "value": 6
+    },
+    {
+      "source": "Bahorel",
+      "target": "Mabeuf",
+      "value": 2
+    },
+    {
+      "source": "Bahorel",
+      "target": "Enjolras",
+      "value": 4
+    },
+    {
+      "source": "Bahorel",
+      "target": "Feuilly",
+      "value": 3
+    },
+    {
+      "source": "Bahorel",
+      "target": "Prouvaire",
+      "value": 2
+    },
+    {
+      "source": "Bahorel",
+      "target": "Marius",
+      "value": 1
+    }
+  ]
+}

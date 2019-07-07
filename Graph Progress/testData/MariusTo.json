@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "Marius",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "BaronessT",
+      "target": "Marius",
+      "value": 1
+    },
+    {
+      "source": "Mabeuf",
+      "target": "Marius",
+      "value": 1
+    },
+    {
+      "source": "Enjolras",
+      "target": "Marius",
+      "value": 7
+    },
+    {
+      "source": "Combeferre",
+      "target": "Marius",
+      "value": 5
+    },
+    {
+      "source": "Feuilly",
+      "target": "Marius",
+      "value": 1
+    },
+    {
+      "source": "Courfeyrac",
+      "target": "Marius",
+      "value": 9
+    },
+    {
+      "source": "Bahorel",
+      "target": "Marius",
+      "value": 1
+    },
+    {
+      "source": "Bossuet",
+      "target": "Marius",
+      "value": 5
+    },
+    {
+      "source": "Joly",
+      "target": "Marius",
+      "value": 2
+    }
+  ]
+}

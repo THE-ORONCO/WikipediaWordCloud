@@ -1,0 +1,33 @@
+{
+  "node": {
+    "id": "Bamatabois",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Judge",
+      "target": "Bamatabois",
+      "value": 2
+    },
+    {
+      "source": "Champmathieu",
+      "target": "Bamatabois",
+      "value": 2
+    },
+    {
+      "source": "Brevet",
+      "target": "Bamatabois",
+      "value": 1
+    },
+    {
+      "source": "Chenildieu",
+      "target": "Bamatabois",
+      "value": 1
+    },
+    {
+      "source": "Cochepaille",
+      "target": "Bamatabois",
+      "value": 1
+    }
+  ]
+}

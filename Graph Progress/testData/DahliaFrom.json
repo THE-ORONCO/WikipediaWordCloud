@@ -1,0 +1,33 @@
+{
+  "node": {
+    "id": "Dahlia",
+    "group": 3
+  },
+  "links": [
+    {
+      "source": "Dahlia",
+      "target": "Tholomyes",
+      "value": 3
+    },
+    {
+      "source": "Dahlia",
+      "target": "Listolier",
+      "value": 3
+    },
+    {
+      "source": "Dahlia",
+      "target": "Fameuil",
+      "value": 3
+    },
+    {
+      "source": "Dahlia",
+      "target": "Blacheville",
+      "value": 3
+    },
+    {
+      "source": "Dahlia",
+      "target": "Favourite",
+      "value": 5
+    }
+  ]
+}

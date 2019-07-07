@@ -1,0 +1,23 @@
+{
+  "node": {
+    "id": "Bamatabois",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Bamatabois",
+      "target": "Fantine",
+      "value": 1
+    },
+    {
+      "source": "Bamatabois",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Bamatabois",
+      "target": "Valjean",
+      "value": 2
+    }
+  ]
+}

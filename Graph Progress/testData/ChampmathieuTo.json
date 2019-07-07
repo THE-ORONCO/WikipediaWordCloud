@@ -1,0 +1,23 @@
+{
+  "node": {
+    "id": "Champmathieu",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Brevet",
+      "target": "Champmathieu",
+      "value": 2
+    },
+    {
+      "source": "Chenildieu",
+      "target": "Champmathieu",
+      "value": 2
+    },
+    {
+      "source": "Cochepaille",
+      "target": "Champmathieu",
+      "value": 2
+    }
+  ]
+}

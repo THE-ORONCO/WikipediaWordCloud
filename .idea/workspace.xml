@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a9421ae8-5909-478b-90f9-dcf962ce8845" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/D3.js_Test/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D3.js_Test/loading json.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graph Progress/jquery-3.4.1.min.OnlyForTesting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graph Progress/testData/datageneratorhelper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graph Progress/testData/template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WikipediaWordCloudIntelliJ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WikipediaWordCloudIntelliJ.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/D3graph_v0.4_LabeledNodes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/D3graph_v0.5_CompatiblityWithIndex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_notWorkin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_v0.1_Dragable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_v0.1_LabledNodes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_v0.2_JsonFileCompatible.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_v0.3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_v0.3_Zooming.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_v0.4_LabledNodes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_v0.5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/loadJson/conversionTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/loadJson/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/loadJson/loadingJson.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/loadJson/myscript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progress/nodeStyling.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/UI/style.css" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Graph Progress/D3graph_v0.5_CompatibilityWithIndex.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="230" selection-start-line="230" selection-end-line="242" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!block;n#setSize#0" />
+                <element signature="n#!!block;n#convertLinkData#0" />
+                <element signature="n#!!block;n#dragstarted#0" />
+                <element signature="n#!!block;n#dragged#0" />
+                <element signature="n#!!block;n#dragended#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/D3.js_Test/loading json.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>link</find>
+      <find>-</find>
+      <find>force</find>
+      <find>.t</find>
+      <find>text</find>
+      <find>dragstarted</find>
+      <find>Apfel</find>
+      <find>restar</find>
+      <find>ticked</find>
+      <find>labels</find>
+      <find>dra</find>
+      <find>id</find>
+      <find>Napoleon</find>
+      <find>index</find>
+      <find>, &quot;group&quot;:</find>
+      <find>, &quot;value&quot;: 9</find>
+      <find>x</find>
+      <find>links</find>
+      <find>data(</find>
+      <find>node</find>
+      <find>label</find>
+      <find>class</find>
+      <find>console.</find>
+      <find>circle</find>
+      <find>drawingSpa</find>
+      <find>chartLayer</find>
+      <find>graph</find>
+      <find>myriel</find>
+      <find>mlle.bap</find>
+      <find>find</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Baum</replace>
+      <replace>Blatt</replace>
+      <replace>Wurm</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="THE_ORONCO &lt;theo.roncoletta@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="development" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MabeufTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MagnonFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MagnonTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MargueriteFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MargueriteTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MariusFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MariusTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mlle.BaptistineFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mlle.BaptistineTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mlle.GillenormandFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mlle.GillenormandTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mlle.VauboisFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mlle.VauboisTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mme.BurgonFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mme.BurgonTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mme.deRFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mme.deRTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mme.HucheloupFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mme.HucheloupTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mme.MagloireFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mme.MagloireTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mme.PontmercyFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mme.PontmercyTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mme.ThenardierFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/Mme.ThenardierTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MontparnasseFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MontparnasseTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MotherInnocentFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MotherInnocentTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MotherPlutarchFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MotherPlutarchTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MyrielFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/MyrielTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/NapoleonFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/NapoleonTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/OldManFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/OldManTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/PerpetueFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/PerpetueTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/PontmercyFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/PontmercyTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/ProuvaireFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/ProuvaireTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/ScaufflaireFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/ScaufflaireTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/SimpliceFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/SimpliceTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/ThenardierFrom.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/testData/ThenardierTo.json" />
+        <option value="$PROJECT_DIR$/Graph Progress/D3graph_v0.5_CompatibilityWithIndex.js" />
+        <option value="$PROJECT_DIR$/D3.js_Test/loading json.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="WikipediaWordCloudIntelliJ" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Git\WikipediaWordCloudIntelliJ" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="WikipediaWordCloudIntelliJ" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Git\WikipediaWordCloudIntelliJ" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="D3.js_Test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WikipediaWordCloudIntelliJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WikipediaWordCloudIntelliJ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WikipediaWordCloudIntelliJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WikipediaWordCloudIntelliJ" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph Progress" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Graph Progress/testData" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\WikipediaWordCloudIntelliJ\Graph Progress\testData" />
+      <recent name="D:\Git\WikipediaWordCloudIntelliJ\Graph Progress" />
+      <recent name="D:\Git\WikipediaWordCloudIntelliJ\UI" />
+      <recent name="D:\Git\WikipediaWordCloudIntelliJ\Progress" />
+      <recent name="D:\Git\WikipediaWordCloudIntelliJ\D3.js_Test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\WikipediaWordCloudIntelliJ\UI" />
+      <recent name="D:\Git\WikipediaWordCloudIntelliJ\Progress\loadJson" />
+      <recent name="D:\Git\WikipediaWordCloudIntelliJ\Progress" />
+      <recent name="D:\Git\WikipediaWordCloudIntelliJ\D3.js_Test\data\openingTest" />
+      <recent name="D:\Git\WikipediaWordCloudIntelliJ\D3.js_Test" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.loading json.html">
+    <configuration name="Frontpage_v0.5.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WikipediaWordCloudIntelliJ/Graph Progress/Frontpage_v0.5.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="datageneratorhelper.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WikipediaWordCloudIntelliJ/Graph Progress/testData/datageneratorhelper.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WikipediaWordCloudIntelliJ/UI/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="loading json.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WikipediaWordCloudIntelliJ/D3.js_Test/loading json.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="D3graph_v0.5_CompatibilityWithIndex.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Graph Progress/D3graph_v0.5_CompatibilityWithIndex.js" working-dir="$PROJECT_DIR$/Graph Progress">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.loading json.html" />
+        <item itemvalue="JavaScript Debug.datageneratorhelper.html" />
+        <item itemvalue="JavaScript Debug.Frontpage_v0.5.html (1)" />
+        <item itemvalue="Node.js.D3graph_v0.5_CompatibilityWithIndex.js" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9421ae8-5909-478b-90f9-dcf962ce8845" name="Default Changelist" comment="" />
+      <created>1559808062135</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559808062135</updated>
+      <workItem from="1559808065403" duration="725000" />
+      <workItem from="1560849285116" duration="1351000" />
+      <workItem from="1561360556753" duration="71892000" />
+      <workItem from="1562322154697" duration="12734000" />
+      <workItem from="1562338513728" duration="29697000" />
+      <workItem from="1562521747182" duration="1688000" />
+      <workItem from="1562523502611" duration="13621000" />
+    </task>
+    <task id="LOCAL-00001" summary="added a lot of different files.&#10;some with my own code, some with other peoples code, but all for d3.js testing purposes.&#10;if there are questions what specific code snippets do don't be afraid to ask">
+      <created>1562109085806</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562109085806</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added a lot of different files.&#10;some with my own code, some with other peoples code, but all for d3.js testing purposes.&#10;if there are questions what specific code snippets do don't be afraid to ask">
+      <created>1562320864250</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562320864251</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="131708000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2373512" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3296" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3296" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3296" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3984" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49925596" weight="0.1872" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50074404" side_tool="true" weight="0.2688" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added a lot of different files.&#10;some with my own code, some with other peoples code, but all for d3.js testing purposes.&#10;if there are questions what specific code snippets do don't be afraid to ask" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a lot of different files.&#10;some with my own code, some with other peoples code, but all for d3.js testing purposes.&#10;if there are questions what specific code snippets do don't be afraid to ask" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_d3js.org_d3.v4.js</url>
+          <line>1673</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MargueriteFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MargueriteTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MariusFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MariusTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mlle.BaptistineFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mlle.BaptistineTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mlle.GillenormandFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mlle.GillenormandTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mlle.VauboisFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mlle.VauboisTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.BurgonFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.BurgonTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.deRFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.deRTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.HucheloupFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.MagloireFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.PontmercyFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.ThenardierFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MontparnasseFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MontparnasseTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MotherInnocentFrom.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.ThenardierTo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.PontmercyTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.MagloireTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MotherInnocentTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.HucheloupTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MotherPlutarchFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MotherPlutarchTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MyrielFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MyrielTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/NapoleonFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/NapoleonTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/OldManFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/OldManTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/PerpetueFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/PerpetueTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/PontmercyFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/PontmercyTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/ProuvaireFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/SimpliceTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/ThenardierFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/ThenardierTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Woman2From.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/ValjeanTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/template.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/SimpliceFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/ScaufflaireTo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/ScaufflaireFrom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/ProuvaireTo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Progress/D3graph_v0.5_CompatibilityWithIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="230" selection-start-line="230" selection-end-line="242" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#setSize#0" />
+            <element signature="n#!!block;n#convertLinkData#0" />
+            <element signature="n#!!block;n#dragstarted#0" />
+            <element signature="n#!!block;n#dragged#0" />
+            <element signature="n#!!block;n#dragended#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3.js_Test/loading json.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.17964824" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

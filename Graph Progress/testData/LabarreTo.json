@@ -1,0 +1,13 @@
+{
+  "node": {
+    "id": "Labarre",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Valjean",
+      "target": "Labarre",
+      "value": 1
+    }
+  ]
+}

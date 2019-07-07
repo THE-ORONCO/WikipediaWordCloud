@@ -1,0 +1,23 @@
+{
+  "node": {
+    "id": "Thenardier",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Thenardier",
+      "target": "Mme.Thenardier",
+      "value": 13
+    },
+    {
+      "source": "Thenardier",
+      "target": "Fantine",
+      "value": 1
+    },
+    {
+      "source": "Thenardier",
+      "target": "Valjean",
+      "value": 12
+    }
+  ]
+}

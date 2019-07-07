@@ -1,0 +1,23 @@
+{
+  "node": {
+    "id": "Babet",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Claquesous",
+      "target": "Babet",
+      "value": 4
+    },
+    {
+      "source": "Montparnasse",
+      "target": "Babet",
+      "value": 2
+    },
+    {
+      "source": "Brujon",
+      "target": "Babet",
+      "value": 3
+    }
+  ]
+}

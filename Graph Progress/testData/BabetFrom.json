@@ -1,0 +1,43 @@
+{
+  "node": {
+    "id": "Babet",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Babet",
+      "target": "Thenardier",
+      "value": 6
+    },
+    {
+      "source": "Babet",
+      "target": "Gueulemer",
+      "value": 6
+    },
+    {
+      "source": "Babet",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Babet",
+      "target": "Mme.Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Babet",
+      "target": "Javert",
+      "value": 2
+    },
+    {
+      "source": "Babet",
+      "target": "Gavroche",
+      "value": 1
+    },
+    {
+      "source": "Babet",
+      "target": "Eponine",
+      "value": 1
+    }
+  ]
+}

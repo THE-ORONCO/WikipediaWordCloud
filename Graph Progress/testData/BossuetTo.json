@@ -1,0 +1,23 @@
+{
+  "node": {
+    "id": "Bossuet",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Joly",
+      "target": "Bossuet",
+      "value": 7
+    },
+    {
+      "source": "Grantaire",
+      "target": "Bossuet",
+      "value": 3
+    },
+    {
+      "source": "Mme.Hucheloup",
+      "target": "Bossuet",
+      "value": 1
+    }
+  ]
+}

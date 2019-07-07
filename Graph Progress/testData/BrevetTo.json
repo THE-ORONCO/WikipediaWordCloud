@@ -1,0 +1,18 @@
+{
+  "node": {
+    "id": "Brevet",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Chenildieu",
+      "target": "Brevet",
+      "value": 2
+    },
+    {
+      "source": "Cochepaille",
+      "target": "Brevet",
+      "value": 2
+    }
+  ]
+}

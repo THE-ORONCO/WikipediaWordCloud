@@ -1,0 +1,48 @@
+{
+  "node": {
+    "id": "Mabeuf",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Enjolras",
+      "target": "Mabeuf",
+      "value": 1
+    },
+    {
+      "source": "Combeferre",
+      "target": "Mabeuf",
+      "value": 2
+    },
+    {
+      "source": "Feuilly",
+      "target": "Mabeuf",
+      "value": 1
+    },
+    {
+      "source": "Courfeyrac",
+      "target": "Mabeuf",
+      "value": 2
+    },
+    {
+      "source": "Bahorel",
+      "target": "Mabeuf",
+      "value": 2
+    },
+    {
+      "source": "Bossuet",
+      "target": "Mabeuf",
+      "value": 1
+    },
+    {
+      "source": "Joly",
+      "target": "Mabeuf",
+      "value": 1
+    },
+    {
+      "source": "MotherPlutarch",
+      "target": "Mabeuf",
+      "value": 3
+    }
+  ]
+}

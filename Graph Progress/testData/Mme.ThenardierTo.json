@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "Mme.Thenardier",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Thenardier",
+      "target": "Mme.Thenardier",
+      "value": 13
+    },
+    {
+      "source": "Cosette",
+      "target": "Mme.Thenardier",
+      "value": 4
+    },
+    {
+      "source": "Javert",
+      "target": "Mme.Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Eponine",
+      "target": "Mme.Thenardier",
+      "value": 2
+    },
+    {
+      "source": "Anzelma",
+      "target": "Mme.Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Magnon",
+      "target": "Mme.Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Gueulemer",
+      "target": "Mme.Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Babet",
+      "target": "Mme.Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Claquesous",
+      "target": "Mme.Thenardier",
+      "value": 1
+    }
+  ]
+}

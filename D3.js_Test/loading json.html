@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JsonLoading</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+    console.log("möp");
+    var json = (function () {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'global': false,
+            'url': "./data/miserables.json",
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+    })();
+
+    console.log(json);
+
+    var temp = loadJsonData("../Graph Progress/testData/BossuetFrom.json");
+
+    //test fuction
+    function loadJsonData(path) {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'global': false,
+            'url': path,
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+    }
+
+    console.log(temp);
+
+
+</script>
+
+</body>
+</html>

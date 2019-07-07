@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "Fantine",
+    "group": 3
+  },
+  "links": [
+    {
+      "source": "Fantine",
+      "target": "Tholomyes",
+      "value": 3
+    },
+    {
+      "source": "Fantine",
+      "target": "Listolier",
+      "value": 3
+    },
+    {
+      "source": "Fantine",
+      "target": "Fameuil",
+      "value": 3
+    },
+    {
+      "source": "Fantine",
+      "target": "Blacheville",
+      "value": 3
+    },
+    {
+      "source": "Fantine",
+      "target": "Favourite",
+      "value": 4
+    },
+    {
+      "source": "Fantine",
+      "target": "Dahlia",
+      "value": 4
+    },
+    {
+      "source": "Fantine",
+      "target": "Zephine",
+      "value": 4
+    },
+    {
+      "source": "Fantine",
+      "target": "Marguerite",
+      "value": 2
+    },
+    {
+      "source": "Fantine",
+      "target": "Valjean",
+      "value": 9
+    }
+  ]
+}

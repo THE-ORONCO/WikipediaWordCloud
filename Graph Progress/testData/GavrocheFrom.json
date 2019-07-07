@@ -1,0 +1,28 @@
+{
+  "node": {
+    "id": "Gavroche",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Gavroche",
+      "target": "Mme.Burgon",
+      "value": 2
+    },
+    {
+      "source": "Gavroche",
+      "target": "Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Gavroche",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Gavroche",
+      "target": "Valjean",
+      "value": 1
+    }
+  ]
+}

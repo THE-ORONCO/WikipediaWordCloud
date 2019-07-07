@@ -1,0 +1,48 @@
+{
+  "node": {
+    "id": "Courfeyrac",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Courfeyrac",
+      "target": "Marius",
+      "value": 9
+    },
+    {
+      "source": "Courfeyrac",
+      "target": "Enjolras",
+      "value": 17
+    },
+    {
+      "source": "Courfeyrac",
+      "target": "Combeferre",
+      "value": 13
+    },
+    {
+      "source": "Courfeyrac",
+      "target": "Gavroche",
+      "value": 7
+    },
+    {
+      "source": "Courfeyrac",
+      "target": "Mabeuf",
+      "value": 2
+    },
+    {
+      "source": "Courfeyrac",
+      "target": "Eponine",
+      "value": 1
+    },
+    {
+      "source": "Courfeyrac",
+      "target": "Feuilly",
+      "value": 6
+    },
+    {
+      "source": "Courfeyrac",
+      "target": "Prouvaire",
+      "value": 3
+    }
+  ]
+}

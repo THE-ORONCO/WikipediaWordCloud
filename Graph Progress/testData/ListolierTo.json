@@ -1,0 +1,38 @@
+{
+  "node": {
+    "id": "Listolier",
+    "group": 3
+  },
+  "links": [
+    {
+      "source": "Fameuil",
+      "target": "Listolier",
+      "value": 4
+    },
+    {
+      "source": "Blacheville",
+      "target": "Listolier",
+      "value": 4
+    },
+    {
+      "source": "Favourite",
+      "target": "Listolier",
+      "value": 3
+    },
+    {
+      "source": "Dahlia",
+      "target": "Listolier",
+      "value": 3
+    },
+    {
+      "source": "Zephine",
+      "target": "Listolier",
+      "value": 3
+    },
+    {
+      "source": "Fantine",
+      "target": "Listolier",
+      "value": 3
+    }
+  ]
+}

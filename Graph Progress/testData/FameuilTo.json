@@ -1,0 +1,33 @@
+{
+  "node": {
+    "id": "Fameuil",
+    "group": 3
+  },
+  "links": [
+    {
+      "source": "Blacheville",
+      "target": "Fameuil",
+      "value": 4
+    },
+    {
+      "source": "Favourite",
+      "target": "Fameuil",
+      "value": 3
+    },
+    {
+      "source": "Dahlia",
+      "target": "Fameuil",
+      "value": 3
+    },
+    {
+      "source": "Zephine",
+      "target": "Fameuil",
+      "value": 3
+    },
+    {
+      "source": "Fantine",
+      "target": "Fameuil",
+      "value": 3
+    }
+  ]
+}

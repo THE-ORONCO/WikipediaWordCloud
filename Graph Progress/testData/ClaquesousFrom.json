@@ -1,0 +1,48 @@
+{
+  "node": {
+    "id": "Claquesous",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Claquesous",
+      "target": "Thenardier",
+      "value": 4
+    },
+    {
+      "source": "Claquesous",
+      "target": "Babet",
+      "value": 4
+    },
+    {
+      "source": "Claquesous",
+      "target": "Gueulemer",
+      "value": 4
+    },
+    {
+      "source": "Claquesous",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Claquesous",
+      "target": "Mme.Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Claquesous",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Claquesous",
+      "target": "Eponine",
+      "value": 1
+    },
+    {
+      "source": "Claquesous",
+      "target": "Enjolras",
+      "value": 1
+    }
+  ]
+}

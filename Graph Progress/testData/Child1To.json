@@ -1,0 +1,13 @@
+{
+  "node": {
+    "id": "Child1",
+    "group": 10
+  },
+  "links": [
+    {
+      "source": "Child2",
+      "target": "Child1",
+      "value": 3
+    }
+  ]
+}

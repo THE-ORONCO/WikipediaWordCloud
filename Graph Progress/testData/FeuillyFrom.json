@@ -1,0 +1,38 @@
+{
+  "node": {
+    "id": "Feuilly",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Feuilly",
+      "target": "Gavroche",
+      "value": 2
+    },
+    {
+      "source": "Feuilly",
+      "target": "Enjolras",
+      "value": 6
+    },
+    {
+      "source": "Feuilly",
+      "target": "Prouvaire",
+      "value": 2
+    },
+    {
+      "source": "Feuilly",
+      "target": "Combeferre",
+      "value": 5
+    },
+    {
+      "source": "Feuilly",
+      "target": "Mabeuf",
+      "value": 1
+    },
+    {
+      "source": "Feuilly",
+      "target": "Marius",
+      "value": 1
+    }
+  ]
+}

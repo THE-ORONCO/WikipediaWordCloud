@@ -1,0 +1,13 @@
+{
+  "node": {
+    "id": "Gribier",
+    "group": 0
+  },
+  "links": [
+    {
+      "source": "Gribier",
+      "target": "Fauchelevent",
+      "value": 2
+    }
+  ]
+}

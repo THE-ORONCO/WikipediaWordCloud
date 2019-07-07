@@ -1,0 +1,38 @@
+{
+  "node": {
+    "id": "Gueulemer",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Gueulemer",
+      "target": "Thenardier",
+      "value": 5
+    },
+    {
+      "source": "Gueulemer",
+      "target": "Valjean",
+      "value": 1
+    },
+    {
+      "source": "Gueulemer",
+      "target": "Mme.Thenardier",
+      "value": 1
+    },
+    {
+      "source": "Gueulemer",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Gueulemer",
+      "target": "Gavroche",
+      "value": 1
+    },
+    {
+      "source": "Gueulemer",
+      "target": "Eponine",
+      "value": 1
+    }
+  ]
+}

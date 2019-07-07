@@ -1,0 +1,68 @@
+{
+  "node": {
+    "id": "Javert",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Fauchelevent",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Bamatabois",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Simplice",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Woman1",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Woman2",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Gavroche",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Enjolras",
+      "target": "Javert",
+      "value": 6
+    },
+    {
+      "source": "Gueulemer",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Babet",
+      "target": "Javert",
+      "value": 2
+    },
+    {
+      "source": "Claquesous",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Montparnasse",
+      "target": "Javert",
+      "value": 1
+    },
+    {
+      "source": "Toussaint",
+      "target": "Javert",
+      "value": 1
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "node": {
+    "id": "Chenildieu",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Chenildieu",
+      "target": "Judge",
+      "value": 2
+    },
+    {
+      "source": "Chenildieu",
+      "target": "Champmathieu",
+      "value": 2
+    },
+    {
+      "source": "Chenildieu",
+      "target": "Brevet",
+      "value": 2
+    },
+    {
+      "source": "Chenildieu",
+      "target": "Valjean",
+      "value": 2
+    },
+    {
+      "source": "Chenildieu",
+      "target": "Bamatabois",
+      "value": 1
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "node": {
+    "id": "Favourite",
+    "group": 3
+  },
+  "links": [
+    {
+      "source": "Dahlia",
+      "target": "Favourite",
+      "value": 5
+    },
+    {
+      "source": "Zephine",
+      "target": "Favourite",
+      "value": 4
+    },
+    {
+      "source": "Fantine",
+      "target": "Favourite",
+      "value": 4
+    }
+  ]
+}

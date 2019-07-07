@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "Eponine",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Anzelma",
+      "target": "Eponine",
+      "value": 2
+    },
+    {
+      "source": "Marius",
+      "target": "Eponine",
+      "value": 5
+    },
+    {
+      "source": "Mabeuf",
+      "target": "Eponine",
+      "value": 1
+    },
+    {
+      "source": "Courfeyrac",
+      "target": "Eponine",
+      "value": 1
+    },
+    {
+      "source": "Gueulemer",
+      "target": "Eponine",
+      "value": 1
+    },
+    {
+      "source": "Babet",
+      "target": "Eponine",
+      "value": 1
+    },
+    {
+      "source": "Claquesous",
+      "target": "Eponine",
+      "value": 1
+    },
+    {
+      "source": "Montparnasse",
+      "target": "Eponine",
+      "value": 1
+    },
+    {
+      "source": "Brujon",
+      "target": "Eponine",
+      "value": 1
+    }
+  ]
+}

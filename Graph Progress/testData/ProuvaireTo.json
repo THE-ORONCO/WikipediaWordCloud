@@ -1,0 +1,38 @@
+{
+  "node": {
+    "id": "Prouvaire",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Feuilly",
+      "target": "Prouvaire",
+      "value": 2
+    },
+    {
+      "source": "Courfeyrac",
+      "target": "Prouvaire",
+      "value": 3
+    },
+    {
+      "source": "Bahorel",
+      "target": "Prouvaire",
+      "value": 2
+    },
+    {
+      "source": "Bossuet",
+      "target": "Prouvaire",
+      "value": 2
+    },
+    {
+      "source": "Joly",
+      "target": "Prouvaire",
+      "value": 2
+    },
+    {
+      "source": "Grantaire",
+      "target": "Prouvaire",
+      "value": 1
+    }
+  ]
+}

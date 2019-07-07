@@ -1,0 +1,58 @@
+{
+  "node": {
+    "id": "Bossuet",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Bossuet",
+      "target": "Marius",
+      "value": 5
+    },
+    {
+      "source": "Bossuet",
+      "target": "Courfeyrac",
+      "value": 12
+    },
+    {
+      "source": "Bossuet",
+      "target": "Gavroche",
+      "value": 5
+    },
+    {
+      "source": "Bossuet",
+      "target": "Bahorel",
+      "value": 4
+    },
+    {
+      "source": "Bossuet",
+      "target": "Enjolras",
+      "value": 10
+    },
+    {
+      "source": "Bossuet",
+      "target": "Feuilly",
+      "value": 6
+    },
+    {
+      "source": "Bossuet",
+      "target": "Prouvaire",
+      "value": 2
+    },
+    {
+      "source": "Bossuet",
+      "target": "Combeferre",
+      "value": 9
+    },
+    {
+      "source": "Bossuet",
+      "target": "Mabeuf",
+      "value": 1
+    },
+    {
+      "source": "Bossuet",
+      "target": "Valjean",
+      "value": 1
+    }
+  ]
+}

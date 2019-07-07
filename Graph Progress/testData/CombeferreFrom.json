@@ -1,0 +1,28 @@
+{
+  "node": {
+    "id": "Combeferre",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Combeferre",
+      "target": "Enjolras",
+      "value": 15
+    },
+    {
+      "source": "Combeferre",
+      "target": "Marius",
+      "value": 5
+    },
+    {
+      "source": "Combeferre",
+      "target": "Gavroche",
+      "value": 6
+    },
+    {
+      "source": "Combeferre",
+      "target": "Mabeuf",
+      "value": 2
+    }
+  ]
+}

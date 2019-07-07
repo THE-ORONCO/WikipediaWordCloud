@@ -1,0 +1,43 @@
+{
+  "node": {
+    "id": "Mme.Hucheloup",
+    "group": 8
+  },
+  "links": [
+    {
+      "source": "Mme.Hucheloup",
+      "target": "Bossuet",
+      "value": 1
+    },
+    {
+      "source": "Mme.Hucheloup",
+      "target": "Joly",
+      "value": 1
+    },
+    {
+      "source": "Mme.Hucheloup",
+      "target": "Grantaire",
+      "value": 1
+    },
+    {
+      "source": "Mme.Hucheloup",
+      "target": "Bahorel",
+      "value": 1
+    },
+    {
+      "source": "Mme.Hucheloup",
+      "target": "Courfeyrac",
+      "value": 1
+    },
+    {
+      "source": "Mme.Hucheloup",
+      "target": "Gavroche",
+      "value": 1
+    },
+    {
+      "source": "Mme.Hucheloup",
+      "target": "Enjolras",
+      "value": 1
+    }
+  ]
+}

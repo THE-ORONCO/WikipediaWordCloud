@@ -1,0 +1,13 @@
+{
+  "node": {
+    "id": "MotherPlutarch",
+    "group": 9
+  },
+  "links": [
+    {
+      "source": "MotherPlutarch",
+      "target": "Mabeuf",
+      "value": 3
+    }
+  ]
+}

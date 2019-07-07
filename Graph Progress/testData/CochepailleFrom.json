@@ -1,0 +1,38 @@
+{
+  "node": {
+    "id": "Cochepaille",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Cochepaille",
+      "target": "Judge",
+      "value": 2
+    },
+    {
+      "source": "Cochepaille",
+      "target": "Champmathieu",
+      "value": 2
+    },
+    {
+      "source": "Cochepaille",
+      "target": "Brevet",
+      "value": 2
+    },
+    {
+      "source": "Cochepaille",
+      "target": "Chenildieu",
+      "value": 2
+    },
+    {
+      "source": "Cochepaille",
+      "target": "Valjean",
+      "value": 2
+    },
+    {
+      "source": "Cochepaille",
+      "target": "Bamatabois",
+      "value": 1
+    }
+  ]
+}

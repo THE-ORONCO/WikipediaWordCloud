@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-3.4.1.min.OnlyForTesting.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var json = (function () {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'global': false,
+            'url': "../../D3.js_Test/data/miserables.json",
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+
+
+    })();
+
+    var tempFrom = "", tempTo = "", s, t, v, id, group, all = "";
+
+    for (i = 0; i < json.nodes.length; i++) {
+
+        id = json.nodes[i].id;
+        group = json.nodes[i].group;
+
+        for (j = 0; j < json.links.length; j++) {
+
+            s = json.links[j].source;
+            t = json.links[j].target;
+            v = json.links[j].value;
+
+
+            if (id === s)
+                tempFrom = tempFrom + '{"source" : "' + s + '", "target": "' + t + '", "value": ' + v + '},';
+
+            if (id === t)
+                tempTo = tempTo + '{"source" : "' + s + '", "target": "' + t + '", "value": ' + v + '},';
+        }
+
+        all = all + "QUE" + id + "From.jsonWHAT" + '{"node":{"id": "' + id + '", "group":' + group + '}, ' + '"links": [' + tempFrom + ']}'
+            + "QUE" + id + "To.jsonWHAT" + '{"node":{"id": "' + id + '", "group":' + group + '}, ' + '"links": [' + tempTo + ']}';
+
+        tempFrom = "";
+        tempTo = "";
+    }
+
+    console.log(all);
+    console.log(json.nodes.length);
+
+</script>
+
+</body>
+</html>

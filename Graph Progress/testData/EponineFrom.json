@@ -1,0 +1,18 @@
+{
+  "node": {
+    "id": "Eponine",
+    "group": 4
+  },
+  "links": [
+    {
+      "source": "Eponine",
+      "target": "Mme.Thenardier",
+      "value": 2
+    },
+    {
+      "source": "Eponine",
+      "target": "Thenardier",
+      "value": 3
+    }
+  ]
+}

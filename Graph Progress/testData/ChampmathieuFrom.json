@@ -1,0 +1,23 @@
+{
+  "node": {
+    "id": "Champmathieu",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Champmathieu",
+      "target": "Valjean",
+      "value": 3
+    },
+    {
+      "source": "Champmathieu",
+      "target": "Judge",
+      "value": 3
+    },
+    {
+      "source": "Champmathieu",
+      "target": "Bamatabois",
+      "value": 2
+    }
+  ]
+}

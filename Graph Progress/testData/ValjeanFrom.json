@@ -1,0 +1,28 @@
+{
+  "node": {
+    "id": "Valjean",
+    "group": 2
+  },
+  "links": [
+    {
+      "source": "Valjean",
+      "target": "Labarre",
+      "value": 1
+    },
+    {
+      "source": "Valjean",
+      "target": "Mme.Magloire",
+      "value": 3
+    },
+    {
+      "source": "Valjean",
+      "target": "Mlle.Baptistine",
+      "value": 3
+    },
+    {
+      "source": "Valjean",
+      "target": "Myriel",
+      "value": 5
+    }
+  ]
+}

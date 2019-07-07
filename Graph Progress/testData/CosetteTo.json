@@ -1,0 +1,43 @@
+{
+  "node": {
+    "id": "Cosette",
+    "group": 5
+  },
+  "links": [
+    {
+      "source": "Javert",
+      "target": "Cosette",
+      "value": 1
+    },
+    {
+      "source": "Woman2",
+      "target": "Cosette",
+      "value": 1
+    },
+    {
+      "source": "Gillenormand",
+      "target": "Cosette",
+      "value": 3
+    },
+    {
+      "source": "Mlle.Gillenormand",
+      "target": "Cosette",
+      "value": 2
+    },
+    {
+      "source": "Lt.Gillenormand",
+      "target": "Cosette",
+      "value": 1
+    },
+    {
+      "source": "Marius",
+      "target": "Cosette",
+      "value": 21
+    },
+    {
+      "source": "Toussaint",
+      "target": "Cosette",
+      "value": 2
+    }
+  ]
+}

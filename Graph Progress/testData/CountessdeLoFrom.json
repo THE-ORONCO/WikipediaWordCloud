@@ -1,0 +1,13 @@
+{
+  "node": {
+    "id": "CountessdeLo",
+    "group": 1
+  },
+  "links": [
+    {
+      "source": "CountessdeLo",
+      "target": "Myriel",
+      "value": 1
+    }
+  ]
+}

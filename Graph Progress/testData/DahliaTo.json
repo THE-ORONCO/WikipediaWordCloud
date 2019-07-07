@@ -1,0 +1,18 @@
+{
+  "node": {
+    "id": "Dahlia",
+    "group": 3
+  },
+  "links": [
+    {
+      "source": "Zephine",
+      "target": "Dahlia",
+      "value": 4
+    },
+    {
+      "source": "Fantine",
+      "target": "Dahlia",
+      "value": 4
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "node": {
+    "id": "Fameuil",
+    "group": 3
+  },
+  "links": [
+    {
+      "source": "Fameuil",
+      "target": "Tholomyes",
+      "value": 4
+    },
+    {
+      "source": "Fameuil",
+      "target": "Listolier",
+      "value": 4
+    }
+  ]
+}
