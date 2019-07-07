@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JSON>
-	<node>
-		<id>Mme.Pontmercy</id>
-		<group>5</group>
-	</node>
-	<links>
-		<source>Mme.Pontmercy</source>
-		<target>Mlle.Gillenormand</target>
-		<value>1</value>
-	</links>
-	<links>
-		<source>Mme.Pontmercy</source>
-		<target>Pontmercy</target>
-		<value>1</value>
-	</links>
+    <node>
+        <id>Mme.Pontmercy</id>
+        <group>5</group>
+    </node>
+    <links>
+        <source>Mme.Pontmercy</source>
+        <target>Mlle.Gillenormand</target>
+        <value>1</value>
+    </links>
+    <links>
+        <source>Mme.Pontmercy</source>
+        <target>Pontmercy</target>
+        <value>1</value>
+    </links>
 </JSON>

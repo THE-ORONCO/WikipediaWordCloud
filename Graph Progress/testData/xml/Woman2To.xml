@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JSON>
-	<node>
-		<id>Woman2</id>
-		<group>5</group>
-	</node>
-	<links/>
+    <node>
+        <id>Woman2</id>
+        <group>5</group>
+    </node>
+    <links/>
 </JSON>

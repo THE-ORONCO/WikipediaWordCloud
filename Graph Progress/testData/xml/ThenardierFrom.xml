@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JSON>
-	<node>
-		<id>Thenardier</id>
-		<group>4</group>
-	</node>
-	<links>
-		<source>Thenardier</source>
-		<target>Mme.Thenardier</target>
-		<value>13</value>
-	</links>
-	<links>
-		<source>Thenardier</source>
-		<target>Fantine</target>
-		<value>1</value>
-	</links>
-	<links>
-		<source>Thenardier</source>
-		<target>Valjean</target>
-		<value>12</value>
-	</links>
+    <node>
+        <id>Thenardier</id>
+        <group>4</group>
+    </node>
+    <links>
+        <source>Thenardier</source>
+        <target>Mme.Thenardier</target>
+        <value>13</value>
+    </links>
+    <links>
+        <source>Thenardier</source>
+        <target>Fantine</target>
+        <value>1</value>
+    </links>
+    <links>
+        <source>Thenardier</source>
+        <target>Valjean</target>
+        <value>12</value>
+    </links>
 </JSON>

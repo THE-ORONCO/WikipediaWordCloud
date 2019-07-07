@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JSON>
-	<node>
-		<id>Brevet</id>
-		<group>2</group>
-	</node>
-	<links>
-		<source>Chenildieu</source>
-		<target>Brevet</target>
-		<value>2</value>
-	</links>
-	<links>
-		<source>Cochepaille</source>
-		<target>Brevet</target>
-		<value>2</value>
-	</links>
+    <node>
+        <id>Brevet</id>
+        <group>2</group>
+    </node>
+    <links>
+        <source>Chenildieu</source>
+        <target>Brevet</target>
+        <value>2</value>
+    </links>
+    <links>
+        <source>Cochepaille</source>
+        <target>Brevet</target>
+        <value>2</value>
+    </links>
 </JSON>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JSON>
-	<node>
-		<id>Bossuet</id>
-		<group>8</group>
-	</node>
-	<links>
-		<source>Joly</source>
-		<target>Bossuet</target>
-		<value>7</value>
-	</links>
-	<links>
-		<source>Grantaire</source>
-		<target>Bossuet</target>
-		<value>3</value>
-	</links>
-	<links>
-		<source>Mme.Hucheloup</source>
-		<target>Bossuet</target>
-		<value>1</value>
-	</links>
+    <node>
+        <id>Bossuet</id>
+        <group>8</group>
+    </node>
+    <links>
+        <source>Joly</source>
+        <target>Bossuet</target>
+        <value>7</value>
+    </links>
+    <links>
+        <source>Grantaire</source>
+        <target>Bossuet</target>
+        <value>3</value>
+    </links>
+    <links>
+        <source>Mme.Hucheloup</source>
+        <target>Bossuet</target>
+        <value>1</value>
+    </links>
 </JSON>

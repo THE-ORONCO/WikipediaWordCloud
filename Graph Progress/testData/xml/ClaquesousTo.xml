@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JSON>
-	<node>
-		<id>Claquesous</id>
-		<group>4</group>
-	</node>
-	<links>
-		<source>Montparnasse</source>
-		<target>Claquesous</target>
-		<value>2</value>
-	</links>
-	<links>
-		<source>Brujon</source>
-		<target>Claquesous</target>
-		<value>1</value>
-	</links>
+    <node>
+        <id>Claquesous</id>
+        <group>4</group>
+    </node>
+    <links>
+        <source>Montparnasse</source>
+        <target>Claquesous</target>
+        <value>2</value>
+    </links>
+    <links>
+        <source>Brujon</source>
+        <target>Claquesous</target>
+        <value>1</value>
+    </links>
 </JSON>

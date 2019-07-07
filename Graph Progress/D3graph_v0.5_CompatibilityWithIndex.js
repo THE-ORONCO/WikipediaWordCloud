@@ -5,12 +5,15 @@ var svg = d3.select("#graphContainer").append("svg").attr("id", "drawingSpace"),
     chartWidth,
     chartHeight,
     margin,
-    color = d3.scaleOrdinal(d3.schemeCategory10);
+    color = d3.scaleOrdinal(d3.schemeCategory10),
+
+    path = "./testData/json";
 
 //set up variable drawing layer
 var chartLayer = svg.append("g").classed("chartLayer", true);
 
 setSize();
+
 function setSize() {
     width = document.querySelector("#graphContainer").clientWidth;
     height = document.querySelector("#graphContainer").clientHeight;
@@ -151,10 +154,26 @@ function restart() {
     link.exit()
         .transition()
         .attr("stroke-opacity", 0)
-        .attrTween("x1", function(d) { return function() { return d.source.x; }; })
-        .attrTween("x2", function(d) { return function() { return d.target.x; }; })
-        .attrTween("y1", function(d) { return function() { return d.source.y; }; })
-        .attrTween("y2", function(d) { return function() { return d.target.y; }; })
+        .attrTween("x1", function (d) {
+            return function () {
+                return d.source.x;
+            };
+        })
+        .attrTween("x2", function (d) {
+            return function () {
+                return d.target.x;
+            };
+        })
+        .attrTween("y1", function (d) {
+            return function () {
+                return d.source.y;
+            };
+        })
+        .attrTween("y2", function (d) {
+            return function () {
+                return d.target.y;
+            };
+        })
         .remove();
 
     //add all links that dont exist in the svg element
@@ -188,14 +207,14 @@ function ticked() {
         });
 
     node
-        .attr("transform", function(d){
-            return "translate(" + d.x + "," + d.y +")";
+        .attr("transform", function (d) {
+            return "translate(" + d.x + "," + d.y + ")";
         })
 
 
 }
 
-function click(d){
+function click(d) {
     console.log(d);
 }
 
@@ -227,13 +246,33 @@ document.getElementById('btnRenderNewNode').addEventListener('click', function (
 });
 
 
+//add a node
+function addNode(newNode) {
+    if (!node.find(n => n.id === newNode.id)) { //the node doesn't exist in node
+        node.push(newNode);
+    }
+    restart();
+}
+
+//add a link
+function addLink(newLink) {
+    if (!(link.find(n => (n.source === newLink.source && n.target === newLink.target)) === undefined) //link doesn't exist in link
+        && !(newLink.source === newLink.target)                                                       //link doesn't has the same node as his source and his target
+        && !(node.find(n => (n.id === newLink.source)) === undefined)                                 //link has a source in node
+        && !(node.find(n => (n.id === newLink.target)) === undefined)) {                              //link has a target in node
+
+        node.push(newLink);
+    }
+    restart();
+}
+
 //function for loading data | currently with local json
-function loadData(name) {
+function loadData(path, name) {
     var json = null;
     $.ajax({
         'async': false,
         'global': false,
-        'url': "./testData/" + name + ".json",
+        'url': path + name + ".json",
         'dataType': "json",
         'success': function (data) {
             json = data;

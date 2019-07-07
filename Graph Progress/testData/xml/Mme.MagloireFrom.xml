@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JSON>
-	<node>
-		<id>Mme.Magloire</id>
-		<group>1</group>
-	</node>
-	<links>
-		<source>Mme.Magloire</source>
-		<target>Myriel</target>
-		<value>10</value>
-	</links>
-	<links>
-		<source>Mme.Magloire</source>
-		<target>Mlle.Baptistine</target>
-		<value>6</value>
-	</links>
+    <node>
+        <id>Mme.Magloire</id>
+        <group>1</group>
+    </node>
+    <links>
+        <source>Mme.Magloire</source>
+        <target>Myriel</target>
+        <value>10</value>
+    </links>
+    <links>
+        <source>Mme.Magloire</source>
+        <target>Mlle.Baptistine</target>
+        <value>6</value>
+    </links>
 </JSON>

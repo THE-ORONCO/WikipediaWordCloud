@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JSON>
-	<node>
-		<id>Champmathieu</id>
-		<group>2</group>
-	</node>
-	<links>
-		<source>Brevet</source>
-		<target>Champmathieu</target>
-		<value>2</value>
-	</links>
-	<links>
-		<source>Chenildieu</source>
-		<target>Champmathieu</target>
-		<value>2</value>
-	</links>
-	<links>
-		<source>Cochepaille</source>
-		<target>Champmathieu</target>
-		<value>2</value>
-	</links>
+    <node>
+        <id>Champmathieu</id>
+        <group>2</group>
+    </node>
+    <links>
+        <source>Brevet</source>
+        <target>Champmathieu</target>
+        <value>2</value>
+    </links>
+    <links>
+        <source>Chenildieu</source>
+        <target>Champmathieu</target>
+        <value>2</value>
+    </links>
+    <links>
+        <source>Cochepaille</source>
+        <target>Champmathieu</target>
+        <value>2</value>
+    </links>
 </JSON>

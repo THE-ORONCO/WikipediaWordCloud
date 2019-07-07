@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JSON>
-	<node>
-		<id>Gribier</id>
-		<group>0</group>
-	</node>
-	<links>
-		<source>Gribier</source>
-		<target>Fauchelevent</target>
-		<value>2</value>
-	</links>
+    <node>
+        <id>Gribier</id>
+        <group>0</group>
+    </node>
+    <links>
+        <source>Gribier</source>
+        <target>Fauchelevent</target>
+        <value>2</value>
+    </links>
 </JSON>

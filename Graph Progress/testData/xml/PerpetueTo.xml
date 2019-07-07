@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JSON>
-	<node>
-		<id>Perpetue</id>
-		<group>3</group>
-	</node>
-	<links>
-		<source>Simplice</source>
-		<target>Perpetue</target>
-		<value>2</value>
-	</links>
+    <node>
+        <id>Perpetue</id>
+        <group>3</group>
+    </node>
+    <links>
+        <source>Simplice</source>
+        <target>Perpetue</target>
+        <value>2</value>
+    </links>
 </JSON>
