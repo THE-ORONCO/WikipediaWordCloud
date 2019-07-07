@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Champtercier</id>
+		<group>1</group>
+	</node>
+	<links>
+		<source>Champtercier</source>
+		<target>Myriel</target>
+		<value>1</value>
+	</links>
+</JSON>

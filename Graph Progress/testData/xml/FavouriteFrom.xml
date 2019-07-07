@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Favourite</id>
+		<group>3</group>
+	</node>
+	<links>
+		<source>Favourite</source>
+		<target>Tholomyes</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Favourite</source>
+		<target>Listolier</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Favourite</source>
+		<target>Fameuil</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Favourite</source>
+		<target>Blacheville</target>
+		<value>4</value>
+	</links>
+</JSON>

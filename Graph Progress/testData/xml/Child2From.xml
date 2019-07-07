@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Child2</id>
+		<group>10</group>
+	</node>
+	<links>
+		<source>Child2</source>
+		<target>Gavroche</target>
+		<value>2</value>
+	</links>
+	<links>
+		<source>Child2</source>
+		<target>Child1</target>
+		<value>3</value>
+	</links>
+</JSON>

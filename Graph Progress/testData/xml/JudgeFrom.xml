@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Judge</id>
+		<group>2</group>
+	</node>
+	<links>
+		<source>Judge</source>
+		<target>Valjean</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Judge</source>
+		<target>Bamatabois</target>
+		<value>2</value>
+	</links>
+</JSON>

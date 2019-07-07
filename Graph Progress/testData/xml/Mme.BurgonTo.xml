@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Mme.Burgon</id>
+		<group>7</group>
+	</node>
+	<links>
+		<source>Gavroche</source>
+		<target>Mme.Burgon</target>
+		<value>2</value>
+	</links>
+</JSON>

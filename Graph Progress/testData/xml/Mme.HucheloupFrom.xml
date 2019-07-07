@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Mme.Hucheloup</id>
+		<group>8</group>
+	</node>
+	<links>
+		<source>Mme.Hucheloup</source>
+		<target>Bossuet</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Mme.Hucheloup</source>
+		<target>Joly</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Mme.Hucheloup</source>
+		<target>Grantaire</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Mme.Hucheloup</source>
+		<target>Bahorel</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Mme.Hucheloup</source>
+		<target>Courfeyrac</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Mme.Hucheloup</source>
+		<target>Gavroche</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Mme.Hucheloup</source>
+		<target>Enjolras</target>
+		<value>1</value>
+	</links>
+</JSON>

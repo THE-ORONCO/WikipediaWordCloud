@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Gillenormand</id>
+		<group>5</group>
+	</node>
+	<links>
+		<source>Magnon</source>
+		<target>Gillenormand</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Mlle.Gillenormand</source>
+		<target>Gillenormand</target>
+		<value>9</value>
+	</links>
+	<links>
+		<source>Lt.Gillenormand</source>
+		<target>Gillenormand</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Marius</source>
+		<target>Gillenormand</target>
+		<value>12</value>
+	</links>
+	<links>
+		<source>BaronessT</source>
+		<target>Gillenormand</target>
+		<value>1</value>
+	</links>
+</JSON>

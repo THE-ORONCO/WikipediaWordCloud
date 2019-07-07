@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Eponine</id>
+		<group>4</group>
+	</node>
+	<links>
+		<source>Eponine</source>
+		<target>Mme.Thenardier</target>
+		<value>2</value>
+	</links>
+	<links>
+		<source>Eponine</source>
+		<target>Thenardier</target>
+		<value>3</value>
+	</links>
+</JSON>

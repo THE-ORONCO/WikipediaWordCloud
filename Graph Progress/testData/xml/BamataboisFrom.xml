@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Bamatabois</id>
+		<group>2</group>
+	</node>
+	<links>
+		<source>Bamatabois</source>
+		<target>Fantine</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Bamatabois</source>
+		<target>Javert</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Bamatabois</source>
+		<target>Valjean</target>
+		<value>2</value>
+	</links>
+</JSON>

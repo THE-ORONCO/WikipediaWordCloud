@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Dahlia</id>
+		<group>3</group>
+	</node>
+	<links>
+		<source>Dahlia</source>
+		<target>Tholomyes</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Dahlia</source>
+		<target>Listolier</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Dahlia</source>
+		<target>Fameuil</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Dahlia</source>
+		<target>Blacheville</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Dahlia</source>
+		<target>Favourite</target>
+		<value>5</value>
+	</links>
+</JSON>

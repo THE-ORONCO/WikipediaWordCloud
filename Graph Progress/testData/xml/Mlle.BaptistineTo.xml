@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Mlle.Baptistine</id>
+		<group>1</group>
+	</node>
+	<links>
+		<source>Mme.Magloire</source>
+		<target>Mlle.Baptistine</target>
+		<value>6</value>
+	</links>
+	<links>
+		<source>Valjean</source>
+		<target>Mlle.Baptistine</target>
+		<value>3</value>
+	</links>
+</JSON>

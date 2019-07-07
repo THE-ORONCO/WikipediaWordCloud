@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Prouvaire</id>
+		<group>8</group>
+	</node>
+	<links>
+		<source>Prouvaire</source>
+		<target>Gavroche</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Prouvaire</source>
+		<target>Enjolras</target>
+		<value>4</value>
+	</links>
+	<links>
+		<source>Prouvaire</source>
+		<target>Combeferre</target>
+		<value>2</value>
+	</links>
+</JSON>

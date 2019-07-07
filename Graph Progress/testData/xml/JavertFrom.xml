@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Javert</id>
+		<group>4</group>
+	</node>
+	<links>
+		<source>Javert</source>
+		<target>Valjean</target>
+		<value>17</value>
+	</links>
+	<links>
+		<source>Javert</source>
+		<target>Fantine</target>
+		<value>5</value>
+	</links>
+	<links>
+		<source>Javert</source>
+		<target>Thenardier</target>
+		<value>5</value>
+	</links>
+	<links>
+		<source>Javert</source>
+		<target>Mme.Thenardier</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Javert</source>
+		<target>Cosette</target>
+		<value>1</value>
+	</links>
+</JSON>

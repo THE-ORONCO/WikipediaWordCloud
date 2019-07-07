@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Zephine</id>
+		<group>3</group>
+	</node>
+	<links>
+		<source>Zephine</source>
+		<target>Tholomyes</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Zephine</source>
+		<target>Listolier</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Zephine</source>
+		<target>Fameuil</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Zephine</source>
+		<target>Blacheville</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Zephine</source>
+		<target>Favourite</target>
+		<value>4</value>
+	</links>
+	<links>
+		<source>Zephine</source>
+		<target>Dahlia</target>
+		<value>4</value>
+	</links>
+</JSON>

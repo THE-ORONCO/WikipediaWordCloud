@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>BaronessT</id>
+		<group>5</group>
+	</node>
+	<links>
+		<source>BaronessT</source>
+		<target>Gillenormand</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>BaronessT</source>
+		<target>Marius</target>
+		<value>1</value>
+	</links>
+</JSON>

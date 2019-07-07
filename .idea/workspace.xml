@@ -2,28 +2,163 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9421ae8-5909-478b-90f9-dcf962ce8845" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/D3.js_Test/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D3.js_Test/loading json.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graph Progress/jquery-3.4.1.min.OnlyForTesting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graph Progress/testData/datageneratorhelper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graph Progress/testData/template.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/WikipediaWordCloudIntelliJ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WikipediaWordCloudIntelliJ.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/D3graph_v0.4_LabeledNodes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/D3graph_v0.5_CompatiblityWithIndex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_notWorkin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_v0.1_Dragable.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_v0.1_LabledNodes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_v0.2_JsonFileCompatible.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_v0.3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_v0.3_Zooming.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_v0.4_LabledNodes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/Frontpage_v0.5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/loadJson/conversionTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/loadJson/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/loadJson/loadingJson.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/loadJson/myscript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress/nodeStyling.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/UI/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D3.js_Test/loading json.html" beforeDir="false" afterPath="$PROJECT_DIR$/D3.js_Test/loading json.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/AnzelmaFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/AnzelmaFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/AnzelmaTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/AnzelmaTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BabetFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BabetFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BabetTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BabetTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BahorelFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BahorelFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BahorelTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BahorelTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BamataboisFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BamataboisFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BamataboisTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BamataboisTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BaronessTFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BaronessTFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BaronessTTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BaronessTTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BlachevilleFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BlachevilleFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BlachevilleTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BlachevilleTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BossuetFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BossuetFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BossuetTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BossuetTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BoulatruelleFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BoulatruelleFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BoulatruelleTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BoulatruelleTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BrevetFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BrevetFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BrevetTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BrevetTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BrujonFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BrujonFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/BrujonTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/BrujonTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ChampmathieuFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ChampmathieuFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ChampmathieuTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ChampmathieuTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ChamptercierFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ChamptercierFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ChamptercierTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ChamptercierTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ChenildieuFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ChenildieuFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ChenildieuTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ChenildieuTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Child1From.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Child1From.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Child1To.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Child1To.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Child2From.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Child2From.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Child2To.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Child2To.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ClaquesousFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ClaquesousFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ClaquesousTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ClaquesousTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/CochepailleFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/CochepailleFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/CochepailleTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/CochepailleTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/CombeferreFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/CombeferreFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/CombeferreTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/CombeferreTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/CosetteFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/CosetteFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/CosetteTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/CosetteTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/CountFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/CountFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/CountTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/CountTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/CountessdeLoFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/CountessdeLoFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/CountessdeLoTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/CountessdeLoTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/CourfeyracFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/CourfeyracFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/CourfeyracTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/CourfeyracTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/CravatteFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/CravatteFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/CravatteTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/CravatteTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/DahliaFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/DahliaFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/DahliaTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/DahliaTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/EnjolrasFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/EnjolrasFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/EnjolrasTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/EnjolrasTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/EponineFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/EponineFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/EponineTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/EponineTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/FameuilFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/FameuilFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/FameuilTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/FameuilTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/FantineFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/FantineFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/FantineTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/FantineTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/FaucheleventFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/FaucheleventFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/FaucheleventTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/FaucheleventTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/FavouriteFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/FavouriteFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/FavouriteTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/FavouriteTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/FeuillyFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/FeuillyFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/FeuillyTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/FeuillyTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/GavrocheFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/GavrocheFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/GavrocheTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/GavrocheTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/GeborandFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/GeborandFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/GeborandTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/GeborandTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/GervaisFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/GervaisFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/GervaisTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/GervaisTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/GillenormandFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/GillenormandFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/GillenormandTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/GillenormandTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/GrantaireFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/GrantaireFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/GrantaireTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/GrantaireTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/GribierFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/GribierFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/GribierTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/GribierTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/GueulemerFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/GueulemerFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/GueulemerTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/GueulemerTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/IsabeauFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/IsabeauFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/IsabeauTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/IsabeauTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/JavertFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/JavertFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/JavertTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/JavertTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/JolyFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/JolyFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/JolyTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/JolyTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/JondretteFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/JondretteFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/JondretteTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/JondretteTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/JudgeFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/JudgeFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/JudgeTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/JudgeTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/LabarreFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/LabarreFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/LabarreTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/LabarreTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ListolierFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ListolierFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ListolierTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ListolierTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Lt.GillenormandFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Lt.GillenormandFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Lt.GillenormandTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Lt.GillenormandTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MabeufFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MabeufFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MabeufTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MabeufTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MagnonFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MagnonFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MagnonTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MagnonTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MargueriteFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MargueriteFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MargueriteTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MargueriteTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MariusFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MariusFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MariusTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MariusTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mlle.BaptistineFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mlle.BaptistineFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mlle.BaptistineTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mlle.BaptistineTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mlle.GillenormandFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mlle.GillenormandFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mlle.GillenormandTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mlle.GillenormandTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mlle.VauboisFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mlle.VauboisFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mlle.VauboisTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mlle.VauboisTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mme.BurgonFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mme.BurgonFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mme.BurgonTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mme.BurgonTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mme.HucheloupFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mme.HucheloupFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mme.HucheloupTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mme.HucheloupTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mme.MagloireFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mme.MagloireFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mme.MagloireTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mme.MagloireTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mme.PontmercyFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mme.PontmercyFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mme.PontmercyTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mme.PontmercyTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mme.ThenardierFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mme.ThenardierFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mme.ThenardierTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mme.ThenardierTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mme.deRFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mme.deRFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Mme.deRTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Mme.deRTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MontparnasseFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MontparnasseFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MontparnasseTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MontparnasseTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MotherInnocentFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MotherInnocentFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MotherInnocentTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MotherInnocentTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MotherPlutarchFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MotherPlutarchFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MotherPlutarchTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MotherPlutarchTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MyrielFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MyrielFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/MyrielTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/MyrielTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/NapoleonFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/NapoleonFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/NapoleonTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/NapoleonTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/OldManFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/OldManFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/OldManTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/OldManTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/PerpetueFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/PerpetueFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/PerpetueTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/PerpetueTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/PontmercyFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/PontmercyFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/PontmercyTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/PontmercyTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ProuvaireFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ProuvaireFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ProuvaireTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ProuvaireTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ScaufflaireFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ScaufflaireFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ScaufflaireTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ScaufflaireTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/SimpliceFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/SimpliceFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/SimpliceTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/SimpliceTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ThenardierFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ThenardierFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ThenardierTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ThenardierTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/TholomyesFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/TholomyesFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/TholomyesTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/TholomyesTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ToussaintFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ToussaintFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ToussaintTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ToussaintTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ValjeanFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ValjeanFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ValjeanTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ValjeanTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Woman1From.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Woman1From.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Woman1To.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Woman1To.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Woman2From.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Woman2From.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/Woman2To.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/Woman2To.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ZephineFrom.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ZephineFrom.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/ZephineTo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/ZephineTo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Progress/testData/template.json" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Progress/testData/json/template.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,8 +190,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/D3.js_Test/loading json.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="294">
+              <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -220,6 +355,12 @@
               <item name="WikipediaWordCloudIntelliJ" type="462c0819:PsiDirectoryNode" />
               <item name="Graph Progress" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="WikipediaWordCloudIntelliJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WikipediaWordCloudIntelliJ" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph Progress" type="462c0819:PsiDirectoryNode" />
+              <item name="testData" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -243,11 +384,11 @@
       <recent name="D:\Git\WikipediaWordCloudIntelliJ\D3.js_Test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\WikipediaWordCloudIntelliJ\Graph Progress\testData\json" />
       <recent name="D:\Git\WikipediaWordCloudIntelliJ\UI" />
       <recent name="D:\Git\WikipediaWordCloudIntelliJ\Progress\loadJson" />
       <recent name="D:\Git\WikipediaWordCloudIntelliJ\Progress" />
       <recent name="D:\Git\WikipediaWordCloudIntelliJ\D3.js_Test\data\openingTest" />
-      <recent name="D:\Git\WikipediaWordCloudIntelliJ\D3.js_Test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -304,7 +445,7 @@
       <workItem from="1562322154697" duration="12734000" />
       <workItem from="1562338513728" duration="29697000" />
       <workItem from="1562521747182" duration="1688000" />
-      <workItem from="1562523502611" duration="13621000" />
+      <workItem from="1562523502611" duration="14273000" />
     </task>
     <task id="LOCAL-00001" summary="added a lot of different files.&#10;some with my own code, some with other peoples code, but all for d3.js testing purposes.&#10;if there are questions what specific code snippets do don't be afraid to ask">
       <created>1562109085806</created>
@@ -324,7 +465,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131708000" />
+    <option name="totallyTimeSpent" value="132360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -368,159 +509,159 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MargueriteFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/MargueriteFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MargueriteTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/MargueriteTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MariusFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/MariusFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MariusTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/MariusTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mlle.BaptistineFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mlle.BaptistineFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mlle.BaptistineTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mlle.BaptistineTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mlle.GillenormandFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mlle.GillenormandFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mlle.GillenormandTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mlle.GillenormandTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mlle.VauboisFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mlle.VauboisFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mlle.VauboisTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mlle.VauboisTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.BurgonFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mme.BurgonFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.BurgonTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mme.BurgonTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.deRFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mme.deRFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.deRTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mme.deRTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.HucheloupFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mme.HucheloupFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.MagloireFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mme.MagloireFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.PontmercyFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mme.PontmercyFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.ThenardierFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mme.ThenardierFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MontparnasseFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/MontparnasseFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MontparnasseTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/MontparnasseTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MotherInnocentFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/MotherInnocentFrom.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.ThenardierTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mme.ThenardierTo.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.PontmercyTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mme.PontmercyTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.MagloireTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mme.MagloireTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MotherInnocentTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/MotherInnocentTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Mme.HucheloupTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Mme.HucheloupTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MotherPlutarchFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/MotherPlutarchFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MotherPlutarchTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/MotherPlutarchTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MyrielFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/MyrielFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/MyrielTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/MyrielTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/NapoleonFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/NapoleonFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/NapoleonTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/NapoleonTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/OldManFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/OldManFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/OldManTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/OldManTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/PerpetueFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/PerpetueFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/PerpetueTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/PerpetueTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/PontmercyFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/PontmercyFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/PontmercyTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/PontmercyTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/ProuvaireFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/ProuvaireFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/SimpliceTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/SimpliceTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/ThenardierFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/ThenardierFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/ThenardierTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/ThenardierTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/Woman2From.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/Woman2From.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/ValjeanTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/ValjeanTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/template.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/template.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/SimpliceFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/SimpliceFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/ScaufflaireTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/ScaufflaireTo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/ScaufflaireFrom.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/ScaufflaireFrom.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/ProuvaireTo.json">
+    <entry file="file://$PROJECT_DIR$/Graph Progress/testData/json/ProuvaireTo.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="1" />
@@ -543,8 +684,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/D3.js_Test/loading json.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="294">
+          <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
         </state>
       </provider>
     </entry>

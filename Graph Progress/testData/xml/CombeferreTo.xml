@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Combeferre</id>
+		<group>8</group>
+	</node>
+	<links>
+		<source>Prouvaire</source>
+		<target>Combeferre</target>
+		<value>2</value>
+	</links>
+	<links>
+		<source>Feuilly</source>
+		<target>Combeferre</target>
+		<value>5</value>
+	</links>
+	<links>
+		<source>Courfeyrac</source>
+		<target>Combeferre</target>
+		<value>13</value>
+	</links>
+	<links>
+		<source>Bahorel</source>
+		<target>Combeferre</target>
+		<value>5</value>
+	</links>
+	<links>
+		<source>Bossuet</source>
+		<target>Combeferre</target>
+		<value>9</value>
+	</links>
+	<links>
+		<source>Joly</source>
+		<target>Combeferre</target>
+		<value>5</value>
+	</links>
+	<links>
+		<source>Grantaire</source>
+		<target>Combeferre</target>
+		<value>1</value>
+	</links>
+</JSON>

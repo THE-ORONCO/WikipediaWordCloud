@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Prouvaire</id>
+		<group>8</group>
+	</node>
+	<links>
+		<source>Feuilly</source>
+		<target>Prouvaire</target>
+		<value>2</value>
+	</links>
+	<links>
+		<source>Courfeyrac</source>
+		<target>Prouvaire</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Bahorel</source>
+		<target>Prouvaire</target>
+		<value>2</value>
+	</links>
+	<links>
+		<source>Bossuet</source>
+		<target>Prouvaire</target>
+		<value>2</value>
+	</links>
+	<links>
+		<source>Joly</source>
+		<target>Prouvaire</target>
+		<value>2</value>
+	</links>
+	<links>
+		<source>Grantaire</source>
+		<target>Prouvaire</target>
+		<value>1</value>
+	</links>
+</JSON>

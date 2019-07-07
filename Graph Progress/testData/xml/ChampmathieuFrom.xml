@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Champmathieu</id>
+		<group>2</group>
+	</node>
+	<links>
+		<source>Champmathieu</source>
+		<target>Valjean</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Champmathieu</source>
+		<target>Judge</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Champmathieu</source>
+		<target>Bamatabois</target>
+		<value>2</value>
+	</links>
+</JSON>

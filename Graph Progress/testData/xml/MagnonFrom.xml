@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Magnon</id>
+		<group>5</group>
+	</node>
+	<links>
+		<source>Magnon</source>
+		<target>Gillenormand</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Magnon</source>
+		<target>Mme.Thenardier</target>
+		<value>1</value>
+	</links>
+</JSON>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Courfeyrac</id>
+		<group>8</group>
+	</node>
+	<links>
+		<source>Bahorel</source>
+		<target>Courfeyrac</target>
+		<value>6</value>
+	</links>
+	<links>
+		<source>Bossuet</source>
+		<target>Courfeyrac</target>
+		<value>12</value>
+	</links>
+	<links>
+		<source>Joly</source>
+		<target>Courfeyrac</target>
+		<value>5</value>
+	</links>
+	<links>
+		<source>Grantaire</source>
+		<target>Courfeyrac</target>
+		<value>2</value>
+	</links>
+	<links>
+		<source>Mme.Hucheloup</source>
+		<target>Courfeyrac</target>
+		<value>1</value>
+	</links>
+</JSON>

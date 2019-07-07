@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Woman2</id>
+		<group>5</group>
+	</node>
+	<links>
+		<source>Woman2</source>
+		<target>Valjean</target>
+		<value>3</value>
+	</links>
+	<links>
+		<source>Woman2</source>
+		<target>Cosette</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Woman2</source>
+		<target>Javert</target>
+		<value>1</value>
+	</links>
+</JSON>

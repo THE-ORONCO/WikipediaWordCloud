@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Pontmercy</id>
+		<group>4</group>
+	</node>
+	<links>
+		<source>Pontmercy</source>
+		<target>Thenardier</target>
+		<value>1</value>
+	</links>
+</JSON>

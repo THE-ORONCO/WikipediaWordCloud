@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+	<node>
+		<id>Courfeyrac</id>
+		<group>8</group>
+	</node>
+	<links>
+		<source>Courfeyrac</source>
+		<target>Marius</target>
+		<value>9</value>
+	</links>
+	<links>
+		<source>Courfeyrac</source>
+		<target>Enjolras</target>
+		<value>17</value>
+	</links>
+	<links>
+		<source>Courfeyrac</source>
+		<target>Combeferre</target>
+		<value>13</value>
+	</links>
+	<links>
+		<source>Courfeyrac</source>
+		<target>Gavroche</target>
+		<value>7</value>
+	</links>
+	<links>
+		<source>Courfeyrac</source>
+		<target>Mabeuf</target>
+		<value>2</value>
+	</links>
+	<links>
+		<source>Courfeyrac</source>
+		<target>Eponine</target>
+		<value>1</value>
+	</links>
+	<links>
+		<source>Courfeyrac</source>
+		<target>Feuilly</target>
+		<value>6</value>
+	</links>
+	<links>
+		<source>Courfeyrac</source>
+		<target>Prouvaire</target>
+		<value>3</value>
+	</links>
+</JSON>
