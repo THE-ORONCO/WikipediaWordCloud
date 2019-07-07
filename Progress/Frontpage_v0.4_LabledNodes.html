@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <title>WikiWordCloud</title>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <style>
+
+        .nodes, .links {
+            /*fill: transparent;*/
+            stroke: #777777;
+            stroke-width: 3px;
+        }
+
+        text {
+            font-family: Linux Libertine, Georgia, Times, serif; /*font stack is defined the same way it is in Wikipedia*/
+            font-size: 20px;
+            color: black;
+            stroke-width: 0px;
+            fill: black;
+        }
+
+    </style>
 </head>
 <body>
 <h1 id="title">WikiWordCloud</h1>
@@ -25,6 +43,18 @@
         color = d3.scaleOrdinal(d3.schemeCategory10);
 
     //temp data
+    var a = {id: "a"},
+        b = {id: "b"},
+        c = {id: "c"},
+        f = {id: "f"},
+        g = {id: "g"},
+        l_ab = {source: a, target: b},
+        l_bc = {source: b, target: c},
+        l_ca = {source: c, target: a},
+        l_fg = {source: f, target: g},
+        l_af = {source: a, target: f};
+
+
     var nodeData = [
             {id: "Myriel"},
             {id: "Napoleon"},
@@ -387,11 +417,11 @@
         .stop();
 
     //initializing the graph
-    var g = svg.append("g"),
-        link = g.append("g").attr("stroke", "#000").attr("stroke-width", 1.5).selectAll(".link"),
-        node = g.append("g").attr("stroke", "#fff").attr("stroke-width", 1.5).selectAll(".node");
+    var g = svg.append("g").attr("class", "graph"),
+        link = g.append("g").attr("class", "links").attr("stroke", "#000").attr("stroke-width", 1.5).selectAll(".link"),
+        node = g.append("g").attr("class", "nodes").selectAll(".node");
 
-    //adding zooming capabilities to the svg element via zoom_handler
+    //adding zooming capabilities to the svg element
     var zoom_handler = d3.zoom().on("zoom", zoom_actions);
     zoom_handler(svg);
 
@@ -416,18 +446,36 @@
             .remove();
 
         //add all nodes that don't exist in the svg element yet
-        node = node.enter().append("circle")
+        /*node = node.enter().append("circle")
             .attr("fill", function (d) {
                 return color(d.id);
             })
             .call(function (node) {
                 node.transition().attr("r", 8);
             })
-            .merge(node);
+            .merge(node);*/
 
 
+        var temp = node.enter().append("g");
 
-        //adding dragging capabilities to the nodes via drag_handler
+        circle = temp.append("circle")
+            .attr("fill", function (d) {
+                return color(d.id);
+            })
+            .call(function (node) {
+                node.transition().attr("r", 8);
+            });
+
+        labels = temp.append("text")
+            .text(function (d) {
+                return d.id;
+            })
+            .attr('x', 6)
+            .attr('y', 3);
+
+        node = node.merge(temp).attr("class", "node");
+
+        //adding dragging capabilities to the nodes
         var drag_handler = d3.drag()
             .on("start", dragstarted)
             .on("drag", dragged)
@@ -436,29 +484,30 @@
         drag_handler(node);
 
 
-        // Apply the general update pattern to the linkData
-        //assign link data to nodes
-        link = link.data(linkData, function (d) {
-            console.log(d.source);
-            return d.source + "-" + d.target;
-        });
+    // Apply the general update pattern to the linkData
+    //assign link data to nodes
+    link = link.data(linkData, function (d) {
+        console.log(d.source);
+        return d.source + "-" + d.target;
+    });
 
-        //remove all links without data
-        link.exit()
-        /*transition*/
-            .remove();
+    //remove all links without data
+    link.exit()
+    /*transition*/
+        .remove();
 
-        //add all links that dont exist in the svg element yet
-        link = link.enter().append("line")
-            .call(function (link) {
-                link.transition().attr("stroke-opacity", 1);
-            })
-            .merge(link);
+    //add all links that dont exist in the svg element yet
+    link = link.enter().append("line")
+        .call(function (link) {
+            link.transition().attr("stroke-opacity", 1);
+        })
+        .merge(link)
+        .attr("class", "link");
 
-        // Update and restart the simulation.
-        simulation.nodes(nodeData);
-        simulation.force("link").links(linkData);
-        simulation.alpha(1).restart();
+    // Update and restart the simulation.
+    simulation.nodes(nodeData);
+    simulation.force("link").links(linkData);
+    simulation.alpha(1).restart();
     }
 
     //define what happens on a tick of the simulation
@@ -495,6 +544,7 @@
 
     }
 
+    //test functions
     document.getElementById('btnRenderExisting3Node').addEventListener('click', function () {
         nodeData = [a, b, c];
         linkData = [l_ab, l_bc, l_ca];
