@@ -5,8 +5,8 @@ body {
   margin-block-end: 0px;
 }
 
-#graph {
-  background-color: darkgrey;
+#graphContainer {
+  background-color: white;
   position: fixed;
   right: 0px;
   width: 75%;
@@ -15,7 +15,7 @@ body {
 
 #sidebar {
   background-color: whitesmoke;
-  width: 25%;
+  width: 230px;
   height: 100%;
   position: fixed;
   text-align: center;
@@ -38,17 +38,20 @@ body {
 }
 
 #searchbar {
-  border: none;
+  border-color: grey;
+  border-radius: 3px;
+  border-width: 1px;
+  margin: 2.5%;
   display: table-cell;
   width: 80%;
   float: left;
   padding: 0px;
-  height: 100%;
-  font-size: 1.5vw;
+  height: 23px;
+  font-size: 20px;
 }
 
 #searchbar::placeholder {
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 #searchbar:focus {
@@ -59,7 +62,7 @@ body {
   float: right;
   border-radius: 0px;
   border: none;
-  background-color: teal;
+  background-color: whitesmoke;
   display: table-cell;
   width: 20%;
   height: 100%;
@@ -93,16 +96,16 @@ body {
 
 .nodes, .links {
   /*fill: transparent;*/
-  stroke: #777777;
+  stroke: lightgray;
   stroke-width: 3px;
 }
 
 text {
-  font-family: sans-serif;
+  font-family: Linux Libertine, Georgia, Times, serif; /*font stack is defined the same way it is in Wikipedia*/
   font-size: 20px;
-  color: white;
+  color: black;
   stroke-width: 0px;
-  fill: white;
+  fill: black;
 }
 
 #bottombar-container {
