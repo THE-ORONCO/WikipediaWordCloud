@@ -77,10 +77,18 @@ body {
   height: 2vw;
 }
 
+#checkbox-container {
+  height: 15vw;
+  display: table;
+  border-spacing: 0px;
+  width: 100%;
+  padding: 0px;
+}
+
 .checkboxes {
-  text-align: left;
-  margin-top: 0.5vw;
-  height: 2vw;
+  text-align: center;
+  vertical-align: bottom;
+  height: 5vw;
 }
 
 .nodes, .links {
