@@ -7,7 +7,7 @@ $res = $conn->query($sql)->fetch_all();
 if(!empty($res) AND $searchName != ""){
 	$xml = new XMLWriter();
 
-	$xml->openURI($pageName.".xml");
+	$xml->openURI($searchName.".xml");
 	$xml->startDocument();
 	$xml->setIndent(true);
 
@@ -25,7 +25,7 @@ if(!empty($res) AND $searchName != ""){
     		for($i=0; $i < count($res); $i++){
     		$xml->startElement('linkTo');
     		    $xml->startElement('target');
-    			    $xml->writeRaw(htmlspecialchars($res[$i][7], ENT_XML1));
+    			    $xml->writeRaw(htmlspecialchars($res[$i][6], ENT_XML1));
     			$xml->endElement();
     		$xml->endElement();
     		}

@@ -158,3 +158,22 @@ Version: '10.3.16-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribut
 2019-07-08 21:08:11 0 [Note] InnoDB: Buffer pool(s) load completed at 190708 21:08:11
 2019-07-08 21:08:11 0 [Note] Plugin 'FEEDBACK' is disabled.
 2019-07-08 21:08:11 0 [Note] Server socket created on IP: '::'.
+2019-07-08 22:47:22 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-07-08 22:47:22 0 [Note] InnoDB: Uses event mutexes
+2019-07-08 22:47:22 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-07-08 22:47:22 0 [Note] InnoDB: Number of pools: 1
+2019-07-08 22:47:22 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-07-08 22:47:22 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2019-07-08 22:47:22 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-07-08 22:47:22 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=2223853
+2019-07-08 22:47:23 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2019-07-08 22:47:23 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-07-08 22:47:23 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-07-08 22:47:23 0 [Note] InnoDB: Setting file '..\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-07-08 22:47:23 0 [Note] InnoDB: File '..\data\ibtmp1' size is now 12 MB.
+2019-07-08 22:47:23 0 [Note] InnoDB: Waiting for purge to start
+2019-07-08 22:47:23 0 [Note] InnoDB: 10.3.16 started; log sequence number 2223862; transaction id 1380
+2019-07-08 22:47:23 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\Kai\Documents\repositories\WikipediaWordCloud\xampp\mysql\data\ib_buffer_pool
+2019-07-08 22:47:23 0 [Note] Plugin 'FEEDBACK' is disabled.
+2019-07-08 22:47:23 0 [Note] InnoDB: Buffer pool(s) load completed at 190708 22:47:23
+2019-07-08 22:47:23 0 [Note] Server socket created on IP: '::'.

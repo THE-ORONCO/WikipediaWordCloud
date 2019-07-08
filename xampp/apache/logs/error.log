@@ -43,3 +43,14 @@ PHP Warning:  Cannot open '..\\php\\extras\\browscap.ini' for reading in Unknown
 PHP Warning:  Cannot open '..\\php\\extras\\browscap.ini' for reading in Unknown on line 0
 [Mon Jul 08 21:08:10.978542 2019] [mpm_winnt:notice] [pid 13640:tid 572] AH00354: Child: Starting 150 worker threads.
 [Mon Jul 08 21:23:58.386603 2019] [mpm_winnt:crit] [pid 13640:tid 572] AH02538: Child: Parent process exited abruptly. Child process is ending
+[Mon Jul 08 22:47:22.495410 2019] [core:warn] [pid 1216:tid 580] AH00098: pid file C:/Users/Kai/Documents/repositories/WikipediaWordCloud/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+PHP Warning:  Cannot open '..\\php\\extras\\browscap.ini' for reading in Unknown on line 0
+[Mon Jul 08 22:47:22.528390 2019] [mpm_winnt:notice] [pid 1216:tid 580] AH00455: Apache/2.4.39 (Win64) PHP/7.3.6 configured -- resuming normal operations
+[Mon Jul 08 22:47:22.528390 2019] [mpm_winnt:notice] [pid 1216:tid 580] AH00456: Apache Lounge VC15 Server built: May 29 2019 11:22:50
+[Mon Jul 08 22:47:22.528390 2019] [core:notice] [pid 1216:tid 580] AH00094: Command line: 'c:\\users\\kai\\documents\\repositories\\wikipediawordcloud\\xampp\\apache\\bin\\httpd.exe -d C:/Users/Kai/Documents/repositories/WikipediaWordCloud/xampp/apache'
+[Mon Jul 08 22:47:22.545379 2019] [mpm_winnt:notice] [pid 1216:tid 580] AH00418: Parent: Created child process 204
+PHP Warning:  Cannot open '..\\php\\extras\\browscap.ini' for reading in Unknown on line 0
+[Mon Jul 08 22:47:23.282452 2019] [mpm_winnt:notice] [pid 204:tid 644] AH00354: Child: Starting 150 worker threads.
+[Mon Jul 08 22:48:07.518228 2019] [php7:notice] [pid 204:tid 1800] [client ::1:57642] PHP Notice:  Unknown: file created in the system's temporary directory in Unknown on line 0
+[Mon Jul 08 22:48:34.794794 2019] [php7:notice] [pid 204:tid 1824] [client ::1:57671] PHP Notice:  Unknown: file created in the system's temporary directory in Unknown on line 0
+[Mon Jul 08 22:48:59.722050 2019] [mpm_winnt:crit] [pid 204:tid 644] AH02538: Child: Parent process exited abruptly. Child process is ending

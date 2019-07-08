@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <wiki>
- <pageName>Bill Gates</pageName>
- <pageID>3747</pageID>
- <pageViews>22954468</pageViews>
+ <pageName>3747</pageName>
+ <pageID>22954468</pageID>
+ <pageViews>3468</pageViews>
  <linkTos>
   <linkTo>
    <target>.NET Foundation</target>
@@ -108,6 +108,9 @@
   </linkTo>
   <linkTo>
    <target>AltspaceVR</target>
+  </linkTo>
+  <linkTo>
+   <target>Alzheimer's disease</target>
   </linkTo>
   <linkTo>
    <target>Amancio Ortega</target>
@@ -365,6 +368,12 @@
    <target>Bill Clinton</target>
   </linkTo>
   <linkTo>
+   <target>Bill Gates' flower fly</target>
+  </linkTo>
+  <linkTo>
+   <target>Bill Gates's house</target>
+  </linkTo>
+  <linkTo>
    <target>Bill Gates (disambiguation)</target>
   </linkTo>
   <linkTo>
@@ -408,6 +417,9 @@
   </linkTo>
   <linkTo>
    <target>Bono</target>
+  </linkTo>
+  <linkTo>
+   <target>Borsheim's Fine Jewelry</target>
   </linkTo>
   <linkTo>
    <target>Bower Award for Business Leadership</target>
@@ -1304,6 +1316,9 @@
    <target>Hungarian Revolution of 1956</target>
   </linkTo>
   <linkTo>
+   <target>I'm a PC</target>
+  </linkTo>
+  <linkTo>
    <target>I. King Jordan</target>
   </linkTo>
   <linkTo>
@@ -1488,21 +1503,6 @@
   </linkTo>
   <linkTo>
    <target>Jessica Singer</target>
-  </linkTo>
-  <linkTo>
-   <target>.NET Foundation</target>
-  </linkTo>
-  <linkTo>
-   <target>86-DOS</target>
-  </linkTo>
-  <linkTo>
-   <target>A&amp;E Television Networks</target>
-  </linkTo>
-  <linkTo>
-   <target>A. R. Rahman</target>
-  </linkTo>
-  <linkTo>
-   <target>A. Sivathanu Pillai</target>
   </linkTo>
  </linkTos>
 </wiki>

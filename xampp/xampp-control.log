@@ -853,3 +853,31 @@
 21:23:59  [main] 	Deinitializing Modules
 21:23:59  [main] 	Deinitializing Control Panel
 
+22:47:20  [main] 	Initializing Control Panel
+22:47:20  [main] 	Windows Version:  Home  64-bit
+22:47:20  [main] 	XAMPP Version: 7.3.6
+22:47:20  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+22:47:20  [main] 	You are not running with administrator rights! This will work for
+22:47:20  [main] 	most application stuff but whenever you do something with services
+22:47:20  [main] 	there will be a security dialogue or things will break! So think 
+22:47:20  [main] 	about running this application with administrator rights!
+22:47:20  [main] 	XAMPP Installation Directory: "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\"
+22:47:20  [main] 	Checking for prerequisites
+22:47:20  [main] 	All prerequisites found
+22:47:20  [main] 	Initializing Modules
+22:47:20  [main] 	The FileZilla module is disabled
+22:47:20  [main] 	The Mercury module is disabled
+22:47:20  [main] 	Starting Check-Timer
+22:47:20  [main] 	Control Panel Ready
+22:47:21  [Apache] 	Attempting to start Apache app...
+22:47:22  [Apache] 	Status change detected: running
+22:47:22  [mysql] 	Attempting to start MySQL app...
+22:47:22  [mysql] 	Status change detected: running
+22:48:59  [Apache] 	Attempting to stop Apache (PID: 1216)
+22:48:59  [Apache] 	Attempting to stop Apache (PID: 204)
+22:48:59  [Apache] 	Status change detected: stopped
+22:49:00  [mysql] 	Attempting to stop MySQL app...
+22:49:00  [mysql] 	Status change detected: stopped
+22:49:01  [main] 	Deinitializing Modules
+22:49:01  [main] 	Deinitializing Control Panel
+
