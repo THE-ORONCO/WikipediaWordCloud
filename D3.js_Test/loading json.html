@@ -8,42 +8,50 @@
 <body>
 
 <script type="text/javascript">
-    console.log("möp");
-    var json = (function () {
-        var json = null;
-        $.ajax({
-            'async': false,
-            'global': false,
-            'url': "./data/miserables.json",
-            'dataType': "json",
-            'success': function (data) {
-                json = data;
-            }
-        });
-        return json;
-    })();
+    /*  console.log("möp");
+      var json = (function () {
+          var json = null;
+          $.ajax({
+              'async': false,
+              'global': false,
+              'url': "./data/miserables.json",
+              'dataType': "json",
+              'success': function (data) {
+                  json = data;
+              }
+          });
+          return json;
+      })();
 
-    console.log(json);
+      console.log(json);*/
 
-    var temp = loadJsonData("../Graph Progress/testData/json/BossuetFrom.json");
+       var temp = loadJsonData("localhost/xsl");
 
-    //test fuction
-    function loadJsonData(path) {
-        var json = null;
-        $.ajax({
-            'async': false,
-            'global': false,
-            'url': path,
-            'dataType': "json",
-            'success': function (data) {
-                json = data;
-            }
-        });
-        return json;
-    }
+       //test fuction
+       function loadJsonData(path) {
+           var json = null;
+           $.ajax({
+               'async': true,
+               'global': false,
+               'url': path,
+               'dataType': "text",
+               'success': function (data) {
+                   json = data;
+               }
+           });
+           return json;
+       }
 
-    console.log(temp);
+       console.log(temp);
 
+
+   /* var temp;
+    jQuery.get('localhost/Bill%20Gates.xml', function (data) {
+        temp = data;
+        console.log(data);
+    });
+
+    console.log(temp);*/
 
 </script>
 
