@@ -7,19 +7,19 @@ $res = $conn->query($sql)->fetch_all();
 if(!empty($res) AND $searchName != ""){
 	$xml = new XMLWriter();
 
-	$xml->openURI($searchName.".xml");
+	$xml->openURI($res[0][0].".xml");
 	$xml->startDocument();
 	$xml->setIndent(true);
 
 	$xml->startElement('wiki');
 		$xml->startElement('pageName');
-			$xml->writeRaw(htmlspecialchars($res[0][1], ENT_XML1));
+			$xml->writeRaw(htmlspecialchars($res[0][0], ENT_XML1));
 		$xml->endElement();
 		$xml->startElement('pageID');
-			$xml->writeRaw($res[0][2]);
+			$xml->writeRaw($res[0][1]);
 		$xml->endElement();
 		$xml->startElement('pageViews');
-			$xml->writeRaw($res[0][3]);
+			$xml->writeRaw($res[0][2]);
 		$xml->endElement();
 		$xml->startElement('linkTos');
     		for($i=0; $i < count($res); $i++){
