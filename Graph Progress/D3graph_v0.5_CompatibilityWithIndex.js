@@ -35,7 +35,7 @@ function setSize() {
 
 }
 
-//loading test data via jquery until the xml request to json converter thingy is finished
+// loading test data via jquery until the xml request to json converter thingy is finished
 var data = (function () {
     var json = null;
     $.ajax({
@@ -66,18 +66,35 @@ function convertLinkData() {
     });
 }
 
-convertLinkData();
+convertLinkData()
+
+// var a = {id: "a"},
+//     b = {id: "b"},
+//     c = {id: "c"},
+//     f = {id: "f"},
+//     g = {id: "g"},
+//     nodeData = [a, b, c, f, g],
+//     l_ab = {source: a, target: b},
+//     l_bc = {source: b, target: c},
+//     l_ca = {source: c, target: a},
+//     l_fg = {source: f, target: g},
+//     l_af = {source: a, target: f},
+//     linkData = [l_ab, l_bc, l_ca, l_fg, l_af];
 
 var id = 0;
 
 //defining what forces act on the different elements
 var simulation = d3.forceSimulation(nodeData)
-    .force('charge', d3.forceManyBody().strength(-200))
-    .force('link', d3.forceLink())
-    .force('center', d3.forceCenter(width / 2, height / 2))
+    // .force('charge', d3.forceManyBody())
+    .force('charge', d3.forceManyBody().strength(-150))
+    // .force('link', d3.forceLink())
+    .force("link", d3.forceLink().id(function(d) { return d.id; }).strength(0.1))
+    .force("collide",d3.forceCollide( function(d){return 30 }).iterations(16))
+    // .force('center', d3.forceCenter(width / 2, height / 2))
     .alphaTarget(1)
     .on("tick", ticked)
-    .stop();
+    // .stop()
+;
 
 //initializing the graph
 var g = svg.append("g").attr("class", "graph"),
@@ -118,7 +135,7 @@ function restart() {
             return color(d.group);
         })
         .call(function (node) {
-            node.transition().attr("r", 8);
+            node.transition().attr("r", 20);
         })
         .on("click", click);
 
@@ -215,7 +232,26 @@ function ticked() {
 }
 
 function click(d) {
-    console.log(d);
+    console.log(linkData);
+    for (var i = linkData.length-1; i > -1; i--) {
+        if ((linkData[i].source === d) || (linkData[i].target === d)) {
+            linkData.splice(i, 1);
+            // linkData[i]= undefined;
+        }
+        console.log(linkData);
+        // console.log("Link: " + linkData[i].source.id + " to " + linkData[i].target.id);
+    }
+    //
+    for (var i = 0; i < nodeData.length; i++) {
+        if (nodeData[i] === d) {
+            console.log("removed Node: " + nodeData[i].id);
+            nodeData.splice(i, 1);
+        }
+    }
+    // console.log(d);
+    // nodeData = [a, b, c];
+    // linkData = [l_ab, l_bc, l_ca];
+    restart();
 }
 
 //test functions
