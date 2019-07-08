@@ -338,10 +338,10 @@
    <target>BgC3</target>
   </linkTo>
   <linkTo>
-   <target>Biblioteca Nacional de EspaÃ±a</target>
+   <target>Biblioteca Nacional de España</target>
   </linkTo>
   <linkTo>
-   <target>BibliothÃ¨que nationale de France</target>
+   <target>Bibliothèque nationale de France</target>
   </linkTo>
   <linkTo>
    <target>Big Bang</target>
@@ -719,7 +719,7 @@
    <target>Cyrus R. Vance</target>
   </linkTo>
   <linkTo>
-   <target>CÃ©sar Cernuda</target>
+   <target>César Cernuda</target>
   </linkTo>
   <linkTo>
    <target>D. Nageshwar Reddy</target>
@@ -830,7 +830,7 @@
    <target>Dhirubhai Thaker</target>
   </linkTo>
   <linkTo>
-   <target>Diario Oficial de la FederaciÃ³n</target>
+   <target>Diario Oficial de la Federación</target>
   </linkTo>
   <linkTo>
    <target>Dick Cheney</target>
@@ -944,7 +944,7 @@
    <target>Embassy of France, Washington, D.C.</target>
   </linkTo>
   <linkTo>
-   <target>Emilio SegrÃ¨</target>
+   <target>Emilio Segrè</target>
   </linkTo>
   <linkTo>
    <target>Emma Lindle</target>
@@ -1055,7 +1055,7 @@
    <target>Franklin D. Roosevelt</target>
   </linkTo>
   <linkTo>
-   <target>FranÃ§ois Hollande</target>
+   <target>François Hollande</target>
   </linkTo>
   <linkTo>
    <target>Fred Jackson (American football)</target>
@@ -1488,6 +1488,21 @@
   </linkTo>
   <linkTo>
    <target>Jessica Singer</target>
+  </linkTo>
+  <linkTo>
+   <target>.NET Foundation</target>
+  </linkTo>
+  <linkTo>
+   <target>86-DOS</target>
+  </linkTo>
+  <linkTo>
+   <target>A&amp;E Television Networks</target>
+  </linkTo>
+  <linkTo>
+   <target>A. R. Rahman</target>
+  </linkTo>
+  <linkTo>
+   <target>A. Sivathanu Pillai</target>
   </linkTo>
  </linkTos>
 </wiki>
