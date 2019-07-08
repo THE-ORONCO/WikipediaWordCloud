@@ -11,3 +11,11 @@ PHP Warning:  Cannot open '..\\php\\extras\\browscap.ini' for reading in Unknown
 [Mon Jul 08 18:42:13.677582 2019] [php7:warn] [pid 6348:tid 1824] [client 127.0.0.1:52499] PHP Warning:  Cannot modify header information - headers already sent in Unknown on line 0
 [Mon Jul 08 18:46:50.015078 2019] [php7:notice] [pid 6348:tid 1820] [client 127.0.0.1:52551] PHP Notice:  Unknown: file created in the system's temporary directory in Unknown on line 0
 [Mon Jul 08 18:46:50.017190 2019] [php7:warn] [pid 6348:tid 1820] [client 127.0.0.1:52551] PHP Warning:  Cannot modify header information - headers already sent in Unknown on line 0
+[Mon Jul 08 18:58:13.006364 2019] [core:warn] [pid 8404:tid 560] AH00098: pid file C:/Users/Kai/Documents/repositories/WikipediaWordCloud/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+PHP Warning:  Cannot open '..\\php\\extras\\browscap.ini' for reading in Unknown on line 0
+[Mon Jul 08 18:58:13.226228 2019] [mpm_winnt:notice] [pid 8404:tid 560] AH00455: Apache/2.4.39 (Win64) PHP/7.3.6 configured -- resuming normal operations
+[Mon Jul 08 18:58:13.226228 2019] [mpm_winnt:notice] [pid 8404:tid 560] AH00456: Apache Lounge VC15 Server built: May 29 2019 11:22:50
+[Mon Jul 08 18:58:13.226228 2019] [core:notice] [pid 8404:tid 560] AH00094: Command line: 'c:\\users\\kai\\documents\\repositories\\wikipediawordcloud\\xampp\\apache\\bin\\httpd.exe -d C:/Users/Kai/Documents/repositories/WikipediaWordCloud/xampp/apache'
+[Mon Jul 08 18:58:13.254210 2019] [mpm_winnt:notice] [pid 8404:tid 560] AH00418: Parent: Created child process 9236
+PHP Warning:  Cannot open '..\\php\\extras\\browscap.ini' for reading in Unknown on line 0
+[Mon Jul 08 18:58:13.910889 2019] [mpm_winnt:notice] [pid 9236:tid 632] AH00354: Child: Starting 150 worker threads.

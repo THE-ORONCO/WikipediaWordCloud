@@ -738,3 +738,57 @@
 09:54:50  [main] 	Deinitializing Modules
 09:54:50  [main] 	Deinitializing Control Panel
 
+18:57:41  [main] 	Initializing Control Panel
+18:57:41  [main] 	Windows Version:  Home  64-bit
+18:57:41  [main] 	XAMPP Version: 7.3.6
+18:57:41  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+18:57:41  [main] 	You are not running with administrator rights! This will work for
+18:57:41  [main] 	most application stuff but whenever you do something with services
+18:57:41  [main] 	there will be a security dialogue or things will break! So think 
+18:57:41  [main] 	about running this application with administrator rights!
+18:57:41  [main] 	XAMPP Installation Directory: "c:\users\kai\documents\repositories\wikipediawordcloud\xampp\"
+18:57:41  [main] 	Checking for prerequisites
+18:57:42  [main] 	All prerequisites found
+18:57:42  [main] 	Initializing Modules
+18:57:42  [Apache] 	Problem detected!
+18:57:42  [Apache] 	Port 80 in use by "C:\xampp\apache\bin\httpd.exe" with PID 512!
+18:57:42  [Apache] 	Apache WILL NOT start without the configured ports free!
+18:57:42  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+18:57:42  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+18:57:42  [Apache] 	Problem detected!
+18:57:42  [Apache] 	Port 443 in use by "C:\xampp\apache\bin\httpd.exe" with PID 512!
+18:57:42  [Apache] 	Apache WILL NOT start without the configured ports free!
+18:57:42  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+18:57:42  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+18:57:42  [mysql] 	Problem detected!
+18:57:42  [mysql] 	Port 3306 in use by "C:\xampp\mysql\bin\mysqld.exe"!
+18:57:42  [mysql] 	MySQL WILL NOT start without the configured ports free!
+18:57:42  [mysql] 	You need to uninstall/disable/reconfigure the blocking application
+18:57:42  [mysql] 	or reconfigure MySQL and the Control Panel to listen on a different port
+18:57:42  [main] 	The FileZilla module is disabled
+18:57:42  [main] 	The Mercury module is disabled
+18:57:42  [main] 	Starting Check-Timer
+18:57:42  [main] 	Control Panel Ready
+18:57:44  [Apache] 	Problem detected!
+18:57:44  [Apache] 	Port 80 in use by "C:\xampp\apache\bin\httpd.exe" with PID 512!
+18:57:44  [Apache] 	Apache WILL NOT start without the configured ports free!
+18:57:44  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+18:57:44  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+18:57:44  [Apache] 	Problem detected!
+18:57:44  [Apache] 	Port 443 in use by "C:\xampp\apache\bin\httpd.exe" with PID 512!
+18:57:44  [Apache] 	Apache WILL NOT start without the configured ports free!
+18:57:44  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+18:57:44  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+18:57:44  [Apache] 	Attempting to start Apache app...
+18:57:44  [Apache] 	Status change detected: running
+18:57:45  [Apache] 	Status change detected: stopped
+18:57:45  [Apache] 	Error: Apache shutdown unexpectedly.
+18:57:45  [Apache] 	This may be due to a blocked port, missing dependencies, 
+18:57:45  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+18:57:45  [Apache] 	Press the Logs button to view error logs and check
+18:57:45  [Apache] 	the Windows Event Viewer for more clues
+18:57:45  [Apache] 	If you need more help, copy and post this
+18:57:45  [Apache] 	entire log window on the forums
+18:57:53  [main] 	Deinitializing Modules
+18:57:53  [main] 	Deinitializing Control Panel
+
