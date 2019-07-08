@@ -21,11 +21,15 @@ if(!empty($res) AND $searchName != ""){
 		$xml->startElement('pageViews');
 			$xml->writeRaw($res[0][3]);
 		$xml->endElement();
-		for($i=0; $i < count($res); $i++){
-		$xml->startElement('linkTo');
-			$xml->writeRaw(str_ireplace("&", "&amp;", $res[$i][7]));
-		$xml->endElement();
-		}
+		$xml->startElement('linkTos');
+    		for($i=0; $i < count($res); $i++){
+    		$xml->startElement('linkTo');
+    		    $xml->startElement('target');
+    			    $xml->writeRaw(str_ireplace("&", "&amp;", $res[$i][7]));
+    			$xml->endElement();
+    		$xml->endElement();
+    		}
+        $xml->endElement();
 	$xml->endElement();
 
 	$xmlOutput = $xml->flush();
