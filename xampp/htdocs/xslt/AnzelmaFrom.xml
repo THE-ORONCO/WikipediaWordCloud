@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSON>
+    <node>
+        <id>Anzelma</id>
+        <group>4</group>
+    </node>
+    <links>
+        <source>Anzelma</source>
+        <target>Eponine</target>
+        <value>2</value>
+    </links>
+    <links>
+        <source>Anzelma</source>
+        <target>Thenardier</target>
+        <value>2</value>
+    </links>
+    <links>
+        <source>Anzelma</source>
+        <target>Mme.Thenardier</target>
+        <value>1</value>
+    </links>
+</JSON>
