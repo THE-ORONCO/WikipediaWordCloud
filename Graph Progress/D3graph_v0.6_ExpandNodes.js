@@ -6,12 +6,11 @@ var svg = d3.select("#graphContainer").append("svg").attr("id", "drawingSpace"),
     chartHeight,
     margin,
     color = d3.scaleOrdinal(d3.schemeCategory10),
-
-    path = "./testData/BillGates.json";
+    path = "./testData/json/",
+    away = true;
 
 //set up variable drawing layer
 var chartLayer = svg.append("g").classed("chartLayer", true);
-
 setSize();
 
 function setSize() {
@@ -31,90 +30,44 @@ function setSize() {
         .attr("width", chartWidth)
         .attr("height", chartHeight)
         .attr("transform", "translate(" + [margin.left, margin.top] + ")")
-
-
 }
 
-//loading test data via jquery until the xml request to json converter thingy is finished
-var data = (function () {
-    var json = null;
-    $.ajax({
-        'async': false,
-        'global': false,
-        'url': path,
-        'dataType': "json",
-        'success': function (data) {
-            json = data;
-        }
+
+//load test data
+var data = loadData(path, "AnzelmaFrom"); //initial load,
+
+
+//initialize arrays that will hold
+var nodeData = [],
+    linkData = [];
+
+addNode(data.node);
+data.links.forEach(function (d) {
+    addNode({"id": d.target});
+
+    addLink({
+        "source": data.node,
+        "target": nodeData.find(x => x.id === d.target)
     });
-    return json;
-})();
+});
 
-var THEBILL = {"id": data.wiki.pageName, "group": 5, "pageViews": data.wiki.pageViews};
-
-var nodeData = [{"id": data.wiki.pageName, "group": 5, "pageViews": data.wiki.pageViews}],
-
-    THEBILLandFriends = generateMissingNodes(),
-
-
-    linksJson = data.wiki.linkTos.linkTo;
-
-
-function generateMissingNodes() {
-
-    var temp = [THEBILL];
-
-    for (var i = 0; i < data.wiki.linkTos.linkTo.length; i++) {
-        temp.push({"id": data.wiki.linkTos.linkTo[i].target, "group": 6, "pageViews": 300});
-    }
-
-
-    return temp;
-
-
-}
-
-
-function generateLinks() {
-    var temp = [];
-    for (var i = 0; i < data.wiki.linkTos.linkTo.length; i++) {
-        temp.push({"source": nodeData[0], "target":  nodeData.find(x => x.id === data.wiki.linkTos.linkTo[i].target)});
-    }
-
-    return temp;
-}
-
-
-
-
-var linkData = [],
-    linksToTheBill = generateLinks();
-
-
-
-
-//transforms links with references to the nodes by id to references to the nodes by object reference
-/*function convertLinkData() {
-    linksRefference.forEach(function (d) {
-        linkData.push({
-            "source": nodeData.find(x => x.id === d.source),
-            "target": nodeData.find(x => x.id === d.target)
-        });
-    });
-}
-
-convertLinkData();*/
-
-var id = 0;
 
 //defining what forces act on the different elements
 var simulation = d3.forceSimulation(nodeData)
-    .force('charge', d3.forceManyBody().strength(-200))
-    .force('link', d3.forceLink().distance(300).strength(0.1))
-    .force('center', d3.forceCenter(width / 2, height / 2))
-    .alphaTarget(1)
-    .on("tick", ticked)
-    .stop();
+    // .force('charge', d3.forceManyBody())
+        .force('charge', d3.forceManyBody().strength(-100))
+        // .force('link', d3.forceLink())
+        .force("link", d3.forceLink().id(function (d) {
+            return d.id;
+        }).strength(0.1).distance(123))
+        .force("collide", d3.forceCollide(function (d) {
+            return 30
+        }).iterations(16))
+        .force('center', d3.forceCenter(width / 2, height / 2))
+        .alphaTarget(1)
+        .on("tick", ticked)
+    // .stop()
+;
 
 //initializing the graph
 var g = svg.append("g").attr("class", "graph"),
@@ -155,9 +108,9 @@ function restart() {
             return color(d.group);
         })
         .call(function (node) {
-            node.transition().attr("r", 8);
+            node.transition().attr("r", 20);
         })
-        .on("click", click);
+        .on("click", clickExpand);
 
     //ad labels to all the new nodes
     labels = temp.append("text")
@@ -251,49 +204,78 @@ function ticked() {
 
 }
 
-var clicked = false;
+function doClickAction(d) {
 
-function click() {
-
-    if (!clicked) {
-        nodeData = THEBILLandFriends;
-        linkData = generateLinks();
-        console.log(nodeData);
-        console.log(linkData);
-
-        restart()
-
-    } else {
-        nodeData = [THEBILL];
-        linkData = [];
-        console.log(nodeData);
-        console.log(linkData);
-        restart()
-    }
-    clicked = !clicked;
 }
 
+//function adds nodes depending on starting node
+function clickExpand(d) {
+    data = loadData(path, d.id + (away === true?"From":"To"));
+    data.links.forEach(function (b) {
+        addNode({"id": b.target, "x": width/2, "y": height/2});
+
+        addLink({
+            "source": nodeData.find(x => x.id === data.node.id),
+            "target": nodeData.find(x => x.id === b.target)
+        });
+    });
+    restart();
+}
+
+function clickCollapse(d) {
+
+}
+
+function clickRemove(d) {
+    for (var i = linkData.length; i > 0; i--) {
+        if ((linkData[i].source === d) || (linkData[i].target === d)) {
+            linkData.splice(i, 1);
+            // linkData[i]= undefined;
+        }
+        // console.log("Link: " + linkData[i].source.id + " to " + linkData[i].target.id);
+    }
+    //
+    for (var i = 0; i < nodeData.length; i++) {
+        if (nodeData[i] === d) {
+            nodeData.splice(i, 1);
+        }
+    }
+    // console.log(d);
+    // nodeData = [a, b, c];
+    // linkData = [l_ab, l_bc, l_ca];
+    restart();
+}
 
 
 //add a node
 function addNode(newNode) {
-    if (!node.find(n => n.id === newNode.id)) { //the node doesn't exist in node
-        node.push(newNode);
+    if (!nodeData.find(n => n.id === newNode.id)) { //the node doesn't exist in node
+        nodeData.push(newNode);
+
     }
-    restart();
 }
 
 //add a link
 function addLink(newLink) {
-    if (!(link.find(n => (n.source === newLink.source && n.target === newLink.target)) === undefined) //link doesn't exist in link
-        && !(newLink.source === newLink.target)                                                       //link doesn't has the same node as his source and his target
-        && !(node.find(n => (n.id === newLink.source)) === undefined)                                 //link has a source in node
-        && !(node.find(n => (n.id === newLink.target)) === undefined)) {                              //link has a target in node
+    if ((linkData.find(n => (n.source === newLink.source && n.target === newLink.target)) === undefined) //link doesn't exist in linkDara
+        && !(newLink.source === newLink.target)                                                   //link doesn't has the same node as his source and his target
+    //link has source and target <-- still needs to be added
+    ) {
 
-        node.push(newLink);
+        linkData.push(newLink);
     }
-    restart();
 }
+
+//transforms links with references to the nodes by id to references to the nodes by object reference
+function convertLinkData() {
+    linksRefference.forEach(function (d) {
+        linkData.push({
+            "source": nodeData.find(x => x.id === d.source),
+            "target": nodeData.find(x => x.id === d.target)
+        });
+    });
+}
+
 
 //function for loading data | currently with local json
 function loadData(path, name) {
@@ -309,7 +291,6 @@ function loadData(path, name) {
     });
     return json;
 }
-
 
 //define what happens on different stages of dragging
 function dragstarted(d) {

@@ -97,7 +97,7 @@ var a = {id: "a"},
         {id: "Mme.Hucheloup"}
     ],
 
-    linksJson = [
+    linksRefference = [
         {source: "Napoleon", target: "Myriel"},
         {source: "Mlle.Baptistine", target: "Myriel"},
         {source: "Mme.Magloire", target: "Myriel"},
@@ -357,7 +357,7 @@ var linkData = [];
 
 //transforms links with references to the nodes by id to references to the nodes by object reference
 function convertLinkData() {
-    linksJson.forEach(function (d) {
+    linksRefference.forEach(function (d) {
         linkData.push({
             "source": nodeData.find(x => x.id === d.source),
             "target": nodeData.find(x => x.id === d.target)
