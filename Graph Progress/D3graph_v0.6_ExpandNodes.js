@@ -7,7 +7,8 @@ var svg = d3.select("#graphContainer").append("svg").attr("id", "drawingSpace"),
     margin,
     color = d3.scaleOrdinal(d3.schemeCategory10),
     path = "./testData/json/",
-    away = true;
+    awayFromNode = false,
+    toNode = true;
 
 //set up variable drawing layer
 var chartLayer = svg.append("g").classed("chartLayer", true);
@@ -33,40 +34,46 @@ function setSize() {
 }
 
 
-//load test data
-var data = loadData(path, "AnzelmaFrom"); //initial load,
+//
+var data = {};
 
 
 //initialize arrays that will hold
 var nodeData = [],
     linkData = [];
 
-addNode(data.node);
-data.links.forEach(function (d) {
-    addNode({"id": d.target});
+initialize("BossuetTo");
 
-    addLink({
-        "source": data.node,
-        "target": nodeData.find(x => x.id === d.target)
+function initialize(name) {
+    data = loadData(path, name); //initial load,
+
+    addNode(data.node);
+    data.links.forEach(function (d) {
+        addNode({"id": d.target});
+
+        addLink({
+            "source": data.node,
+            "target": nodeData.find(x => x.id === d.target)
+        });
     });
-});
+}
 
 
 //defining what forces act on the different elements
 var simulation = d3.forceSimulation(nodeData)
     // .force('charge', d3.forceManyBody())
-        .force('charge', d3.forceManyBody().strength(-100))
+        .force('charge', d3.forceManyBody().strength(-500))
         // .force('link', d3.forceLink())
         .force("link", d3.forceLink().id(function (d) {
             return d.id;
-        }).strength(0.1).distance(123))
+        }).strength(0.5).distance(150))
         .force("collide", d3.forceCollide(function (d) {
-            return 30
-        }).iterations(16))
+            return 40
+        }).iterations(3))
         .force('center', d3.forceCenter(width / 2, height / 2))
         .alphaTarget(1)
         .on("tick", ticked)
-    // .stop()
+        .stop()
 ;
 
 //initializing the graph
@@ -177,7 +184,7 @@ function restart() {
     // Update and restart the simulation.
     simulation.nodes(nodeData);
     simulation.force("link").links(linkData);
-    simulation.alpha(1).restart();
+    simulation.alpha(0.4).restart();
 }
 
 //define what happens on a tick of the simulation
@@ -204,25 +211,45 @@ function ticked() {
 
 }
 
+//decides what action is activated when the user clicks a node
 function doClickAction(d) {
 
 }
 
 //function adds nodes depending on starting node
 function clickExpand(d) {
-    data = loadData(path, d.id + (away === true?"From":"To"));
-    data.links.forEach(function (b) {
-        addNode({"id": b.target, "x": width/2, "y": height/2});
 
-        addLink({
-            "source": nodeData.find(x => x.id === data.node.id),
-            "target": nodeData.find(x => x.id === b.target)
+    if (awayFromNode){ data = loadData(path, d.id + "From");
+
+        data.links.forEach(function (b) {
+            addNode({"id": b.target, "x": width / 2, "y": height / 2});
+
+            addLink({
+                "source": nodeData.find(x => x.id === data.node.id),
+                "target": nodeData.find(x => x.id === b.target)
+            });
         });
-    });
-    restart();
+    }
+    if (toNode){ data = loadData(path, d.id + "To");
+
+        data.links.forEach(function (b) {
+            addNode({"id": b.source, "x": width / 2, "y": height / 2});
+
+            addLink({
+                "source": nodeData.find(x => x.id === b.source),
+                "target": nodeData.find(x => x.id === data.node.id)
+            });
+        });
+    }
+
+        restart();
 }
 
 function clickCollapse(d) {
+
+}
+
+function clickSelect(d) {
 
 }
 
