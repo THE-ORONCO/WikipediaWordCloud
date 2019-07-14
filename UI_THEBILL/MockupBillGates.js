@@ -7,7 +7,7 @@ var svg = d3.select("#graphContainer").append("svg").attr("id", "drawingSpace"),
     margin,
     color = d3.scaleOrdinal(d3.schemeCategory10),
 
-    path = "./testData/json";
+    path = "../Graph Progress/testData/BillGates.json";
 
 //set up variable drawing layer
 var chartLayer = svg.append("g").classed("chartLayer", true);
@@ -35,13 +35,13 @@ function setSize() {
 
 }
 
-// loading test data via jquery until the xml request to json converter thingy is finished
+//loading test data via jquery until the xml request to json converter thingy is finished
 var data = (function () {
     var json = null;
     $.ajax({
         'async': false,
         'global': false,
-        'url': "../D3.js_Test/data/miserables.json",
+        'url': path,
         'dataType': "json",
         'success': function (data) {
             json = data;
@@ -50,51 +50,71 @@ var data = (function () {
     return json;
 })();
 
-var nodeData = data.nodes,
+var THEBILL = {"id": data.wiki.pageName, "group": 5, "pageViews": data.wiki.pageViews};
 
-    linksJson = data.links;
+var nodeData = [{"id": data.wiki.pageName, "group": 5, "pageViews": data.wiki.pageViews}],
 
-var linkData = [];
+    THEBILLandFriends = generateMissingNodes(),
+
+
+    linksJson = data.wiki.linkTos.linkTo;
+
+
+function generateMissingNodes() {
+
+    var temp = [THEBILL];
+
+    for (var i = 0; i < data.wiki.linkTos.linkTo.length; i++) {
+        temp.push({"id": data.wiki.linkTos.linkTo[i].target, "group": 6, "pageViews": 300});
+    }
+
+
+    return temp;
+
+
+}
+
+
+function generateLinks() {
+    var temp = [];
+    for (var i = 0; i < data.wiki.linkTos.linkTo.length; i++) {
+        temp.push({"source": nodeData[0], "target":  nodeData.find(x => x.id === data.wiki.linkTos.linkTo[i].target)});
+    }
+
+    return temp;
+}
+
+
+
+
+var linkData = [],
+    linksToTheBill = generateLinks();
+
+
+
 
 //transforms links with references to the nodes by id to references to the nodes by object reference
-function convertLinkData() {
-    linksJson.forEach(function (d) {
-        linkData.push({
-            "source": nodeData.find(x => x.id === d.source),
-            "target": nodeData.find(x => x.id === d.target)
+/*function convertLinkData() {
+    linksRefference.forEach(function (d) {
+        renderedLinks.push({
+            "source": renderedNodes.find(x => x.id === d.source),
+            "target": renderedNodes.find(x => x.id === d.target)
         });
     });
 }
 
-convertLinkData()
-
-// var a = {id: "a"},
-//     b = {id: "b"},
-//     c = {id: "c"},
-//     f = {id: "f"},
-//     g = {id: "g"},
-//     renderedNodes = [a, b, c, f, g],
-//     l_ab = {source: a, target: b},
-//     l_bc = {source: b, target: c},
-//     l_ca = {source: c, target: a},
-//     l_fg = {source: f, target: g},
-//     l_af = {source: a, target: f},
-//     renderedLinks = [l_ab, l_bc, l_ca, l_fg, l_af];
+convertLinkData();*/
 
 var id = 0;
 
 //defining what forces act on the different elements
 var simulation = d3.forceSimulation(nodeData)
-    // .force('charge', d3.forceManyBody())
-    .force('charge', d3.forceManyBody().strength(-150))
-    // .force('link', d3.forceLink())
-    .force("link", d3.forceLink().id(function(d) { return d.id; }).strength(0.1))
-    .force("collide",d3.forceCollide( function(d){return 30 }).iterations(16))
-    // .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('charge', d3.forceManyBody().strength(-200))
+    .force('link', d3.forceLink().distance(300).strength(0.1))
+    .force('center', d3.forceCenter(width / 2, height / 2))
     .alphaTarget(1)
     .on("tick", ticked)
-    // .stop()
-;
+    .stop();
 
 //initializing the graph
 var g = svg.append("g").attr("class", "graph"),
@@ -135,7 +155,7 @@ function restart() {
             return color(d.group);
         })
         .call(function (node) {
-            node.transition().attr("r", 20);
+            node.transition().attr("r", 8);
         })
         .on("click", click);
 
@@ -231,55 +251,28 @@ function ticked() {
 
 }
 
-function click(d) {
-    console.log(linkData);
-    for (var i = linkData.length-1; i > -1; i--) {
-        if ((linkData[i].source === d) || (linkData[i].target === d)) {
-            linkData.splice(i, 1);
-            // renderedLinks[i]= undefined;
-        }
+var clicked = false;
+
+function click() {
+
+    if (!clicked) {
+        nodeData = THEBILLandFriends;
+        linkData = generateLinks();
+        console.log(nodeData);
         console.log(linkData);
-        // console.log("Link: " + renderedLinks[i].source.id + " to " + renderedLinks[i].target.id);
+
+        restart()
+
+    } else {
+        nodeData = [THEBILL];
+        linkData = [];
+        console.log(nodeData);
+        console.log(linkData);
+        restart()
     }
-    //
-    for (var i = 0; i < nodeData.length; i++) {
-        if (nodeData[i] === d) {
-            console.log("removed Node: " + nodeData[i].id);
-            nodeData.splice(i, 1);
-        }
-    }
-    // console.log(d);
-    // renderedNodes = [a, b, c];
-    // renderedLinks = [l_ab, l_bc, l_ca];
-    restart();
+    clicked = !clicked;
 }
 
-//test functions
-document.getElementById('btnRenderExisting3Node').addEventListener('click', function () {
-    nodeData = [a, b, c];
-    linkData = [l_ab, l_bc, l_ca];
-    restart();
-});
-
-document.getElementById('btnRenderExisting2Node').addEventListener('click', function () {
-    nodeData = [a, b];
-    linkData = [l_ab];
-    restart();
-});
-
-document.getElementById('btnRenderNewNode').addEventListener('click', function () {
-    var d = {
-        id: id++,
-        x: width / 2,
-        y: height / 2
-    };
-    nodeData = [a, b, c, d];
-    linkData = [l_ab, l_bc, l_ca, {
-        source: a,
-        target: d
-    }];
-    restart();
-});
 
 
 //add a node

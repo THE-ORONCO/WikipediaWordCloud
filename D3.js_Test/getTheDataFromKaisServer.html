@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+
+<script type="text/javascript">
+    var json = null;
+    $.ajax({
+            'async': false,
+            'global': false,
+            'url': "http://localhost/xslt/index.php",
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            },
+            'mode': 'cors'
+        }
+    );
+
+    console.log(json);
+
+
+</script>
+
+</body>
+</html>

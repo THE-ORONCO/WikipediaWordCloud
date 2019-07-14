@@ -48,13 +48,13 @@
         config = JSON.parse(localStorage.graph);
         console.log(JSON.stringify(config));
         linkedByIndex = {};
-        //Create an array of source,target containing all linkData
+        //Create an array of source,target containing all renderedLinks
         config.links.forEach(function (d) {
             linkedByIndex[d.source + "," + d.target] = true;
             linkedByIndex[d.target + "," + d.source] = true;
         });
 
-        //Draw linkData
+        //Draw renderedLinks
         link = link.data(config.links);
         link.exit().remove();
         link = link.enter().append("line")
@@ -94,12 +94,12 @@
             .text(function (d) { return d.id; })
             .merge(label);
 
-        //Add nodeData to simulation
+        //Add renderedNodes to simulation
         simulation
             .nodes(config.nodes)
             .on("tick", ticked);
 
-        //Add linkData to simulation
+        //Add renderedLinks to simulation
         simulation.force("link")
             .links(config.links);
 
@@ -121,7 +121,7 @@
             .attr("y", function (d) { return d.y = Math.max(d.radius, Math.min(height - d.radius, d.y)); });
     }
 
-    //Using above array, check if two nodeData are linked
+    //Using above array, check if two renderedNodes are linked
     function isConnected(node1, node2) {
         return linkedByIndex[node1.id + "," + node2.id] || node1.index == node2.index;
     }

@@ -48,8 +48,8 @@
     d3.xml("testData2.xml", function(error, document) {
         if (error) throw error;
 
-        var nodeData = d3.select(document).selectAll("*").nodes(),
-            linkData = nodes
+        var renderedNodes = d3.select(document).selectAll("*").nodes(),
+            renderedLinks = nodes
                 .slice(1)
                 .map(function(d) { return {source: d, target: d.parentNode}; });
 

@@ -9,9 +9,9 @@
 <h1 id="title">WikiWordCloud</h1>
 
 <div>
-    <button id='btnRenderExisting2Node'>Render 2 existing nodeData</button>
-    <button id='btnRenderExisting3Node'>Render 3 existing nodeData</button>
-    <button id='btnRenderNewNode'>Render 3 existing nodeData and 1 brand new node</button>
+    <button id='btnRenderExisting2Node'>Render 2 existing renderedNodes</button>
+    <button id='btnRenderExisting3Node'>Render 3 existing renderedNodes</button>
+    <button id='btnRenderNewNode'>Render 3 existing renderedNodes and 1 brand new node</button>
 
 </div>
 
@@ -28,13 +28,13 @@
         c = {id: "c"},
         f = {id: "f"},
         g = {id: "g"},
-        nodeData = [a, b, c, f, g],
+        renderedNodes = [a, b, c, f, g],
         l_ab = {source: a, target: b},
         l_bc = {source: b, target: c},
         l_ca = {source: c, target: a},
         l_fg = {source: f, target: g},
         l_af = {source: a, target: f},
-        linkData = [l_ab, l_bc, l_ca, l_fg, l_af];
+        renderedLinks = [l_ab, l_bc, l_ca, l_fg, l_af];
 
     console.log(a.name);
 
@@ -56,7 +56,7 @@
 
     function restart() {
 
-        // Apply the general update pattern to the nodeData.
+        // Apply the general update pattern to the renderedNodes.
         node = node.data(nodes, function (d) {
             return d.id;
         });
@@ -78,13 +78,13 @@
                 .on("drag", dragged)
                 .on("end", dragended));
 
-        // Apply the general update pattern to the linkData.
+        // Apply the general update pattern to the renderedLinks.
         link = link.data(links, function (d) {
             console.log(d);
             return d.source + "-" + d.target;
         });
 
-        // Keep the exiting linkData connected to the moving remaining nodeData.
+        // Keep the exiting renderedLinks connected to the moving remaining renderedNodes.
         link.exit()
         /*transition*/
             .remove();

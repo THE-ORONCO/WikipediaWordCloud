@@ -26,7 +26,7 @@
 
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
-    //define forces acting on linkData and nodeData
+    //define forces acting on renderedLinks and renderedNodes
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink().id(function (d) {
             return d.id;
@@ -34,7 +34,7 @@
         .force("charge", d3.forceManyBody())
         .force("center", d3.forceCenter(width / 2, height / 2));
 
-    linkData = [
+    renderedLinks = [
         {"source": "Napoleon", "target": "Myriel", "value": 1},
         {"source": "Mlle.Baptistine", "target": "Myriel", "value": 8},
         {"source": "Mme.Magloire", "target": "Myriel", "value": 10},

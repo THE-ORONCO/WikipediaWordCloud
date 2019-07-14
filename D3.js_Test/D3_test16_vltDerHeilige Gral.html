@@ -8,9 +8,9 @@
 <body>
 
 <div>
-    <button id='btnRenderExisting2Node'>Render 2 existing nodeData</button>
-    <button id='btnRenderExisting3Node'>Render 3 existing nodeData</button>
-    <button id='btnRenderNewNode'>Render 3 existing nodeData and 1 brand new node</button>
+    <button id='btnRenderExisting2Node'>Render 2 existing renderedNodes</button>
+    <button id='btnRenderExisting3Node'>Render 3 existing renderedNodes</button>
+    <button id='btnRenderNewNode'>Render 3 existing renderedNodes and 1 brand new node</button>
 </div>
 <svg width="400" height="400"></svg>
 
@@ -29,7 +29,7 @@
         c = {
             id: "c"
         },
-        nodeData = [a, b, c],
+        renderedNodes = [a, b, c],
         l_ab = {
             source: a,
             target: b
@@ -42,7 +42,7 @@
             source: c,
             target: a
         }
-    linkData = [l_ab, l_bc, l_ca];
+    renderedLinks = [l_ab, l_bc, l_ca];
 
     var id = 0;
 
@@ -62,7 +62,7 @@
 
     function restart() {
 
-        // Apply the general update pattern to the nodeData.
+        // Apply the general update pattern to the renderedNodes.
         node = node.data(nodes, function (d) {
             return d.id;
         });
@@ -80,12 +80,12 @@
             })
             .merge(node);
 
-        // Apply the general update pattern to the linkData.
+        // Apply the general update pattern to the renderedLinks.
         link = link.data(links, function (d) {
             return d.source.id + "-" + d.target.id;
         });
 
-        // Keep the exiting linkData connected to the moving remaining nodeData.
+        // Keep the exiting renderedLinks connected to the moving remaining renderedNodes.
         link.exit()
             /*transition*/
             .remove();
@@ -128,13 +128,13 @@
 
     document.getElementById('btnRenderExisting3Node').addEventListener('click', function () {
         nodes = [a, b, c];
-        linkData = [l_ab, l_bc, l_ca];
+        renderedLinks = [l_ab, l_bc, l_ca];
         restart();
     });
 
     document.getElementById('btnRenderExisting2Node').addEventListener('click', function () {
         nodes = [a, b];
-        linkData = [l_ab];
+        renderedLinks = [l_ab];
         restart();
     });
 
@@ -145,7 +145,7 @@
             y: height / 2
         };
         nodes = [a, b, c, d];
-        linkData = [l_ab, l_bc, l_ca, {
+        renderedLinks = [l_ab, l_bc, l_ca, {
             source: a,
             target: d
         }];

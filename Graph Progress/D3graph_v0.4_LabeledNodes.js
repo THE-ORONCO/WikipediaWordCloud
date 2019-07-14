@@ -17,7 +17,7 @@ var a = {id: "a"},
     l_af = {source: a, target: f};
 
 
-/*var nodeData = [
+/*var renderedNodes = [
         {id: "Myriel"},
         {id: "Napoleon"},
         {id: "Mlle.Baptistine"},
@@ -353,14 +353,14 @@ var a = {id: "a"},
         {source: "Mme.Hucheloup", target: "Gavroche"},
         {source: "Mme.Hucheloup", target: "Enjolras"}];
 
-var linkData = [];
+var renderedLinks = [];
 
 //transforms links with references to the nodes by id to references to the nodes by object reference
 function convertLinkData() {
     linksRefference.forEach(function (d) {
-        linkData.push({
-            "source": nodeData.find(x => x.id === d.source),
-            "target": nodeData.find(x => x.id === d.target)
+        renderedLinks.push({
+            "source": renderedNodes.find(x => x.id === d.source),
+            "target": renderedNodes.find(x => x.id === d.target)
         });
     });
 }
@@ -400,7 +400,7 @@ restart();
 
 function restart() {
 
-    // Apply the general update pattern to the nodeData
+    // Apply the general update pattern to the renderedNodes
     //assign node data to nodes
     node = node.data(nodeData, function (d) {
         return d.id;
@@ -452,7 +452,7 @@ function restart() {
     drag_handler(node);
 
 
-    // Apply the general update pattern to the linkData
+    // Apply the general update pattern to the renderedLinks
     //assign link data to nodes
     link = link.data(linkData, function (d) {
         return d.source + "-" + d.target;

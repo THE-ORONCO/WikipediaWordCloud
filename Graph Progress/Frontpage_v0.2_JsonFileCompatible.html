@@ -9,9 +9,9 @@
 <h1 id="title">WikiWordCloud</h1>
 
 <div>
-    <button id='btnRenderExisting2Node'>Render 2 existing nodeData</button>
-    <button id='btnRenderExisting3Node'>Render 3 existing nodeData</button>
-    <button id='btnRenderNewNode'>Render 3 existing nodeData and 1 brand new node</button>
+    <button id='btnRenderExisting2Node'>Render 2 existing renderedNodes</button>
+    <button id='btnRenderExisting3Node'>Render 3 existing renderedNodes</button>
+    <button id='btnRenderNewNode'>Render 3 existing renderedNodes and 1 brand new node</button>
 
 </div>
 
@@ -23,7 +23,7 @@
         height = +svg.attr("height"),
         color = d3.scaleOrdinal(d3.schemeCategory10);
 
-    var nodeData = [
+    var renderedNodes = [
             {id: "Myriel"},
             {id: "Napoleon"},
             {id: "Mlle.Baptistine"},
@@ -359,7 +359,7 @@
             {source: "Mme.Hucheloup", target: "Gavroche"},
             {source: "Mme.Hucheloup", target: "Enjolras"}];
 
-    var linkData = [];
+    var renderedLinks = [];
 
     function convertLinkData() {
         linksJson.forEach(function (d) {
@@ -391,7 +391,7 @@
 
     function restart() {
 
-        // Apply the general update pattern to the nodeData.
+        // Apply the general update pattern to the renderedNodes.
         node = node.data(nodeData, function (d) {
             return d.id;
         });
@@ -413,13 +413,13 @@
                 .on("drag", dragged)
                 .on("end", dragended));
 
-        // Apply the general update pattern to the linkData.
+        // Apply the general update pattern to the renderedLinks.
         link = link.data(linkData, function (d) {
             console.log(d.source);
             return d.source + "-" + d.target;
         });
 
-        // Keep the exiting linkData connected to the moving remaining nodeData.
+        // Keep the exiting renderedLinks connected to the moving remaining renderedNodes.
         link.exit()
         /*transition*/
             .remove();

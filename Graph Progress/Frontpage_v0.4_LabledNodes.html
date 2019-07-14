@@ -27,9 +27,9 @@
 <h1 id="title">WikiWordCloud</h1>
 
 <div>
-    <button id='btnRenderExisting2Node'>Render 2 existing nodeData</button>
-    <button id='btnRenderExisting3Node'>Render 3 existing nodeData</button>
-    <button id='btnRenderNewNode'>Render 3 existing nodeData and 1 brand new node</button>
+    <button id='btnRenderExisting2Node'>Render 2 existing renderedNodes</button>
+    <button id='btnRenderExisting3Node'>Render 3 existing renderedNodes</button>
+    <button id='btnRenderNewNode'>Render 3 existing renderedNodes and 1 brand new node</button>
 
 </div>
 
@@ -55,7 +55,7 @@
         l_af = {source: a, target: f};
 
 
-    var nodeData = [
+    var renderedNodes = [
             {id: "Myriel"},
             {id: "Napoleon"},
             {id: "Mlle.Baptistine"},
@@ -391,7 +391,7 @@
             {source: "Mme.Hucheloup", target: "Gavroche"},
             {source: "Mme.Hucheloup", target: "Enjolras"}];
 
-    var linkData = [];
+    var renderedLinks = [];
 
     //transforms links with references to the nodes by id to references to the nodes by object reference
     function convertLinkData() {
@@ -434,7 +434,7 @@
 
     function restart() {
 
-        // Apply the general update pattern to the nodeData
+        // Apply the general update pattern to the renderedNodes
         //assign node data to nodes
         node = node.data(nodeData, function (d) {
             return d.id;
@@ -484,7 +484,7 @@
         drag_handler(node);
 
 
-    // Apply the general update pattern to the linkData
+    // Apply the general update pattern to the renderedLinks
     //assign link data to nodes
     link = link.data(linkData, function (d) {
         console.log(d.source);

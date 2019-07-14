@@ -1,20 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>WikiWordCloud</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="jquery-3.4.1.min.OnlyForTesting.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="nodeStyling.css">
-
 </head>
+
 <body>
-<h1 id="title">WikiWordCloud</h1>
+<div id="sidebar">
+    <div id="title-container">
+        <p id="title">WikiWord
+            Cloud</p>
+    </div>
+    <div id="searchbar-container">
+        <input id="searchbar" type="text" name="searchbar" placeholder="Enter term here...">
+        <button id="searchbtn" type="button" name="button">
+            <img id="sb-img" src="icons/magnifier.svg" alt="Magnifying Glass">
+        </button>
+    </div>
 
-<div id="graphContainer"></div>
-<script src="D3graph_v0.6_ExpandNodes.js"></script>
+    <div id="checkbox-container">
+        <label><input type="radio" name="onClick" id="expandCheck" value="expand" checked>expand
+            <label><input type="checkbox" name="from" id="from">from</label>
+            <label><input type="checkbox" name="to" id="to">to</label>
+        </label><br>
 
+        <label><input type="radio" name="onClick" id="collapseCheck" value="collapse">collapse</label><br>
+
+        <label><input type="radio" name="onClick" id="deleteCheck" value="delete">delete</label><br>
+
+        <label><input type="radio" name="onClick" id="selectCheck" value="select">select</label>
+
+    </div>
+
+    <div id="slider-div">
+        <label>
+            <input type="range" min="0" max="300">
+        </label>
+    </div>
+
+    <div id="button-container">
+        <button class="ourbtn" type="button" name="addElement" onclick="addElement()">Add</button><br>
+        <button class="ourbtn" type="button" name="showAllLoadedData" onclick="renderAllData();">show all loaded Nodes</button>
+    </div>
+
+    <div id="bottombar-container">
+        <p><a href="./impressum.html">Impressum</a> | <a href="./instructions.html">Anleitung</a></p>
+    </div>
+</div>
+<div id="graphContainer">
+    <svg id="drawingSpace"></svg>
+</div>
+<script src="D3graph_v0.7_ClickActionViaSelectorsInSidebar.js"></script>
 
 </body>
+
 </html>

@@ -6,12 +6,12 @@ var svg = d3.select("#graphContainer").append("svg").attr("id", "drawingSpace"),
     chartHeight,
     margin,
     color = d3.scaleOrdinal(d3.schemeCategory10),
-
-    path = "./testData/json";
+    path = "../Graph Progress/testData/json/",
+    awayFromNode = true,
+    toNode = false;
 
 //set up variable drawing layer
 var chartLayer = svg.append("g").classed("chartLayer", true);
-
 setSize();
 
 function setSize() {
@@ -31,69 +31,49 @@ function setSize() {
         .attr("width", chartWidth)
         .attr("height", chartHeight)
         .attr("transform", "translate(" + [margin.left, margin.top] + ")")
-
-
 }
 
-// loading test data via jquery until the xml request to json converter thingy is finished
-var data = (function () {
-    var json = null;
-    $.ajax({
-        'async': false,
-        'global': false,
-        'url': "../D3.js_Test/data/miserables.json",
-        'dataType': "json",
-        'success': function (data) {
-            json = data;
-        }
-    });
-    return json;
-})();
 
-var nodeData = data.nodes,
+//
+var data = {};
 
-    linksJson = data.links;
 
-var linkData = [];
+//initialize arrays that will hold
+var nodeData = [],
+    linkData = [];
 
-//transforms links with references to the nodes by id to references to the nodes by object reference
-function convertLinkData() {
-    linksJson.forEach(function (d) {
-        linkData.push({
-            "source": nodeData.find(x => x.id === d.source),
+initialize("BossuetTo");
+
+function initialize(name) {
+    data = loadData(path, name); //initial load,
+
+    addNode(data.node);
+    data.links.forEach(function (d) {
+        addNode({"id": d.target});
+
+        addLink({
+            "source": data.node,
             "target": nodeData.find(x => x.id === d.target)
         });
     });
 }
 
-convertLinkData()
-
-// var a = {id: "a"},
-//     b = {id: "b"},
-//     c = {id: "c"},
-//     f = {id: "f"},
-//     g = {id: "g"},
-//     renderedNodes = [a, b, c, f, g],
-//     l_ab = {source: a, target: b},
-//     l_bc = {source: b, target: c},
-//     l_ca = {source: c, target: a},
-//     l_fg = {source: f, target: g},
-//     l_af = {source: a, target: f},
-//     renderedLinks = [l_ab, l_bc, l_ca, l_fg, l_af];
-
-var id = 0;
 
 //defining what forces act on the different elements
 var simulation = d3.forceSimulation(nodeData)
     // .force('charge', d3.forceManyBody())
-    .force('charge', d3.forceManyBody().strength(-150))
-    // .force('link', d3.forceLink())
-    .force("link", d3.forceLink().id(function(d) { return d.id; }).strength(0.1))
-    .force("collide",d3.forceCollide( function(d){return 30 }).iterations(16))
-    // .force('center', d3.forceCenter(width / 2, height / 2))
-    .alphaTarget(1)
-    .on("tick", ticked)
-    // .stop()
+        .force('charge', d3.forceManyBody().strength(-500))
+        // .force('link', d3.forceLink())
+        .force("link", d3.forceLink().id(function (d) {
+            return d.id;
+        }).strength(0.5).distance(150))
+        .force("collide", d3.forceCollide(function (d) {
+            return 40
+        }).iterations(3))
+        .force('center', d3.forceCenter(width / 2, height / 2))
+        .alphaTarget(1)
+        .on("tick", ticked)
+        .stop()
 ;
 
 //initializing the graph
@@ -137,7 +117,7 @@ function restart() {
         .call(function (node) {
             node.transition().attr("r", 20);
         })
-        .on("click", click);
+        .on("click", clickExpand);
 
     //ad labels to all the new nodes
     labels = temp.append("text")
@@ -204,7 +184,7 @@ function restart() {
     // Update and restart the simulation.
     simulation.nodes(nodeData);
     simulation.force("link").links(linkData);
-    simulation.alpha(1).restart();
+    simulation.alpha(0.4).restart();
 }
 
 //define what happens on a tick of the simulation
@@ -231,20 +211,61 @@ function ticked() {
 
 }
 
-function click(d) {
-    console.log(linkData);
-    for (var i = linkData.length-1; i > -1; i--) {
+//decides what action is activated when the user clicks a node
+function doClickAction(d) {
+
+}
+
+//function adds nodes depending on starting node
+function clickExpand(d) {
+
+    if (awayFromNode) {
+        data = loadData(path, d.id + "From");
+
+        data.links.forEach(function (b) {
+            addNode({"id": b.target, "x": width / 2, "y": height / 2});
+
+            addLink({
+                "source": nodeData.find(x => x.id === data.node.id),
+                "target": nodeData.find(x => x.id === b.target)
+            });
+        });
+    }
+    if (toNode) {
+        data = loadData(path, d.id + "To");
+
+        data.links.forEach(function (b) {
+            addNode({"id": b.source, "x": width / 2, "y": height / 2});
+
+            addLink({
+                "source": nodeData.find(x => x.id === b.source),
+                "target": nodeData.find(x => x.id === data.node.id)
+            });
+        });
+    }
+
+    restart();
+}
+
+function clickCollapse(d) {
+
+}
+
+function clickSelect(d) {
+
+}
+
+function clickRemove(d) {
+    for (var i = linkData.length; i > 0; i--) {
         if ((linkData[i].source === d) || (linkData[i].target === d)) {
             linkData.splice(i, 1);
             // renderedLinks[i]= undefined;
         }
-        console.log(linkData);
         // console.log("Link: " + renderedLinks[i].source.id + " to " + renderedLinks[i].target.id);
     }
     //
     for (var i = 0; i < nodeData.length; i++) {
         if (nodeData[i] === d) {
-            console.log("removed Node: " + nodeData[i].id);
             nodeData.splice(i, 1);
         }
     }
@@ -254,69 +275,52 @@ function click(d) {
     restart();
 }
 
-//test functions
-document.getElementById('btnRenderExisting3Node').addEventListener('click', function () {
-    nodeData = [a, b, c];
-    linkData = [l_ab, l_bc, l_ca];
-    restart();
-});
-
-document.getElementById('btnRenderExisting2Node').addEventListener('click', function () {
-    nodeData = [a, b];
-    linkData = [l_ab];
-    restart();
-});
-
-document.getElementById('btnRenderNewNode').addEventListener('click', function () {
-    var d = {
-        id: id++,
-        x: width / 2,
-        y: height / 2
-    };
-    nodeData = [a, b, c, d];
-    linkData = [l_ab, l_bc, l_ca, {
-        source: a,
-        target: d
-    }];
-    restart();
-});
-
 
 //add a node
 function addNode(newNode) {
-    if (!node.find(n => n.id === newNode.id)) { //the node doesn't exist in node
-        node.push(newNode);
+    if (!nodeData.find(n => n.id === newNode.id)) { //the node doesn't exist in node
+        nodeData.push(newNode);
+
     }
-    restart();
 }
 
 //add a link
 function addLink(newLink) {
-    if (!(link.find(n => (n.source === newLink.source && n.target === newLink.target)) === undefined) //link doesn't exist in link
-        && !(newLink.source === newLink.target)                                                       //link doesn't has the same node as his source and his target
-        && !(node.find(n => (n.id === newLink.source)) === undefined)                                 //link has a source in node
-        && !(node.find(n => (n.id === newLink.target)) === undefined)) {                              //link has a target in node
+    if ((linkData.find(n => (n.source === newLink.source && n.target === newLink.target)) === undefined) //link doesn't exist in linkDara
+        && !(newLink.source === newLink.target)                                                   //link doesn't has the same node as his source and his target
+    //link has source and target <-- still needs to be added
+    ) {
 
-        node.push(newLink);
+        linkData.push(newLink);
     }
-    restart();
 }
+
+//transforms links with references to the nodes by id to references to the nodes by object reference
+function convertLinkData() {
+    linksRefference.forEach(function (d) {
+        linkData.push({
+            "source": nodeData.find(x => x.id === d.source),
+            "target": nodeData.find(x => x.id === d.target)
+        });
+    });
+}
+
 
 //function for loading data | currently with local json
 function loadData(path, name) {
     var json = null;
     $.ajax({
-        'async': false,
-        'global': false,
-        'url': path + name + ".json",
-        'dataType': "json",
-        'success': function (data) {
-            json = data;
+            'async': false,
+            'global': false,
+            'url': path + name + ".json",
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
         }
-    });
+    );
     return json;
 }
-
 
 //define what happens on different stages of dragging
 function dragstarted(d) {

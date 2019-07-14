@@ -1,19 +1,42 @@
 //set up drawingspace and initialize different variables that are needed later
-var svg = d3.select("#graphContainer").append("svg").attr("id", "drawingSpace"),
+//visual elements and variables
+var svg = d3.select("#drawingSpace"),
     width = +svg.attr("width"),
     height = +svg.attr("height"),
     chartWidth,
     chartHeight,
     margin,
-    color = d3.scaleOrdinal(d3.schemeCategory10),
-    path = "./testData/json/",
-    awayFromNode = true,
-    toNode = true;
+    color = d3.scaleOrdinal(d3.schemeCategory10), //color sheme for the nodes
+    chartLayer = svg.append("g").classed("chartLayer", true);//set up variable drawing layer
+setSize(); //initialize the graphical base components
 
-//set up variable drawing layer
-var chartLayer = svg.append("g").classed("chartLayer", true);
-setSize();
+//data access and data containers
+var path = "./testData/json/",  //path of the database
+    data = {},//initialize the data object
+    nodeData = [],//all Data on Nodes
+    linkData = [],//all Data on Links
+    renderedNodes = [],//all rendered Nodes
+    renderedLinks = [];//all rendered Links
 
+
+//simulation environment
+var simulation = d3.forceSimulation(renderedNodes)                   //defining what forces act on the different elements
+// .force('charge', d3.forceManyBody())
+    .force('charge', d3.forceManyBody().strength(-500))
+    // .force('link', d3.forceLink())
+    .force("link", d3.forceLink().id(function (d) {
+        return d.id;
+    }).strength(0.5).distance(150))
+    .force("collide", d3.forceCollide(function (d) {
+        return 40
+    }).iterations(3))
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .alphaTarget(1)
+    .on("tick", ticked)
+    .stop();
+
+
+//create the graph depending on the size of the svg element
 function setSize() {
     width = document.querySelector("#graphContainer").clientWidth;
     height = document.querySelector("#graphContainer").clientHeight;
@@ -33,15 +56,10 @@ function setSize() {
         .attr("transform", "translate(" + [margin.left, margin.top] + ")")
 }
 
-var data = {};
-
-
-//initialize arrays that will hold
-var nodeData = [],
-    linkData = [];
 
 initialize("BossuetTo");
 
+//initialisation function
 function initialize(name) {
     data = loadData(path, name); //initial load,
 
@@ -51,28 +69,11 @@ function initialize(name) {
 
         addLink({
             "source": data.node,
-            "target": nodeData.find(x => x.id === d.target)
+            "target": renderedNodes.find(x => x.id === d.target)
         });
     });
 }
 
-
-//defining what forces act on the different elements
-var simulation = d3.forceSimulation(nodeData)
-    // .force('charge', d3.forceManyBody())
-        .force('charge', d3.forceManyBody().strength(-500))
-        // .force('link', d3.forceLink())
-        .force("link", d3.forceLink().id(function (d) {
-            return d.id;
-        }).strength(0.5).distance(150))
-        .force("collide", d3.forceCollide(function (d) {
-            return 40
-        }).iterations(3))
-        .force('center', d3.forceCenter(width / 2, height / 2))
-        .alphaTarget(1)
-        .on("tick", ticked)
-        .stop()
-;
 
 //initializing the graph
 var g = svg.append("g").attr("class", "graph"),
@@ -87,20 +88,21 @@ function zoom_actions() {
     g.attr("transform", d3.event.transform);
 }
 
-//rendering function
+//initial render/simulation of the graph
 restart();
 
+//rendering function that starts and restarts the rendering process based on the data in renderedNodes and renderedLinks
 function restart() {
 
     // Apply the general update pattern to the renderedNodes
     //assign node data to nodes
-    node = node.data(nodeData, function (d) {
+    node = node.data(renderedNodes, function (d) {
         return d.id;
     });
 
     //remove all nodes without data
     node.exit()
-        .transition()
+        .transition()//shrink the circles to r = 0
         .attr("r", 0)
         .remove();
 
@@ -113,9 +115,9 @@ function restart() {
             return color(d.group);
         })
         .call(function (node) {
-            node.transition().attr("r", 20);
+            node.transition().attr("r", 20);//let the circles pop into the diagram
         })
-        .on("click", clickExpand);
+        .on("click", doClickAction);
 
     //ad labels to all the new nodes
     labels = temp.append("text")
@@ -123,9 +125,12 @@ function restart() {
             return d.id;
         })
         .attr("x", function (d) {
-            return d.id.toString().length * (-1) * 5;
+            return d.id.toString().length * (-1) * 5; //center the text somewhat
         })
-        .attr("y", 17);
+        .attr("y", 17)
+        .call(function (text) {
+            text.transition().attr("opacity", 100); //let the text become more opaque
+        });
 
     //merge all the new nodes that now have circles and labels back into the set of all nodes
     node = node.merge(temp);
@@ -141,13 +146,13 @@ function restart() {
 
     // Apply the general update pattern to the renderedLinks
     //assign link data to nodes
-    link = link.data(linkData, function (d) {
+    link = link.data(renderedLinks, function (d) {
         return d.source + "-" + d.target;
     });
 
     //remove all links without data
     link.exit()
-        .transition()
+        .transition()//animate the removal of the link
         .attr("stroke-opacity", 0)
         .attrTween("x1", function (d) {
             return function () {
@@ -180,9 +185,9 @@ function restart() {
         .attr("class", "link");
 
     // Update and restart the simulation.
-    simulation.nodes(nodeData);
-    simulation.force("link").links(linkData);
-    simulation.alpha(0.4).restart();
+    simulation.nodes(renderedNodes);
+    simulation.force("link").links(renderedLinks);
+    simulation.alpha(1).restart();
 }
 
 //define what happens on a tick of the simulation
@@ -211,39 +216,65 @@ function ticked() {
 
 //decides what action is activated when the user clicks a node
 function doClickAction(d) {
+    if (document.getElementById("expandCheck").checked) {
+        if (document.getElementById("from").checked) {
+            clickExpandFrom(d);
+        }
+        if (document.getElementById("to").checked) {
+            clickExpandTo(d);
+        }
 
+    }
+    if (document.getElementById("collapseCheck").checked) {
+        clickCollapse(d);
+
+    }
+    if (document.getElementById("deleteCheck").checked) {
+        clickRemove(d);
+
+    }
+    if (document.getElementById("selectCheck").checked) {
+        clickSelect(d);
+    }
+
+    console.log(renderedNodes);
+    console.log(renderedLinks);
+    console.log(nodeData);
+    console.log(linkData);
+
+    validateDataSets();
 }
 
-//function adds nodes depending on starting node
-function clickExpand(d) {
+function clickExpandFrom(d) {
+    data = loadData(path, d.id + "From");
 
-    if (awayFromNode) {
-        data = loadData(path, d.id + "From");
+    data.links.forEach(function (b) {
+        addNode({"id": b.target, "x": width / 2, "y": height / 2});
 
-        data.links.forEach(function (b) {
-            addNode({"id": b.target, "x": width / 2, "y": height / 2});
-
-            addLink({
-                "source": nodeData.find(x => x.id === data.node.id),
-                "target": nodeData.find(x => x.id === b.target)
-            });
+        addLink({
+            "source": renderedNodes.find(x => x.id === d.id),
+            "target": renderedNodes.find(x => x.id === b.target)
         });
-    }
-    if (toNode) {
-        data = loadData(path, d.id + "To");
-
-        data.links.forEach(function (b) {
-            addNode({"id": b.source, "x": width / 2, "y": height / 2});
-
-            addLink({
-                "source": nodeData.find(x => x.id === b.source),
-                "target": nodeData.find(x => x.id === data.node.id)
-            });
-        });
-    }
+    });
 
     restart();
 }
+
+function clickExpandTo(d) {
+    data = loadData(path, d.id + "To");
+
+    data.links.forEach(function (b) {
+        addNode({"id": b.source, "x": width / 2, "y": height / 2});
+
+        addLink({
+            "source": renderedNodes.find(x => x.id === b.source),
+            "target": renderedNodes.find(x => x.id === d.id)
+        });
+    });
+
+    restart();
+}
+
 
 function clickCollapse(d) {
 
@@ -254,22 +285,18 @@ function clickSelect(d) {
 }
 
 function clickRemove(d) {
-    for (var i = linkData.length; i > 0; i--) {
-        if ((linkData[i].source === d) || (linkData[i].target === d)) {
-            linkData.splice(i, 1);
-            // renderedLinks[i]= undefined;
+
+    for (var i = renderedLinks.length - 1; i > -1; i--) {
+        if ((renderedLinks[i].source === d) || (renderedLinks[i].target === d)) {
+            renderedLinks.splice(i, 1);
         }
-        // console.log("Link: " + renderedLinks[i].source.id + " to " + renderedLinks[i].target.id);
+        console.log("Link: " + renderedLinks[i].source.id + " to " + renderedLinks[i].target.id);
     }
-    //
-    for (var i = 0; i < nodeData.length; i++) {
-        if (nodeData[i] === d) {
-            nodeData.splice(i, 1);
+    for (i = 0; i < renderedNodes.length; i++) {
+        if (renderedNodes[i] === d) {
+            renderedNodes.splice(i, 1);
         }
     }
-    // console.log(d);
-    // renderedNodes = [a, b, c];
-    // renderedLinks = [l_ab, l_bc, l_ca];
     restart();
 }
 
@@ -278,18 +305,18 @@ function clickRemove(d) {
 function addNode(newNode) {
     if (!nodeData.find(n => n.id === newNode.id)) { //the node doesn't exist in node
         nodeData.push(newNode);
-
+        renderedNodes.push(newNode);
     }
 }
 
 //add a link
 function addLink(newLink) {
     if ((linkData.find(n => (n.source === newLink.source && n.target === newLink.target)) === undefined) //link doesn't exist in linkDara
-        && !(newLink.source === newLink.target)                                                   //link doesn't has the same node as his source and his target
+        && !(newLink.source === newLink.target))                        //link doesn't has the same node as his source and his target
     //link has source and target <-- still needs to be added
-    ) {
-
+    {
         linkData.push(newLink);
+        renderedLinks.push(newLink);
     }
 }
 
@@ -297,8 +324,8 @@ function addLink(newLink) {
 function convertLinkData() {
     linksRefference.forEach(function (d) {
         linkData.push({
-            "source": nodeData.find(x => x.id === d.source),
-            "target": nodeData.find(x => x.id === d.target)
+            "source": renderedNodes.find(x => x.id === d.source),
+            "target": renderedNodes.find(x => x.id === d.target)
         });
     });
 }
@@ -318,6 +345,46 @@ function loadData(path, name) {
         }
     );
     return json;
+}
+validateDataSets();
+
+function validateDataSets() {
+    console.log("validation results:");
+    if(nodeData.length === 0){
+        console.log("nodeData is empty");
+    }
+    else if (nodeData.find(x => nodeData.find(y => y.id === x.id)).length > 1) {
+        console.log("duplicate in nodeData");
+    }
+
+    if(renderedNodes.length === 0){
+        console.log("renderedNodes is empty");
+    }
+    else if (renderedNodes.find(x => renderedNodes.find(y => y.id === x.id)).length > 1) {
+        console.log("duplicate in renderedNodes");
+    }
+
+    if(linkData.length === 0){
+        console.log("linkData is empty");
+    }
+    else if (linkData.find(x => linkData.find(y => y.source === x.source && y.target === x.target)).length > 1) {
+        console.log("duplicate in linkData");
+    }
+
+    if(renderedLinks.length === 0){
+        console.log("renderedLinks is empty");
+    }
+    else if (renderedLinks.find(x => renderedLinks.find(y => y.source === x.source && y.target === x.target)).length > 1) {
+        console.log("duplicate in renderedLinks");
+    }
+}
+
+function renderAllData() {
+
+    //!!!!!!!!!!!!!!! WARNING THIS IS WORKS VIA REFFERENCE AND HAT TO BE PUT INTO A FOR LOOP!!!!!!!!!!
+    renderedLinks = linkData;
+    renderedNodes = nodeData;
+    restart();
 }
 
 //define what happens on different stages of dragging
