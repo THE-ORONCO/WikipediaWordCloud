@@ -225,10 +225,7 @@ function doClickAction(d) {
         }
 
     }
-    if (document.getElementById("collapseCheck").checked) {
-        clickCollapse(d);
 
-    }
     if (document.getElementById("deleteCheck").checked) {
         clickRemove(d);
 
@@ -275,24 +272,18 @@ function clickExpandTo(d) {
     restart();
 }
 
-
-function clickCollapse(d) {
-
-}
-
 function clickSelect(d) {
 
 }
 
 function clickRemove(d) {
 
-    for (var i = renderedLinks.length - 1; i > -1; i--) {
+    for (var i = (renderedLinks.length - 1); i > -1; i--) {
         if ((renderedLinks[i].source === d) || (renderedLinks[i].target === d)) {
             renderedLinks.splice(i, 1);
         }
-        console.log("Link: " + renderedLinks[i].source.id + " to " + renderedLinks[i].target.id);
     }
-    for (i = 0; i < renderedNodes.length; i++) {
+    for (i = (renderedNodes.length -1); i > -1; i--) {
         if (renderedNodes[i] === d) {
             renderedNodes.splice(i, 1);
         }
