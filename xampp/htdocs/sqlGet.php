@@ -33,9 +33,24 @@ if(!empty($res) AND $searchName != ""){
 	$xml->endElement();
 
 	$xmlOutput = $xml->flush();
+	
+	$xml = new DOMDocument;
+	$xml->load($pageName.".xml");
+
+	$xsl = new DOMDocument;
+	$xsl->load('xmlToJson.xslt');
+
+	$proc = new XSLTProcessor;
+	$proc->importStyleSheet($xsl);
+
+	$myfile = fopen($pageName.".json", "w") or die("Unable to open file!");
+	fwrite($myfile, $proc->transformToXML($xml));
+	fclose($myfile);
+	
 }elseif(empty($res)){
 	echo("Not found in DB");
 }elseif($searchName == ""){
 	echo("Enter something");
 }
+
 ?>
