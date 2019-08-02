@@ -34,6 +34,7 @@ var simulation = d3.forceSimulation(renderedNodes)                   //defining 
     .alphaTarget(1)
     .on("tick", ticked)
     .stop();
+;
 
 
 //create the graph depending on the size of the svg element
@@ -371,10 +372,14 @@ function validateDataSets() {
 }
 
 function renderAllData() {
-
-    //!!!!!!!!!!!!!!! WARNING THIS IS WORKS VIA REFFERENCE AND HAT TO BE PUT INTO A FOR LOOP!!!!!!!!!!
-    renderedLinks = linkData;
-    renderedNodes = nodeData;
+    renderedLinks = [];
+    for(var i = 0; i  < renderedLinks.length; i++){
+        renderedLinks.push(linkData[i]);
+    }
+    renderedNodes = [];
+    for(i = 0; i  < renderedLinks.length; i++){
+        renderedNodes.push(nodeData[i]);
+    }
     restart();
 }
 
